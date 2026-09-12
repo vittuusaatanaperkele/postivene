@@ -1054,10 +1054,6 @@
         <translation>బ్యాకప్ నుండి పునరుద్ధరించు</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>మీ ప్రొఫైల్ ఉన్న పరికరంలో సెట్టింగ్‌లు తెరిచి రెండో పరికరాన్ని చేర్చడాన్ని ఎంచుకోండి. అది చూపే కోడ్‌కు ఈ ఫోన్‌ను చూపండి. రెండూ ఒకే నెట్‌వర్క్‌లో ఉండాలి.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>మీ ప్రొఫైల్ ఉన్న పరికరంలో బ్యాకప్ చేసి ఫైల్‌ను ఈ ఫోన్‌కు కాపీ చేయండి. తర్వాత దాన్ని ఇక్కడ ఎంచుకోండి.</translation>
     </message>
@@ -1076,6 +1072,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>ఈ పరికరంలో కెమెరా లేదు. బ్యాకప్ ఫైల్‌తో కెమెరా లేకుండానే అవుతుంది.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>మీ ప్రొఫైల్ ఉన్న పరికరంలో సెట్టింగ్‌లు తెరిచి రెండో పరికరాన్ని చేర్చడాన్ని ఎంచుకోండి. రెండూ ఒకే నెట్‌వర్క్‌లో ఉండాలి.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>అది చూపే కోడ్‌కు ఈ ఫోన్‌ను చూపండి</translation>
     </message>
 </context>
 <context>

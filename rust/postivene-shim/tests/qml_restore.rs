@@ -8,6 +8,11 @@
 //! transfer takes the reader to the profile it brought over, and that a
 //! code the shim refuses is put into words rather than shown as a
 //! protocol complaint. The transfer itself is `restore.rs`.
+//!
+//! The device half also has to hand the camera the page down to its
+//! foot, and say what it is looking for. A code is read out of the
+//! pixels it lands in, and a viewfinder sharing the page with a
+//! paragraph gave too few of them to read one reliably.
 
 // Qt harness: needs `unsafe` for `env::set_var` before Qt starts
 // (`unused_unsafe` because it is only unsafe from edition 2024 on),
@@ -122,6 +127,20 @@ const PROBE_QML: &str = r"
         function pageProperty(property) {
             return loader.item ? '' + loader.item[property] : 'no-page'
         }
+        // Where an item ends, measured from the top of the page.
+        function bottomOf(name) {
+            var item = findIn(loader.item, name)
+            if (!item) { return 'missing:' + name }
+            return '' + (item.y + item.height)
+        }
+        // A property of the scanner the page loaded rather than of the
+        // page: how the page has set the view up.
+        function viewProperty(property) {
+            var host = findIn(loader.item, 'scanLoader')
+            if (!host) { return 'missing:scanLoader' }
+            if (!host.item) { return 'no-view:' + host.status }
+            return '' + host.item[property]
+        }
         // What the camera or the file browser hands the page.
         function begin(text) {
             if (!loader.item) { return 'no-page' }
@@ -160,7 +179,13 @@ fn a_profile_that_exists_already_is_asked_after_and_brought_over() {
         std::env::set_var("QT_QPA_PLATFORM", "offscreen");
         std::env::set_var("POSTIVENE_FAKE_JOURNAL", &journal);
         std::env::set_var("POSTIVENE_ACCOUNTS_DIR", temp.join("accounts"));
+        // Where the view writes the frames it grabs.
+        std::env::set_var("XDG_CACHE_HOME", &temp);
     }
+
+    // The scanner is a `Postivene` type: without this the view fails to
+    // load and the device half is a page with a message about cameras.
+    postivene_shim::register_qml_types();
 
     let core_box = QObjectBox::new(DeltaChatCore::default());
     let stack_box = QObjectBox::new(PageStackProbe::default());
@@ -261,6 +286,21 @@ fn a_profile_that_exists_already_is_asked_after_and_brought_over() {
             "device-button",
             call!("get", "chooseFileButton", "visible"),
         );
+    });
+
+    // 6s: what the camera was given, and what the view was told, before
+    // a code is handed over -- a transfer takes the viewfinder down.
+    let s = steps.clone();
+    single_shot(Duration::from_secs(6), move || {
+        record(&s, "device-foot", call!("bottomOf", "scanArea"));
+        record(&s, "device-page", call!("pageProperty", "height"));
+        record(&s, "device-link", call!("viewProperty", "offerLink"));
+        record(&s, "device-hint", call!("get", "hint", "text"));
+        record(
+            &s,
+            "device-typed",
+            call!("get", "typeLinkButton", "visible"),
+        );
         record(
             &s,
             "device-begin",
@@ -269,12 +309,12 @@ fn a_profile_that_exists_already_is_asked_after_and_brought_over() {
     });
 
     let s = steps.clone();
-    single_shot(Duration::from_secs(7), move || {
+    single_shot(Duration::from_secs(8), move || {
         record(&s, "device-busy", call!("pageProperty", "busy"));
         record(&s, "device-said", call!("pageProperty", "errorMessage"));
     });
 
-    single_shot(Duration::from_secs(8), move || unsafe {
+    single_shot(Duration::from_secs(9), move || unsafe {
         (*engine_ptr).quit();
     });
 
@@ -346,6 +386,40 @@ fn assert_pages(steps: &[(String, String)], navigation: &str) {
         value_of(steps, "device-button"),
         "false",
         "the device half offers the file browser as well. {context}"
+    );
+
+    // The camera runs to the foot of the page, as it does on the QR
+    // page. Asked of where the viewfinder ends rather than of how tall
+    // it is: a page laid out on a phone puts a header and a line of
+    // instructions above it, and what matters is that everything left
+    // after those is the camera's.
+    let foot: f64 = value_of(steps, "device-foot").parse().unwrap_or(0.0);
+    let page: f64 = value_of(steps, "device-page").parse().unwrap_or(0.0);
+    assert!(
+        page > 0.0 && page - foot <= 64.0,
+        "the camera stops {} short of the foot of a {page} page, so it \
+         is a strip with the page scrolling under it -- which is the \
+         view a code cannot be read out of. {context}",
+        page - foot
+    );
+
+    assert_eq!(
+        value_of(steps, "device-link"),
+        "false",
+        "the take-over scanner offers to have the code typed, which \
+         nobody does: it carries an address and a one-time secret. \
+         {context}"
+    );
+    assert_eq!(
+        value_of(steps, "device-typed"),
+        "false",
+        "the button for typing the link is up anyway. {context}"
+    );
+    let hint = value_of(steps, "device-hint");
+    assert!(
+        hint.contains("code it shows"),
+        "the view still says it is looking for an invite: {hint:?}. \
+         {context}"
     );
     assert_eq!(
         value_of(steps, "device-begin"),

@@ -1049,10 +1049,6 @@
         <translation>Резерв күчермәдән торгызырга</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>Профилегез булган җиһазда көйләүләрне ачыгыз һәм икенче җиһаз өстәүне сайлагыз. Ул күрсәткән кодка бу телефонны тотыгыз. Икесе дә бер үк челтәрдә булырга тиеш.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>Профилегез булган җиһазда резерв күчермә ясагыз һәм файлны бу телефонга күчерегез. Аннары аны шушында сайлагыз.</translation>
     </message>
@@ -1071,6 +1067,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Бу җиһазда камера юк. Резерв күчермә файлы белән камерасыз да була.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Профилегез булган җиһазда көйләүләрне ачыгыз һәм икенче җиһаз өстәүне сайлагыз. Икесе дә бер үк челтәрдә булырга тиеш.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Ул күрсәткән кодка бу телефонны тотыгыз</translation>
     </message>
 </context>
 <context>

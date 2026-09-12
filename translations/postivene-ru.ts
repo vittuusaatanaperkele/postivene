@@ -1059,10 +1059,6 @@
         <translation>Восстановить из резервной копии</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>На устройстве с вашим профилем откройте настройки и выберите добавление второго устройства. Наведите этот телефон на показанный код. Оба должны быть в одной сети.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>На устройстве с вашим профилем сделайте резервную копию и скопируйте файл на этот телефон. Затем выберите его здесь.</translation>
     </message>
@@ -1081,6 +1077,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>На этом устройстве нет камеры. С файлом резервной копии она и не нужна.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>На устройстве с вашим профилем откройте настройки и выберите добавление второго устройства. Оба должны быть в одной сети.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Наведите этот телефон на показанный код</translation>
     </message>
 </context>
 <context>

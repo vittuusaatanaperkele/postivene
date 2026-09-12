@@ -1059,10 +1059,6 @@
         <translation>Відновити з резервної копії</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>На пристрої з вашим профілем відкрийте налаштування й виберіть додавання другого пристрою. Наведіть цей телефон на показаний код. Обидва мають бути в одній мережі.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>На пристрої з вашим профілем зробіть резервну копію й скопіюйте файл на цей телефон. Потім виберіть його тут.</translation>
     </message>
@@ -1081,6 +1077,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>На цьому пристрої немає камери. З файлом резервної копії вона й не потрібна.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>На пристрої з вашим профілем відкрийте налаштування й виберіть додавання другого пристрою. Обидва мають бути в одній мережі.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Наведіть цей телефон на показаний код</translation>
     </message>
 </context>
 <context>

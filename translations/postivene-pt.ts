@@ -1054,10 +1054,6 @@
         <translation>Restaurar a partir de uma cópia</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>No dispositivo que tem o seu perfil, abra as definições e escolha adicionar um segundo dispositivo. Aponte este telefone ao código que aparecer. Os dois têm de estar na mesma rede.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>No dispositivo que tem o seu perfil, faça uma cópia de segurança e copie o ficheiro para este telefone. Depois escolha-o aqui.</translation>
     </message>
@@ -1076,6 +1072,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Não há câmara neste dispositivo. Com um ficheiro de cópia dispensa-se.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>No dispositivo que tem o seu perfil, abra as definições e escolha adicionar um segundo dispositivo. Os dois têm de estar na mesma rede.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Aponte este telefone ao código que aparecer</translation>
     </message>
 </context>
 <context>

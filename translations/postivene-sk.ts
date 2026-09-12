@@ -1059,10 +1059,6 @@
         <translation>Obnoviť zo zálohy</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>Na zariadení s vaším profilom otvorte nastavenia a zvoľte pridanie druhého zariadenia. Namierte tento telefón na zobrazený kód. Obe musia byť v tej istej sieti.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>Na zariadení s vaším profilom vytvorte zálohu a skopírujte súbor do tohto telefónu. Potom ho tu vyberte.</translation>
     </message>
@@ -1081,6 +1077,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Na tomto zariadení nie je fotoaparát. So súborom zálohy to ide aj bez neho.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Na zariadení s vaším profilom otvorte nastavenia a zvoľte pridanie druhého zariadenia. Obe musia byť v tej istej sieti.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Namierte tento telefón na zobrazený kód</translation>
     </message>
 </context>
 <context>

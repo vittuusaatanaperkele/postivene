@@ -117,6 +117,7 @@ Page {
     }
 
     SilicaFlickable {
+        id: flickable
         anchors.fill: parent
         contentHeight: Math.max(height, column.height + Theme.paddingLarge)
 
@@ -140,12 +141,12 @@ Page {
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.secondaryHighlightColor
                 text: page.fromDevice
-                      ? qsTr("On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.")
+                      ? qsTr("On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.")
                       : qsTr("On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.")
             }
 
-            // The file half of the first step. The camera half is below,
-            // outside the column, because it takes the rest of the page.
+            // The file half of the first step. The camera half is last
+            // in the column, because it takes the rest of the page.
             Button {
                 objectName: "chooseFileButton"
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -176,23 +177,22 @@ Page {
                 }
             }
 
-            Banner {
-                objectName: "errorBanner"
-                width: parent.width
-                text: page.errorMessage
-                onDismissed: page.errorMessage = ""
-            }
-
             // The camera, when that is the way the profile is coming.
-            // Loaded by URL, as the QR page loads it: this is the only
-            // other place a Camera is named, and a phone without one
-            // should lose the scanner rather than the page.
+            // Loaded by URL, as the QR page loads it: a phone without
+            // one should lose the scanner rather than the page.
             Item {
                 id: scanArea
                 objectName: "scanArea"
                 visible: page.fromDevice && !page.busy
                 width: parent.width
-                height: visible ? Math.max(Theme.itemSizeLarge, page.height * 0.5) : 0
+                // The rest of the page, down to the bottom, the way the
+                // QR page gives it: a code is read from the pixels it
+                // lands in, and a viewfinder sharing the page with a
+                // paragraph gives it too few of them.
+                height: visible
+                        ? Math.max(Theme.itemSizeLarge,
+                                   flickable.height - y - Theme.paddingLarge)
+                        : 0
 
                 Loader {
                     id: scanLoader
@@ -201,6 +201,11 @@ Page {
                     active: page.fromDevice
                     source: Qt.resolvedUrl("../components/ScanView.qml")
                     onLoaded: {
+                        scanLoader.item.hintText =
+                            qsTr("Hold the phone up to the code it shows")
+                        // The code carries the other phone's address and
+                        // a one-time secret. Nobody types that.
+                        scanLoader.item.offerLink = false
                         scanLoader.item.scanned.connect(page.begin)
                         scanLoader.item.failed.connect(function(message) {
                             page.errorMessage = message
@@ -230,5 +235,19 @@ Page {
                 }
             }
         }
+    }
+
+    // Over the foot of the page rather than in the column: a message
+    // that lands mid-scan would otherwise shorten the viewfinder under
+    // the hand holding the phone up to a code.
+    Banner {
+        objectName: "errorBanner"
+        anchors {
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+        }
+        text: page.errorMessage
+        onDismissed: page.errorMessage = ""
     }
 }

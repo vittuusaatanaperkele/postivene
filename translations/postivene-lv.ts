@@ -1059,10 +1059,6 @@
         <translation>Atjaunot no rezerves kopijas</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>Ierīcē, kurā ir jūsu profils, atveriet iestatījumus un izvēlieties pievienot otru ierīci. Pavērsiet šo tālruni pret parādīto kodu. Abām jābūt vienā tīklā.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>Ierīcē, kurā ir jūsu profils, izveidojiet rezerves kopiju un nokopējiet datni uz šo tālruni. Tad izvēlieties to šeit.</translation>
     </message>
@@ -1081,6 +1077,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Šajā ierīcē nav kameras. Ar rezerves kopijas datni iztiek arī bez tās.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Ierīcē, kurā ir jūsu profils, atveriet iestatījumus un izvēlieties pievienot otru ierīci. Abām jābūt vienā tīklā.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Pavērsiet šo tālruni pret parādīto kodu</translation>
     </message>
 </context>
 <context>

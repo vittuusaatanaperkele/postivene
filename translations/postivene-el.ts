@@ -1054,10 +1054,6 @@
         <translation>Επαναφορά από αντίγραφο ασφαλείας</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>Στη συσκευή που έχει το προφίλ σας, ανοίξτε τις ρυθμίσεις και επιλέξτε την προσθήκη δεύτερης συσκευής. Στρέψτε αυτό το τηλέφωνο στον κωδικό που εμφανίζει. Και οι δύο συσκευές πρέπει να είναι στο ίδιο δίκτυο.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>Στη συσκευή που έχει το προφίλ σας, φτιάξτε ένα αντίγραφο ασφαλείας και αντιγράψτε το αρχείο σε αυτό το τηλέφωνο. Μετά επιλέξτε το εδώ.</translation>
     </message>
@@ -1076,6 +1072,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Δεν υπάρχει κάμερα σε αυτή τη συσκευή. Με ένα αρχείο αντιγράφου γίνεται και χωρίς.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Στη συσκευή που έχει το προφίλ σας, ανοίξτε τις ρυθμίσεις και επιλέξτε την προσθήκη δεύτερης συσκευής. Και οι δύο συσκευές πρέπει να είναι στο ίδιο δίκτυο.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Στρέψτε αυτό το τηλέφωνο στον κωδικό που εμφανίζει</translation>
     </message>
 </context>
 <context>

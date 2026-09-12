@@ -1054,10 +1054,6 @@
         <translation>ബാക്കപ്പിൽനിന്ന് വീണ്ടെടുക്കുക</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>നിങ്ങളുടെ പ്രൊഫൈൽ ഉള്ള ഉപകരണത്തിൽ ക്രമീകരണങ്ങൾ തുറന്ന് രണ്ടാമത്തെ ഉപകരണം ചേർക്കുക എന്നത് തിരഞ്ഞെടുക്കുക. അത് കാണിക്കുന്ന കോഡിന് നേരെ ഈ ഫോൺ പിടിക്കുക. രണ്ടും ഒരേ ശൃംഖലയിൽ വേണം.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>നിങ്ങളുടെ പ്രൊഫൈൽ ഉള്ള ഉപകരണത്തിൽ ഒരു ബാക്കപ്പ് ഉണ്ടാക്കി ഫയൽ ഈ ഫോണിലേക്ക് പകർത്തുക. പിന്നെ അത് ഇവിടെ തിരഞ്ഞെടുക്കുക.</translation>
     </message>
@@ -1076,6 +1072,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>ഈ ഉപകരണത്തിൽ ക്യാമറയില്ല. ബാക്കപ്പ് ഫയലുണ്ടെങ്കിൽ ക്യാമറ വേണ്ട.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>നിങ്ങളുടെ പ്രൊഫൈൽ ഉള്ള ഉപകരണത്തിൽ ക്രമീകരണങ്ങൾ തുറന്ന് രണ്ടാമത്തെ ഉപകരണം ചേർക്കുക എന്നത് തിരഞ്ഞെടുക്കുക. രണ്ടും ഒരേ ശൃംഖലയിൽ വേണം.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>അത് കാണിക്കുന്ന കോഡിന് നേരെ ഈ ഫോൺ പിടിക്കുക</translation>
     </message>
 </context>
 <context>

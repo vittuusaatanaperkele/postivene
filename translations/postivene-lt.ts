@@ -1059,10 +1059,6 @@
         <translation>Atkurti iš atsarginės kopijos</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>Įrenginyje, kuriame yra jūsų profilis, atverkite nustatymus ir pasirinkite pridėti antrą įrenginį. Nukreipkite šį telefoną į rodomą kodą. Abu turi būti tame pačiame tinkle.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>Įrenginyje, kuriame yra jūsų profilis, sukurkite atsarginę kopiją ir nukopijuokite failą į šį telefoną. Tada pasirinkite jį čia.</translation>
     </message>
@@ -1081,6 +1077,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Šiame įrenginyje kameros nėra. Su atsarginės kopijos failu jos ir nereikia.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Įrenginyje, kuriame yra jūsų profilis, atverkite nustatymus ir pasirinkite pridėti antrą įrenginį. Abu turi būti tame pačiame tinkle.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Nukreipkite šį telefoną į rodomą kodą</translation>
     </message>
 </context>
 <context>

@@ -1049,10 +1049,6 @@
         <translation>Khôi phục từ bản sao lưu</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>Trên thiết bị đang có hồ sơ, mở cài đặt và chọn thêm thiết bị thứ hai. Hướng điện thoại này vào mã hiện ra. Cả hai phải ở cùng một mạng.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>Trên thiết bị đang có hồ sơ, hãy tạo bản sao lưu và chép tệp sang điện thoại này. Rồi chọn tệp đó ở đây.</translation>
     </message>
@@ -1071,6 +1067,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Máy này không có camera. Dùng tệp sao lưu thì không cần camera.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Trên thiết bị đang có hồ sơ, mở cài đặt và chọn thêm thiết bị thứ hai. Cả hai phải ở cùng một mạng.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Hướng điện thoại này vào mã hiện ra</translation>
     </message>
 </context>
 <context>

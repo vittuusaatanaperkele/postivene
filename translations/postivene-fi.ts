@@ -1054,10 +1054,6 @@
         <translation>Palauta varmuuskopiosta</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>Avaa profiilin sisältävässä laitteessa asetukset ja valitse toisen laitteen lisääminen. Suuntaa tämä puhelin sen näyttämään koodiin. Molempien on oltava samassa verkossa.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>Tee profiilin sisältävässä laitteessa varmuuskopio ja kopioi tiedosto tähän puhelimeen. Valitse se sitten täältä.</translation>
     </message>
@@ -1076,6 +1072,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Tässä laitteessa ei ole kameraa. Varmuuskopiotiedostolla onnistuu ilmankin.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Avaa profiilin sisältävässä laitteessa asetukset ja valitse toisen laitteen lisääminen. Molempien on oltava samassa verkossa.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Suuntaa tämä puhelin sen näyttämään koodiin</translation>
     </message>
 </context>
 <context>

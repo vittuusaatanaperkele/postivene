@@ -1054,10 +1054,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1075,6 +1071,14 @@
     </message>
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

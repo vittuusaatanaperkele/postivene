@@ -1049,10 +1049,6 @@
         <translation>从备份恢复</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>在有你个人资料的设备上打开设置，选择添加第二台设备。把这部手机对准它显示的码。两台设备要在同一个网络里。</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>在有你个人资料的设备上创建备份，把文件复制到这部手机，然后在这里选择它。</translation>
     </message>
@@ -1071,6 +1067,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>这台设备没有摄像头。用备份文件也可以，不需要摄像头。</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>在有你个人资料的设备上打开设置，选择添加第二台设备。两台设备要在同一个网络里。</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>把这部手机对准它显示的码</translation>
     </message>
 </context>
 <context>

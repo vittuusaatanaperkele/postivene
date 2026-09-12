@@ -1054,10 +1054,6 @@
         <translation>Herstellen uit een back-up</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>Open op het apparaat met je profiel de instellingen en kies om een tweede apparaat toe te voegen. Houd deze telefoon voor de code die het toont. Beide moeten op hetzelfde netwerk zitten.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>Maak op het apparaat met je profiel een back-up en kopieer het bestand naar deze telefoon. Kies het daarna hier.</translation>
     </message>
@@ -1076,6 +1072,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Er is geen camera op dit apparaat. Met een back-upbestand kan het ook zonder.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Open op het apparaat met je profiel de instellingen en kies om een tweede apparaat toe te voegen. Beide moeten op hetzelfde netwerk zitten.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Houd deze telefoon voor de code die het toont</translation>
     </message>
 </context>
 <context>

@@ -1054,10 +1054,6 @@
         <translation>Gjenopprett fra en sikkerhetskopi</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>På enheten som har profilen din: åpne innstillingene og velg å legge til en andre enhet. Hold denne telefonen mot koden den viser. Begge må være på det samme nettverket.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>På enheten som har profilen din: lag en sikkerhetskopi og kopier filen over på denne telefonen. Velg den så her.</translation>
     </message>
@@ -1076,6 +1072,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Det er ikke noe kamera på denne enheten. Med en sikkerhetskopi går det uten.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>På enheten som har profilen din: åpne innstillingene og velg å legge til en andre enhet. Begge må være på det samme nettverket.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Hold denne telefonen mot koden den viser</translation>
     </message>
 </context>
 <context>

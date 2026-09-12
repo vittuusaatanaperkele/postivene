@@ -1059,10 +1059,6 @@
         <translation>Przywróć z kopii zapasowej</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>Na urządzeniu, które ma twój profil, otwórz ustawienia i wybierz dodanie drugiego urządzenia. Skieruj ten telefon na pokazany kod. Oba muszą być w tej samej sieci.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>Na urządzeniu, które ma twój profil, zrób kopię zapasową i skopiuj plik na ten telefon. Potem wybierz go tutaj.</translation>
     </message>
@@ -1081,6 +1077,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Na tym urządzeniu nie ma aparatu. Z plikiem kopii zapasowej obejdzie się bez niego.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Na urządzeniu, które ma twój profil, otwórz ustawienia i wybierz dodanie drugiego urządzenia. Oba muszą być w tej samej sieci.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Skieruj ten telefon na pokazany kod</translation>
     </message>
 </context>
 <context>

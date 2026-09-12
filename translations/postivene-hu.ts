@@ -1049,10 +1049,6 @@
         <translation>Visszaállítás mentésből</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>A profilt tartalmazó eszközön nyissa meg a beállításokat, és válassza a második eszköz hozzáadását. Tartsa ezt a telefont a megjelenő kód elé. Mindkettőnek ugyanazon a hálózaton kell lennie.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>A profilt tartalmazó eszközön készítsen mentést, és másolja a fájlt erre a telefonra. Utána válassza ki itt.</translation>
     </message>
@@ -1071,6 +1067,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Ezen az eszközön nincs kamera. Mentésfájllal kamera nélkül is megy.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>A profilt tartalmazó eszközön nyissa meg a beállításokat, és válassza a második eszköz hozzáadását. Mindkettőnek ugyanazon a hálózaton kell lennie.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Tartsa ezt a telefont a megjelenő kód elé</translation>
     </message>
 </context>
 <context>

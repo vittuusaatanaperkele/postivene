@@ -1054,10 +1054,6 @@
         <translation>காப்புப் பிரதியிலிருந்து மீட்டெடு</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>உங்கள் சுயவிவரம் உள்ள சாதனத்தில் அமைப்புகளைத் திறந்து இரண்டாவது சாதனத்தைச் சேர்ப்பதைத் தேர்ந்தெடுக்கவும். அது காட்டும் குறியீட்டை நோக்கி இந்தத் தொலைபேசியைப் பிடிக்கவும். இரண்டும் ஒரே வலையமைப்பில் இருக்க வேண்டும்.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>உங்கள் சுயவிவரம் உள்ள சாதனத்தில் ஒரு காப்புப் பிரதி எடுத்து, கோப்பை இந்தத் தொலைபேசிக்கு நகலெடுக்கவும். பிறகு அதை இங்கே தேர்ந்தெடுக்கவும்.</translation>
     </message>
@@ -1076,6 +1072,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>இந்தச் சாதனத்தில் கேமரா இல்லை. காப்புக் கோப்பு இருந்தால் கேமரா தேவையில்லை.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>உங்கள் சுயவிவரம் உள்ள சாதனத்தில் அமைப்புகளைத் திறந்து இரண்டாவது சாதனத்தைச் சேர்ப்பதைத் தேர்ந்தெடுக்கவும். இரண்டும் ஒரே வலையமைப்பில் இருக்க வேண்டும்.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>அது காட்டும் குறியீட்டை நோக்கி இந்தத் தொலைபேசியைப் பிடிக்கவும்</translation>
     </message>
 </context>
 <context>

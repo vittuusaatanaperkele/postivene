@@ -435,7 +435,15 @@ removed from the store even after approval. Not an option.
    bar should move and the app should land in that profile's chat list,
    fetching -- and with a backup file copied onto the phone, the file
    browser should list it (it filters to .tar) and import it the same
-   way. Worth trying on a phone without a camera too, or with the
+   way. The viewfinder on the device half has to run from under the
+   line of instructions down to the foot of the page, the way the QR
+   page's does, and it should read a code held up to it at arm's
+   length within a second or two. A viewfinder that is a strip with the
+   page scrolling under it is the bug this had: a code is read out of
+   the pixels it lands in, and half a page of camera did not give it
+   enough of them. There is no "enter the link" button on this one --
+   the code carries an address and a one-time secret, which nobody
+   types. Worth trying on a phone without a camera too, or with the
    camera denied: the page has to fall back to saying so rather than
    showing a dead viewfinder, and the backup half has to work
    regardless.

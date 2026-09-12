@@ -1059,10 +1059,6 @@
         <translation>Restaurează dintr-o copie de siguranță</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>Pe dispozitivul care are profilul, deschideți setările și alegeți adăugarea unui al doilea dispozitiv. Îndreptați acest telefon spre codul afișat. Ambele trebuie să fie în aceeași rețea.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>Pe dispozitivul care are profilul, faceți o copie de siguranță și copiați fișierul pe acest telefon. Apoi alegeți-l aici.</translation>
     </message>
@@ -1081,6 +1077,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Pe acest dispozitiv nu există cameră. Cu un fișier de copie se poate și fără.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Pe dispozitivul care are profilul, deschideți setările și alegeți adăugarea unui al doilea dispozitiv. Ambele trebuie să fie în aceeași rețea.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Îndreptați acest telefon spre codul afișat</translation>
     </message>
 </context>
 <context>

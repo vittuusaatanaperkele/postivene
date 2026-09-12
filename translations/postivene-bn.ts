@@ -1054,10 +1054,6 @@
         <translation>ব্যাকআপ থেকে ফিরিয়ে আনুন</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>আপনার প্রোফাইল যে যন্ত্রে আছে সেখানে সেটিংস খুলে দ্বিতীয় যন্ত্র যোগ করা বেছে নিন। সেটি যে কোড দেখাবে তার দিকে এই ফোনটি ধরুন। দুটি যন্ত্রকেই একই নেটওয়ার্কে থাকতে হবে।</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>আপনার প্রোফাইল যে যন্ত্রে আছে সেখানে একটি ব্যাকআপ তৈরি করে ফাইলটি এই ফোনে কপি করুন। তারপর এখানে সেটি বেছে নিন।</translation>
     </message>
@@ -1076,6 +1072,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>এই যন্ত্রে ক্যামেরা নেই। ব্যাকআপ ফাইল দিয়ে ক্যামেরা ছাড়াই কাজ চলে।</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>আপনার প্রোফাইল যে যন্ত্রে আছে সেখানে সেটিংস খুলে দ্বিতীয় যন্ত্র যোগ করা বেছে নিন। দুটি যন্ত্রকেই একই নেটওয়ার্কে থাকতে হবে।</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>সেটি যে কোড দেখাবে তার দিকে এই ফোনটি ধরুন</translation>
     </message>
 </context>
 <context>

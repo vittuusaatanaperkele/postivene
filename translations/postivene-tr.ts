@@ -1049,10 +1049,6 @@
         <translation>Yedekten geri yükle</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>Profilinizin bulunduğu cihazda ayarları açın ve ikinci cihaz eklemeyi seçin. Bu telefonu gösterilen koda tutun. İkisi de aynı ağda olmalı.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>Profilinizin bulunduğu cihazda bir yedek alın ve dosyayı bu telefona kopyalayın. Sonra buradan seçin.</translation>
     </message>
@@ -1071,6 +1067,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Bu cihazda kamera yok. Yedek dosyasıyla kamerasız da olur.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Profilinizin bulunduğu cihazda ayarları açın ve ikinci cihaz eklemeyi seçin. İkisi de aynı ağda olmalı.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Bu telefonu gösterilen koda tutun</translation>
     </message>
 </context>
 <context>

@@ -1054,10 +1054,6 @@
         <translation>Gendan fra en sikkerhedskopi</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>På enheden med din profil: åbn indstillingerne og vælg at tilføje en anden enhed. Hold denne telefon op mod koden, den viser. Begge enheder skal være på det samme netværk.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>På enheden med din profil: lav en sikkerhedskopi og kopiér filen over på denne telefon. Vælg den så her.</translation>
     </message>
@@ -1076,6 +1072,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>Der er ikke noget kamera på denne enhed. Med en sikkerhedskopi går det uden.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>På enheden med din profil: åbn indstillingerne og vælg at tilføje en anden enhed. Begge enheder skal være på det samme netværk.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Hold denne telefon op mod koden, den viser</translation>
     </message>
 </context>
 <context>

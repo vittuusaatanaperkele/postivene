@@ -1054,10 +1054,6 @@
         <translation>बॅकअपमधून पुनर्संचयित करा</translation>
     </message>
     <message>
-        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
-        <translation>ज्या उपकरणावर तुमचे प्रोफाइल आहे तिथे सेटिंग्ज उघडा आणि दुसरे उपकरण जोडणे निवडा. ते दाखवत असलेल्या कोडसमोर हा फोन धरा. दोन्ही एकाच नेटवर्कवर हवीत.</translation>
-    </message>
-    <message>
         <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
         <translation>ज्या उपकरणावर तुमचे प्रोफाइल आहे तिथे बॅकअप तयार करा आणि फाइल या फोनवर कॉपी करा. मग ती इथे निवडा.</translation>
     </message>
@@ -1076,6 +1072,14 @@
     <message>
         <source>The camera is not available on this device. A backup file works without one.</source>
         <translation>या उपकरणावर कॅमेरा नाही. बॅकअप फाइलने कॅमेऱ्याशिवायही होते.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>ज्या उपकरणावर तुमचे प्रोफाइल आहे तिथे सेटिंग्ज उघडा आणि दुसरे उपकरण जोडणे निवडा. दोन्ही एकाच नेटवर्कवर हवीत.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>ते दाखवत असलेल्या कोडसमोर हा फोन धरा</translation>
     </message>
 </context>
 <context>

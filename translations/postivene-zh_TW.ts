@@ -547,6 +547,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>不必註冊，不必電話號碼</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>你的個人檔案就在這支手機上建立。不需要電話號碼，不需要在任何公司開戶，也沒有什麼要簽。</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>誰可以聯絡你，由你決定</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>沒有可以查到你的名錄。給朋友看一個 QR Code，或者傳一條連結給對方，你們就能互相寫信了。</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>每一則訊息都上了鎖</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>訊息一律全程加密。傳送它們的伺服器一個字也讀不到。</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>人人平等的群組</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>群組裡所有人的權限相同：任何人都可以加入朋友、改名或離開。沒有誰說了算。</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>伺服器只負責轉交</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>中繼會把訊息留著，直到對方的手機上線，它只做這一件事。你的對話留在你自己的裝置上。</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>繼續滑動即可建立個人檔案。</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -860,6 +907,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmail 中繼由志工利用空閒時間營運。如果這個似乎無法使用，請返回並嘗試另一個。</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>好，我們來建立你的個人檔案。</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>我已經有個人檔案</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>建立個人檔案</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>從另一台裝置搬移個人檔案還沒完成，正在開發中。</translation>
     </message>
 </context>
 <context>
@@ -1211,16 +1277,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>安全的去中心化聊天</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>以 Delta Chat 為基礎的安全去中心化通訊</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>不需要電話號碼，也不需要在我們這裡註冊帳號：你的個人檔案存放在你自己選擇的郵件伺服器上。</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Delta Chat 是什麼？</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>新增個人檔案</translation>
+        <source>Set up my profile</source>
+        <translation>設定我的個人檔案</translation>
     </message>
 </context>
 </TS>

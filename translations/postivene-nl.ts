@@ -550,6 +550,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Geen aanmelding, geen telefoonnummer</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Je profiel ontstaat hier op je telefoon. Geen telefoonnummer, geen account bij een bedrijf, niets te ondertekenen.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Jij bepaalt wie je kan bereiken</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Er is geen gids waarin je gevonden wordt. Laat een vriend een code zien om te scannen of stuur een link, en dan kunnen jullie schrijven.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Elk bericht zit op slot</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Berichten zijn altijd de hele weg versleuteld. De servers die ze dragen, lezen er geen woord van.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Groepen van gelijken</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>In een groep heeft iedereen dezelfde rechten: iedereen kan iemand toevoegen, de naam wijzigen of vertrekken. Niemand is de baas.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>De server geeft het alleen maar door</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Een relay houdt een bericht vast tot de andere telefoon online is, meer doet het niet. Je gesprekken blijven op je apparaat.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Blijf vegen om je profiel in te stellen.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -865,6 +912,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmail-relays worden door vrijwilligers in hun vrije tijd beheerd. Als deze niet lijkt te werken, ga dan terug en probeer een andere.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Goed, laten we je profiel instellen.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Ik heb al een profiel</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Een profiel aanmaken</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Een profiel van een ander apparaat overnemen is nog niet klaar. Er wordt aan gewerkt.</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Veilige gedecentraliseerde chat</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Veilig, gedecentraliseerd berichtenverkeer op basis van Delta Chat</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Geen telefoonnummer, geen account bij ons: je profiel staat op een mailserver naar keuze.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Wat is Delta Chat?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Profiel toevoegen</translation>
+        <source>Set up my profile</source>
+        <translation>Mijn profiel instellen</translation>
     </message>
 </context>
 </TS>

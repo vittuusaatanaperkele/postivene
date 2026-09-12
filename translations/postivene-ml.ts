@@ -550,6 +550,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>സൈൻ-അപ്പ് വേണ്ട, ഫോൺ നമ്പർ വേണ്ട</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>നിങ്ങളുടെ പ്രൊഫൈൽ ഇവിടെ, നിങ്ങളുടെ ഫോണിൽത്തന്നെ ഉണ്ടാകുന്നു. ഫോൺ നമ്പർ വേണ്ട, ഒരു കമ്പനിയിലും അക്കൗണ്ട് വേണ്ട, ഒപ്പിടാനും ഒന്നുമില്ല.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>ആർക്കു നിങ്ങളെ ബന്ധപ്പെടാമെന്ന് നിങ്ങൾ തീരുമാനിക്കുന്നു</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>നിങ്ങളെ കണ്ടെത്താൻ ഒരു പട്ടികയുമില്ല. സുഹൃത്തിന് സ്കാൻ ചെയ്യാൻ ഒരു കോഡ് കാണിക്കുക അല്ലെങ്കിൽ ഒരു ലിങ്ക് അയയ്ക്കുക, പിന്നെ നിങ്ങൾക്ക് പരസ്പരം എഴുതാം.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>ഓരോ സന്ദേശവും പൂട്ടിയിരിക്കുന്നു</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>സന്ദേശങ്ങൾ എപ്പോഴും വഴി മുഴുവൻ എൻക്രിപ്റ്റ് ചെയ്തിരിക്കും. അവ വഹിക്കുന്ന സെർവറുകൾക്ക് ഒരു വാക്കുപോലും വായിക്കാനാവില്ല.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>തുല്യരുടെ കൂട്ടങ്ങൾ</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>ഒരു കൂട്ടത്തിൽ എല്ലാവർക്കും ഒരേ അവകാശം: ആർക്കും ഒരു സുഹൃത്തിനെ ചേർക്കാം, പേരു മാറ്റാം, ഇറങ്ങിപ്പോകാം. ആരും മേലാളനല്ല.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>സെർവർ അത് കൈമാറുക മാത്രം ചെയ്യുന്നു</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>മറ്റേ ഫോൺ ഓൺലൈനാകുന്നതുവരെ റിലേ സന്ദേശം സൂക്ഷിക്കുന്നു, അത്രമാത്രം. നിങ്ങളുടെ സംഭാഷണങ്ങൾ നിങ്ങളുടെ ഉപകരണത്തിൽത്തന്നെ നിൽക്കും.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>പ്രൊഫൈൽ ഒരുക്കാൻ സ്വൈപ്പ് ചെയ്തുകൊണ്ടിരിക്കുക.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -865,6 +912,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmail റിലേകൾ സന്നദ്ധപ്രവർത്തകർ അവരുടെ ഒഴിവുസമയത്ത് നടത്തുന്നവയാണ്. ഇത് പ്രവർത്തിക്കുന്നില്ലെന്ന് തോന്നിയാൽ, തിരികെ പോയി മറ്റൊന്ന് പരീക്ഷിക്കുക.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>ശരി, നിങ്ങളുടെ പ്രൊഫൈൽ ഒരുക്കാം.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>എനിക്ക് ഇതിനകം പ്രൊഫൈൽ ഉണ്ട്</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>പ്രൊഫൈൽ ഉണ്ടാക്കുക</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>മറ്റൊരു ഉപകരണത്തിൽനിന്ന് പ്രൊഫൈൽ കൊണ്ടുവരുന്നത് ഇനിയും തയ്യാറായിട്ടില്ല. അതിന്റെ പണി നടക്കുന്നു.</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>സുരക്ഷിതമായ വികേന്ദ്രീകൃത ചാറ്റ്</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Delta Chat അടിസ്ഥാനമാക്കിയ സുരക്ഷിതവും വികേന്ദ്രീകൃതവുമായ സന്ദേശവിനിമയം</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>ഫോൺ നമ്പർ വേണ്ട, ഞങ്ങളുടെ പക്കൽ അക്കൗണ്ട് വേണ്ട: നിങ്ങളുടെ പ്രൊഫൈൽ നിങ്ങൾ തിരഞ്ഞെടുത്ത മെയിൽ സെർവറിൽ ഇരിക്കുന്നു.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Delta Chat എന്താണ്?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>പ്രൊഫൈൽ ചേർക്കുക</translation>
+        <source>Set up my profile</source>
+        <translation>എന്റെ പ്രൊഫൈൽ ഒരുക്കുക</translation>
     </message>
 </context>
 </TS>

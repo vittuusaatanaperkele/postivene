@@ -550,6 +550,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>नोंदणी नाही, फोन नंबर नाही</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>तुमचे प्रोफाइल इथेच, तुमच्या फोनवर तयार होते. फोन नंबर नको, कोणत्याही कंपनीचे खाते नको, सही करायलाही काही नाही.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>तुमच्याशी कोण संपर्क करू शकेल हे तुम्ही ठरवता</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>तुम्हाला शोधता येईल अशी कोणतीही यादी नाही. मित्राला स्कॅन करण्यासाठी कोड दाखवा किंवा दुवा पाठवा, मग तुम्ही दोघे लिहू शकता.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>प्रत्येक संदेशाला कुलूप</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>संदेश नेहमी संपूर्ण वाटेत एन्क्रिप्ट केलेले असतात. ते वाहून नेणाऱ्या सर्व्हरना एक शब्दही वाचता येत नाही.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>समान हक्कांचे गट</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>गटात सर्वांचे हक्क समान: कोणीही मित्र जोडू शकतो, नाव बदलू शकतो किंवा बाहेर पडू शकतो. कोणी प्रमुख नसतो.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>सर्व्हर तो फक्त पुढे देतो</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>दुसरा फोन ऑनलाइन येईपर्यंत रिले संदेश ठेवतो, एवढेच. तुमच्या गप्पा तुमच्याच उपकरणावर राहतात.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>प्रोफाइल तयार करण्यासाठी स्वाइप करत राहा.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -865,6 +912,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmail रिले स्वयंसेवक आपल्या फावल्या वेळात चालवतात. हे चालत नसल्यासारखे वाटल्यास, मागे जाऊन दुसरे वापरून पाहा.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>ठीक आहे, तुमचे प्रोफाइल तयार करूया.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>माझ्याकडे आधीच प्रोफाइल आहे</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>प्रोफाइल तयार करा</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>दुसऱ्या उपकरणावरून प्रोफाइल आणणे अजून तयार नाही. त्यावर काम सुरू आहे.</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>सुरक्षित विकेंद्रित चॅट</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Delta Chat वर आधारित सुरक्षित, विकेंद्रित संदेशवहन</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>फोन नंबर नाही, आमच्याकडे खाते नाही: तुमची प्रोफाइल तुम्ही निवडलेल्या मेल सर्व्हरवर राहते.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Delta Chat म्हणजे काय?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>प्रोफाइल जोडा</translation>
+        <source>Set up my profile</source>
+        <translation>माझे प्रोफाइल तयार करा</translation>
     </message>
 </context>
 </TS>

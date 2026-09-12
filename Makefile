@@ -125,12 +125,14 @@ fetch-server:
 translations:
 	./scripts/release-translations.sh
 
-## Repaint the field of faces the first screen draws (qml/art/) from
-## tools/faces/. Python 3 and nothing else; the results are committed,
-## so a build needs neither this nor a display. Run it when the painter
-## changes, and look at what it made.
+## Repaint the art the onboarding screens draw (qml/art/) from
+## tools/faces/: the field of faces behind them, and the picture over
+## each fact of the introduction. Python 3 and nothing else; the results
+## are committed, so a build needs neither this nor a display. Run it
+## when a painter changes, and look at what it made.
 faces:
 	python3 tools/faces/faces.py
+	python3 tools/faces/scenes.py
 
 ## Prove scripts/sonar-report.sh still reports what it claims to, against a
 ## stub server. The real service is unreachable from CI's network and from a

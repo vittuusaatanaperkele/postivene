@@ -326,8 +326,9 @@ deltachat-rpc-server (bundled binary, subprocess) = the entire core
   picture.** A new reader sees what an old one sees when the app is
   minimised: a field of faces in the ambience's colours, grey in its
   primary and a few lit in its highlight, filling the screen either way
-  up, with the app's name, what it is and the one button in a box the
-  field clears for them. Nobody is known yet, so the faces are made up
+  up, with the app's name, one line saying what it is, and the two ways
+  on, in a box the field clears for them. Nobody is known yet, so the
+  faces are made up
   -- busts in discs and initials on discs, the two kinds of avatar the
   app draws -- and they are painted ahead of time by `tools/faces/`
   (`make faces`) into two masks in `qml/art/`, one per orientation,
@@ -341,6 +342,21 @@ deltachat-rpc-server (bundled binary, subprocess) = the entire core
   The painter is standard-library Python and deterministic, so the
   masks change only when it does, and a build needs neither it nor a
   display.
+- **A newcomer is told what Delta Chat is before being asked to pick a
+  server.** The first screen offers two ways on rather than one, because
+  a reader who has never heard of Delta Chat and a reader who came for
+  it want different next screens. "Tell me about Delta Chat" is five
+  facts, one per screen, swiped through (`pages/IntroPage.qml`): a
+  profile made on the device, no directory to be found in, encryption
+  that is simply always on, groups without an owner, a relay that only
+  carries messages. They follow delta.chat's own FAQ with the technical
+  half left out, each over a drawing painted the way the faces are
+  (`tools/faces/scenes.py`, `components/InkArt.qml`), and swiping past
+  the last one goes on to the setup path rather than stopping. "Set up
+  my profile" goes there directly: the same field, the same cleared box,
+  and the choice between creating a profile -- the relay dialog, which
+  is where a server is picked -- and bringing one over from another
+  device, which is not built yet and says so.
   Adding a profile is the other half of that screen, and the relay is
   the part of it nobody here controls: a public relay is somebody's
   spare-time server, and one that is down holds the core's transport

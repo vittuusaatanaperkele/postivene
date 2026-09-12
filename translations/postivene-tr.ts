@@ -547,6 +547,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Kayıt yok, telefon numarası yok</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Profiliniz burada, telefonunuzda oluşur. Telefon numarası yok, bir şirkette hesap yok, imzalanacak bir şey yok.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Size kimin ulaşabileceğine siz karar verirsiniz</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Sizi bulabilecekleri bir rehber yok. Bir arkadaşınıza taranacak bir kod gösterin ya da bir bağlantı gönderin, sonra yazışabilirsiniz.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Her ileti kilitlidir</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>İletiler her zaman baştan sona şifrelenir. Onları taşıyan sunucular tek kelime okuyamaz.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Eşitlerin grupları</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Grupta herkesin hakları aynıdır: herkes birini ekleyebilir, adını değiştirebilir ya da ayrılabilir. Kimse başkan değildir.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Sunucu yalnızca iletir</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Aktarıcı, diğer telefon çevrimiçi olana kadar iletiyi tutar, yaptığı tek şey budur. Sohbetleriniz cihazınızda kalır.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Profilinizi kurmak için kaydırmaya devam edin.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -860,6 +907,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmail aktarıcıları gönüllüler tarafından boş zamanlarında işletilir. Bu çalışmıyor gibi görünüyorsa geri dönüp başka birini deneyin.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Pekâlâ, profilinizi kuralım.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Zaten bir profilim var</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Profil oluştur</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Başka bir cihazdan profil getirmek henüz hazır değil. Üzerinde çalışılıyor.</translation>
     </message>
 </context>
 <context>
@@ -1211,16 +1277,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Güvenli, merkezsiz sohbet</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Delta Chat üzerine kurulu güvenli, merkeziyetsiz mesajlaşma</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Telefon numarası yok, bizde hesap yok: profiliniz sizin seçtiğiniz bir posta sunucusunda yaşar.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Delta Chat nedir?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Profil ekle</translation>
+        <source>Set up my profile</source>
+        <translation>Profilimi kur</translation>
     </message>
 </context>
 </TS>

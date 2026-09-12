@@ -547,6 +547,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Теркәлү юк, телефон номеры юк</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Профилегез шушында, телефоныгызда языла. Телефон номеры да, компания хисабы да, имза куяр нәрсә дә кирәкми.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Сезгә кем яза ала, шуны сез хәл итәсез</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Сезне табарлык бернинди исемлек тә юк. Дустыгызга сканерлау өчен код күрсәтегез яки сылтама җибәрегез, аннары икегез дә яза аласыз.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Һәр хәбәр бикле</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Хәбәрләр һәрвакыт бөтен юл буена шифрлана. Аларны ташучы серверлар бер сүз дә укый алмый.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Тигезләр төркеме</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Төркемдә барысының да хокуклары бертигез: теләсә кем дус өсти ала, исемен үзгәртә ала яки чыгып китә ала. Беркем дә баш түгел.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Сервер аны алга тапшыра гына</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Икенче телефон челтәргә чыкканчы реле хәбәрне саклый, шул гына. Сөйләшүләрегез үз җиһазыгызда кала.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Профиль ясау өчен свайп итүне дәвам итегез.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -860,6 +907,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmail релеларын ирекле ярдәмчеләр буш вакытларында тоталар. Әгәр бусы эшләми кебек тоелса, кире кайтып башкасын сынап карагыз.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Ярый, профилегезне ясыйк.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Минем профилем инде бар</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Профиль ясарга</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Башка җиһаздан профиль күчерү әле әзер түгел. Аның өстендә эш бара.</translation>
     </message>
 </context>
 <context>
@@ -1211,16 +1277,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Куркынычсыз үзәкләштерелмәгән чат</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Delta Chat нигезендәге куркынычсыз, үзәксезләндерелгән хәбәрләшү</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Телефон номеры кирәкми, бездә хисап кирәкми: профилегез сез сайлаган почта серверында яши.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Delta Chat нәрсә ул?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Профиль өстәргә</translation>
+        <source>Set up my profile</source>
+        <translation>Профилемне көйләргә</translation>
     </message>
 </context>
 </TS>

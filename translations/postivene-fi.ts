@@ -550,6 +550,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Ei rekisteröitymistä, ei puhelinnumeroa</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Profiilisi syntyy tässä puhelimessa. Ei puhelinnumeroa, ei tiliä yrityksessä, ei mitään allekirjoitettavaa.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Sinä päätät, kuka voi tavoittaa sinut</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Mitään luetteloa, josta sinut löytäisi, ei ole. Näytä kaverille skannattava koodi tai lähetä hänelle linkki, niin voitte kirjoittaa toisillenne.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Jokainen viesti on lukossa</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Viestit on aina salattu koko matkan. Palvelimet, jotka niitä kuljettavat, eivät lue niistä sanaakaan.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Ryhmiä vertaisten kesken</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Ryhmässä kaikilla on samat oikeudet: kuka tahansa voi lisätä kaverin, nimetä ryhmän uudelleen tai poistua. Kukaan ei määrää.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Palvelin vain välittää sen eteenpäin</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Välityspalvelin pitää viestin, kunnes toinen puhelin on verkossa, eikä tee muuta. Keskustelusi pysyvät laitteessasi.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Pyyhkäise eteenpäin ja luo profiilisi.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -865,6 +912,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmail-välityspalvelimia ylläpitävät vapaaehtoiset vapaa-ajallaan. Jos tämä ei näytä toimivan, palaa takaisin ja kokeile toista.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Selvä, tehdään sinulle profiili.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Minulla on jo profiili</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Luo profiili</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Profiilin siirtäminen toisesta laitteesta ei ole vielä valmis. Sitä tehdään parhaillaan.</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Turvallinen hajautettu keskustelu</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Turvallista hajautettua viestintää Delta Chatin päällä</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Ei puhelinnumeroa, ei tiliä meillä: profiilisi asuu valitsemallasi sähköpostipalvelimella.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Mikä Delta Chat on?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Lisää profiili</translation>
+        <source>Set up my profile</source>
+        <translation>Luo profiilini</translation>
     </message>
 </context>
 </TS>

@@ -550,6 +550,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>பதிவு இல்லை, தொலைபேசி எண் இல்லை</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>உங்கள் சுயவிவரம் இங்கேயே, உங்கள் தொலைபேசியிலேயே உருவாகிறது. தொலைபேசி எண் வேண்டாம், எந்த நிறுவனத்திலும் கணக்கு வேண்டாம், கையொப்பமிட ஒன்றுமில்லை.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>உங்களை யார் தொடர்பு கொள்ளலாம் என்பதை நீங்களே தேர்வு செய்கிறீர்கள்</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>உங்களைத் தேடிக் கண்டுபிடிக்க எந்தப் பட்டியலும் இல்லை. நண்பருக்கு ஸ்கேன் செய்யக் குறியீட்டைக் காட்டுங்கள் அல்லது இணைப்பை அனுப்புங்கள், பிறகு இருவரும் எழுதலாம்.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>ஒவ்வொரு செய்தியும் பூட்டப்பட்டுள்ளது</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>செய்திகள் எப்போதும் முழு வழியிலும் மறையாக்கம் செய்யப்பட்டிருக்கும். அவற்றைச் சுமக்கும் சேவையகங்களால் ஒரு சொல்லும் படிக்க முடியாது.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>சமமானவர்களின் குழுக்கள்</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>குழுவில் அனைவருக்கும் ஒரே உரிமை: யார் வேண்டுமானாலும் நண்பரைச் சேர்க்கலாம், பெயரை மாற்றலாம் அல்லது வெளியேறலாம். யாரும் தலைவர் அல்ல.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>சேவையகம் அதை அனுப்பி வைப்பது மட்டுமே</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>மற்ற தொலைபேசி இணையத்தில் வரும் வரை ரிலே செய்தியை வைத்திருக்கும், அவ்வளவுதான். உங்கள் உரையாடல்கள் உங்கள் சாதனத்திலேயே இருக்கும்.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>சுயவிவரத்தை அமைக்கத் தொடர்ந்து விரலை இழுக்கவும்.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -865,6 +912,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmail ரிலேக்களை தன்னார்வலர்கள் தங்கள் ஓய்வு நேரத்தில் இயக்குகிறார்கள். இது வேலை செய்யவில்லை எனத் தோன்றினால், பின்னால் சென்று வேறொன்றை முயற்சிக்கவும்.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>சரி, உங்கள் சுயவிவரத்தை அமைப்போம்.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>என்னிடம் ஏற்கனவே சுயவிவரம் உள்ளது</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>சுயவிவரத்தை உருவாக்கு</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>மற்றொரு சாதனத்திலிருந்து சுயவிவரத்தைக் கொண்டு வருவது இன்னும் தயாராகவில்லை. அதன் பணி நடக்கிறது.</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>பாதுகாப்பான பரவலாக்கப்பட்ட அரட்டை</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Delta Chat அடிப்படையிலான பாதுகாப்பான, பரவலாக்கப்பட்ட செய்தியிடல்</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>தொலைபேசி எண் இல்லை, எங்களிடம் கணக்கு இல்லை: உங்கள் சுயவிவரம் நீங்கள் தேர்ந்தெடுத்த அஞ்சல் சேவையகத்தில் இருக்கும்.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Delta Chat என்றால் என்ன?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>சுயவிவரத்தைச் சேர்</translation>
+        <source>Set up my profile</source>
+        <translation>என் சுயவிவரத்தை அமை</translation>
     </message>
 </context>
 </TS>

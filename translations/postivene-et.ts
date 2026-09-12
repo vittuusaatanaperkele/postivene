@@ -550,6 +550,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Ei mingit registreerimist ega telefoninumbrit</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Sinu profiil sünnib siinsamas telefonis. Telefoninumbrit pole vaja, ettevõtte kontot samuti mitte, allkirjastada pole midagi.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Sina otsustad, kes saab sulle kirjutada</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Pole kataloogi, kust sind üles leitaks. Näita sõbrale skannitavat koodi või saada talle link, ja siis saate kirjutada.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Iga sõnum on lukus</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Sõnumid on alati kogu tee krüptitud. Serverid, mis neid edasi kannavad, ei loe neist sõnagi.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Võrdsete grupid</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Grupis on kõigil samad õigused: igaüks võib lisada sõbra, grupi ümber nimetada või sealt lahkuda. Ülemust pole.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Server üksnes annab selle edasi</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Relee hoiab sõnumit, kuni teine telefon on võrgus, ja rohkem ta ei teegi. Sinu vestlused jäävad sinu seadmesse.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Libista edasi, et profiil seadistada.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -865,6 +912,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmaili releesid peavad vabatahtlikud oma vabal ajal. Kui see ei paista töötavat, mine tagasi ja proovi mõnda teist.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Hästi, teeme sulle profiili.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Mul on juba profiil</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Loo profiil</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Profiili toomine teisest seadmest pole veel valmis. Sellega tegeletakse.</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Turvaline hajutatud vestlus</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Turvaline hajus sõnumivahetus Delta Chati peal</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Ei telefoninumbrit ega kontot meie juures: sinu profiil elab sinu valitud meiliserveris.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Mis on Delta Chat?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Lisa profiil</translation>
+        <source>Set up my profile</source>
+        <translation>Seadista minu profiil</translation>
     </message>
 </context>
 </TS>

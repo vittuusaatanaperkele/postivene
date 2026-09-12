@@ -547,6 +547,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Nincs regisztráció, nincs telefonszám</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>A profilja itt, a telefonján készül el. Nem kell telefonszám, nem kell fiók egy cégnél, nincs mit aláírni.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Ön dönti el, ki érheti el</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Nincs névjegyzék, amelyben megtalálnák. Mutasson egy ismerősének beolvasható kódot, vagy küldjön neki hivatkozást, és már írhatnak egymásnak.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Minden üzenet zárva van</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Az üzenetek mindig végig titkosítva utaznak. A kiszolgálók, amelyek viszik őket, egy szót sem olvashatnak belőlük.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Egyenlők csoportjai</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>A csoportban mindenkinek ugyanannyi joga van: bárki hozzáadhat valakit, átnevezheti vagy elhagyhatja. Senki sem főnök.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>A kiszolgáló csak továbbadja</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>A továbbító addig őrzi az üzenetet, amíg a másik telefon el nem érhető, és mást nem tesz. A beszélgetései a készülékén maradnak.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Lapozzon tovább a profil beállításához.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -860,6 +907,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>A chatmail-továbbítókat önkéntesek üzemeltetik a szabadidejükben. Ha ez nem tűnik működőnek, lépjen vissza, és próbáljon ki egy másikat.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Rendben, állítsuk be a profilját.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Már van profilom</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Profil létrehozása</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>A profil áthozása másik készülékről még nincs kész. Készül.</translation>
     </message>
 </context>
 <context>
@@ -1211,16 +1277,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Biztonságos, decentralizált csevegés</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Biztonságos, decentralizált üzenetküldés a Delta Chatre építve</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Nincs telefonszám, nincs fiók nálunk: a profilja egy Ön által választott levelezőkiszolgálón él.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Mi az a Delta Chat?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Profil hozzáadása</translation>
+        <source>Set up my profile</source>
+        <translation>Profil beállítása</translation>
     </message>
 </context>
 </TS>

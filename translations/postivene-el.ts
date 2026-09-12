@@ -550,6 +550,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Χωρίς εγγραφή, χωρίς αριθμό τηλεφώνου</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Το προφίλ σας δημιουργείται εδώ, στο τηλέφωνό σας. Χωρίς αριθμό τηλεφώνου, χωρίς λογαριασμό σε εταιρεία, χωρίς υπογραφές.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Εσείς επιλέγετε ποιος μπορεί να σας γράψει</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Δεν υπάρχει κατάλογος για να σας βρουν. Δείξτε σε έναν φίλο έναν κωδικό για σάρωση ή στείλτε του έναν σύνδεσμο, και μπορείτε να γράφετε οι δυο σας.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Κάθε μήνυμα είναι κλειδωμένο</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Τα μηνύματα είναι πάντα κρυπτογραφημένα σε όλη τη διαδρομή. Οι διακομιστές που τα μεταφέρουν δεν διαβάζουν ούτε λέξη.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Ομάδες ίσων</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Όλοι σε μια ομάδα έχουν τα ίδια δικαιώματα: ο καθένας μπορεί να προσθέσει κάποιον, να τη μετονομάσει ή να φύγει. Κανείς δεν είναι αφεντικό.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Ο διακομιστής απλώς το προωθεί</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Ο διακομιστής κρατά ένα μήνυμα ώσπου να συνδεθεί το άλλο τηλέφωνο, και τίποτα άλλο. Οι συνομιλίες σας μένουν στη συσκευή σας.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Συνεχίστε να σύρετε για να ρυθμίσετε το προφίλ σας.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -865,6 +912,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Οι διακομιστές chatmail λειτουργούν από εθελοντές στον ελεύθερο χρόνο τους. Αν αυτός δεν φαίνεται να λειτουργεί, γυρίστε πίσω και δοκιμάστε έναν άλλο.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Ωραία, ας ετοιμάσουμε το προφίλ σας.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Έχω ήδη προφίλ</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Δημιουργία προφίλ</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Η μεταφορά προφίλ από άλλη συσκευή δεν είναι έτοιμη ακόμη. Ετοιμάζεται.</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Ασφαλής αποκεντρωμένη συνομιλία</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Ασφαλή αποκεντρωμένα μηνύματα βασισμένα στο Delta Chat</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Χωρίς αριθμό τηλεφώνου, χωρίς λογαριασμό σε εμάς: το προφίλ σας ζει σε έναν διακομιστή αλληλογραφίας της επιλογής σας.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Τι είναι το Delta Chat;</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Προσθήκη προφίλ</translation>
+        <source>Set up my profile</source>
+        <translation>Ρύθμιση του προφίλ μου</translation>
     </message>
 </context>
 </TS>

@@ -553,6 +553,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Jokios registracijos, jokio telefono numerio</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Jūsų profilis sukuriamas čia pat, telefone. Nereikia nei telefono numerio, nei įmonės paskyros, nieko nereikia pasirašyti.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Jūs nusprendžiate, kas gali jums parašyti</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Nėra jokio sąrašo, kuriame jus rastų. Parodykite draugui nuskaitomą kodą arba nusiųskite nuorodą, ir galėsite susirašinėti.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Kiekviena žinutė užrakinta</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Žinutės visada šifruojamos visą kelią. Serveriai, kurie jas neša, neperskaito nė žodžio.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Lygiųjų grupės</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Grupėje visi turi vienodas teises: bet kas gali pridėti draugą, pervadinti ją ar iš jos išeiti. Niekas čia nevadovauja.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Serveris ją tik perduoda toliau</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Retransliatorius laiko žinutę, kol kitas telefonas prisijungs, ir daugiau nieko nedaro. Jūsų pokalbiai lieka jūsų įrenginyje.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Braukite toliau, kad susikurtumėte profilį.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -870,6 +917,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmail retransliatorius savanoriai prižiūri laisvalaikiu. Jei šis, regis, neveikia, grįžkite ir pabandykite kitą.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Gerai, sukurkime jums profilį.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Jau turiu profilį</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Sukurti profilį</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Profilio perkėlimas iš kito įrenginio dar neparuoštas. Prie jo dirbama.</translation>
     </message>
 </context>
 <context>
@@ -1221,16 +1287,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Saugus decentralizuotas pokalbis</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Saugios decentralizuotos žinutės, paremtos Delta Chat</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Jokio telefono numerio, jokios paskyros pas mus: jūsų profilis gyvena jūsų pasirinktame pašto serveryje.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Kas yra Delta Chat?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Pridėti profilį</translation>
+        <source>Set up my profile</source>
+        <translation>Nustatyti mano profilį</translation>
     </message>
 </context>
 </TS>

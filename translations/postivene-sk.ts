@@ -553,6 +553,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Žiadna registrácia, žiadne telefónne číslo</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Váš profil vznikne tu, v telefóne. Žiadne telefónne číslo, žiadny účet vo firme, nič na podpis.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Vy rozhodujete, kto sa vám ozve</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Neexistuje zoznam, v ktorom by vás niekto našiel. Ukážte kamarátovi kód na naskenovanie alebo mu pošlite odkaz a môžete si písať.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Každá správa je zamknutá</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Správy sú vždy šifrované po celej ceste. Servery, ktoré ich prenášajú, z nich neprečítajú ani slovo.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Skupiny rovných</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>V skupine majú všetci rovnaké práva: ktokoľvek môže pridať kamaráta, premenovať ju alebo z nej odísť. Nikto tu nevelí.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Server ju len podá ďalej</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Relé podrží správu, kým nie je druhý telefón online, a nič viac nerobí. Vaše rozhovory zostávajú vo vašom zariadení.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Potiahnite ďalej a nastavte si profil.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -870,6 +917,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmail relé prevádzkujú dobrovoľníci vo svojom voľnom čase. Ak sa zdá, že toto nefunguje, vráťte sa a skúste iné.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Dobre, nastavme vám profil.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Profil už mám</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Vytvoriť profil</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Prenos profilu z iného zariadenia ešte nie je hotový. Pracuje sa na ňom.</translation>
     </message>
 </context>
 <context>
@@ -1221,16 +1287,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Bezpečný decentralizovaný chat</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Bezpečné decentralizované správy postavené na Delta Chate</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Žiadne telefónne číslo, žiadny účet u nás: váš profil žije na poštovom serveri podľa vašej voľby.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Čo je Delta Chat?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Pridať profil</translation>
+        <source>Set up my profile</source>
+        <translation>Nastaviť profil</translation>
     </message>
 </context>
 </TS>

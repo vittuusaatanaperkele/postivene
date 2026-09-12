@@ -553,6 +553,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Bez reģistrācijas, bez tālruņa numura</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Jūsu profils tiek izveidots šeit, tālrunī. Nav vajadzīgs ne tālruņa numurs, ne konts kādā uzņēmumā, nekas nav jāparaksta.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Jūs izlemjat, kurš var jums rakstīt</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Nav nekāda saraksta, kurā jūs atrast. Parādiet draugam skenējamu kodu vai nosūtiet saiti, un jūs abi varēsiet rakstīties.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Katra ziņa ir aizslēgta</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Ziņas vienmēr ir šifrētas visā ceļā. Serveri, kas tās pārnēsā, nenolasa ne vārda.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Vienlīdzīgo grupas</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Grupā visiem ir vienādas tiesības: ikviens var pievienot draugu, pārdēvēt to vai aiziet. Neviens nav priekšnieks.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Serveris to tikai nodod tālāk</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Relejs patur ziņu, līdz otrs tālrunis ir tiešsaistē, un neko vairāk nedara. Jūsu sarunas paliek jūsu ierīcē.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Velciet tālāk, lai izveidotu profilu.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -870,6 +917,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmail relejus brīvprātīgie uztur savā brīvajā laikā. Ja šis, šķiet, nedarbojas, dodieties atpakaļ un izmēģiniet citu.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Labi, izveidosim jums profilu.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Man jau ir profils</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Izveidot profilu</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Profila pārnešana no citas ierīces vēl nav gatava. Pie tās strādā.</translation>
     </message>
 </context>
 <context>
@@ -1221,16 +1287,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Droša decentralizēta saziņa</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Droša decentralizēta ziņapmaiņa, kuras pamatā ir Delta Chat</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Bez tālruņa numura, bez konta pie mums: jūsu profils dzīvo jūsu izvēlētā pasta serverī.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Kas ir Delta Chat?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Pievienot profilu</translation>
+        <source>Set up my profile</source>
+        <translation>Iestatīt manu profilu</translation>
     </message>
 </context>
 </TS>

@@ -547,6 +547,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Không đăng ký, không số điện thoại</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Hồ sơ của bạn được tạo ngay tại đây, trên điện thoại. Không cần số điện thoại, không cần tài khoản ở công ty nào, không phải ký gì cả.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Bạn chọn ai có thể liên lạc với mình</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Không có danh bạ nào để người khác tìm ra bạn. Hãy cho bạn bè quét một mã hoặc gửi cho họ một liên kết, rồi hai người có thể nhắn cho nhau.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Mọi tin nhắn đều được khoá</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Tin nhắn luôn được mã hoá suốt chặng đường. Các máy chủ mang chúng đi không đọc được một chữ nào.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Nhóm của những người ngang hàng</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Trong nhóm, mọi người có quyền như nhau: ai cũng có thể thêm bạn bè, đổi tên nhóm hoặc rời đi. Không ai là chủ.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Máy chủ chỉ chuyển tiếp</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Máy chủ chuyển tiếp giữ tin nhắn cho đến khi điện thoại kia trực tuyến, chỉ vậy thôi. Các cuộc trò chuyện của bạn ở lại trên máy bạn.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Cứ vuốt tiếp để tạo hồ sơ của bạn.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -860,6 +907,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Các máy chủ chuyển tiếp chatmail do tình nguyện viên vận hành trong thời gian rảnh. Nếu máy chủ này có vẻ không hoạt động, hãy quay lại và thử một máy chủ khác.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Được rồi, hãy tạo hồ sơ cho bạn.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Tôi đã có hồ sơ</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Tạo hồ sơ</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Việc mang hồ sơ từ máy khác sang vẫn chưa sẵn sàng. Đang được làm.</translation>
     </message>
 </context>
 <context>
@@ -1211,16 +1277,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Trò chuyện an toàn, phi tập trung</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Nhắn tin an toàn, phi tập trung dựa trên Delta Chat</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Không cần số điện thoại, không cần tài khoản với chúng tôi: hồ sơ của bạn nằm trên máy chủ thư do bạn chọn.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Delta Chat là gì?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Thêm hồ sơ</translation>
+        <source>Set up my profile</source>
+        <translation>Thiết lập hồ sơ của tôi</translation>
     </message>
 </context>
 </TS>

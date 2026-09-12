@@ -281,17 +281,21 @@ class Tile:
 
     Coordinates are the avatar's own: the disc is the unit circle, y
     down, and `scale` turns that into pixels. Everything drawn is clipped
-    to the disc, so a shape can spill over its edge freely.
+    to the disc, so a shape can spill over its edge freely -- unless the
+    tile is asked for the whole square, which is what the intro pictures
+    (scenes.py) are drawn on.
     """
 
-    def __init__(self, size):
+    def __init__(self, size, clip=True):
         self.size = size
         self.scale = size / 2.0
         self.rows = [[0.0] * size for _ in range(size)]
-        self.clip = Ellipse(self.scale, self.scale, self.scale - 0.5)
+        self.clip = Ellipse(self.scale, self.scale, self.scale - 0.5) if clip else None
 
     def fill(self, shape, ink):
-        shape = Scaled(shape, self.scale) & self.clip
+        shape = Scaled(shape, self.scale)
+        if self.clip is not None:
+            shape = shape & self.clip
         for py in range(self.size):
             diff, partial, lo, hi = self.coverage(shape, py)
             if lo <= hi:

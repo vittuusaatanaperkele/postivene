@@ -553,6 +553,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Fără înregistrare, fără număr de telefon</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Profilul dumneavoastră se creează aici, pe telefon. Fără număr de telefon, fără cont la vreo companie, fără nimic de semnat.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Dumneavoastră alegeți cine vă poate scrie</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Nu există niciun catalog în care să fiți găsit. Arătați-i unui prieten un cod de scanat sau trimiteți-i o legătură, și veți putea să vă scrieți.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Fiecare mesaj este încuiat</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Mesajele sunt criptate pe tot drumul, întotdeauna. Serverele care le duc nu citesc niciun cuvânt.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Grupuri între egali</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Într-un grup toți au aceleași drepturi: oricine poate adăuga pe cineva, îl poate redenumi sau îl poate părăsi. Nimeni nu comandă.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Serverul doar îl trece mai departe</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Un releu ține mesajul până când celălalt telefon este online, și atât. Conversațiile rămân pe dispozitivul dumneavoastră.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Glisați mai departe pentru a vă configura profilul.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -870,6 +917,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Releele chatmail sunt întreținute de voluntari în timpul lor liber. Dacă acesta nu pare să funcționeze, întoarceți-vă și încercați altul.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Bine, să vă configurăm profilul.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Am deja un profil</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Creează un profil</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Aducerea unui profil de pe alt dispozitiv nu este încă gata. Se lucrează la ea.</translation>
     </message>
 </context>
 <context>
@@ -1221,16 +1287,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Conversații sigure și descentralizate</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Mesagerie sigură și descentralizată, bazată pe Delta Chat</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Fără număr de telefon, fără cont la noi: profilul tău trăiește pe un server de e-mail ales de tine.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Ce este Delta Chat?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Adaugă profil</translation>
+        <source>Set up my profile</source>
+        <translation>Configurează-mi profilul</translation>
     </message>
 </context>
 </TS>

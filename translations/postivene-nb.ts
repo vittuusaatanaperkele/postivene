@@ -550,6 +550,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Ingen registrering, intet telefonnummer</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Profilen din blir laget her på telefonen. Ikke noe telefonnummer, ingen konto hos et selskap, ingenting å skrive under på.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Du bestemmer hvem som kan nå deg</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Det finnes ingen katalog å bli funnet i. Vis en venn en kode å skanne, eller send en lenke, så kan dere skrive sammen.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Hver melding er låst</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Meldinger er alltid kryptert hele veien. Tjenerne som bærer dem, kan ikke lese et ord.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Grupper mellom likemenn</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Alle i en gruppe har de samme rettighetene: hvem som helst kan legge til en venn, gi den nytt navn eller forlate den. Ingen bestemmer.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Tjeneren bare sender den videre</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Et relé holder på meldingen til den andre telefonen er på nett, og mer gjør det ikke. Samtalene dine blir på enheten din.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Sveip videre for å sette opp profilen din.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -865,6 +912,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmail-reléer drives av frivillige på fritiden. Hvis dette ikke ser ut til å virke, gå tilbake og prøv et annet.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Greit, la oss sette opp profilen din.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Jeg har allerede en profil</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Opprett en profil</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Å flytte en profil fra en annen enhet er ikke klart ennå. Det jobbes med saken.</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Sikker desentralisert chat</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Sikre desentraliserte meldinger bygd på Delta Chat</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Ingen telefonnummer, ingen konto hos oss: profilen din bor på en e-posttjener du velger selv.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Hva er Delta Chat?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Legg til profil</translation>
+        <source>Set up my profile</source>
+        <translation>Sett opp profilen min</translation>
     </message>
 </context>
 </TS>

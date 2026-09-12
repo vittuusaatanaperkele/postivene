@@ -419,6 +419,15 @@ removed from the store even after approval. Not an option.
    nothing stutters on the way in: the field is one picture and one
    shader (`components/FaceField.qml`), and the headless tests can load
    it but cannot see it drawn.
+   The two ways on from that screen are worth walking once each. "Tell
+   me about Delta Chat" is five facts swiped through one at a time
+   (`pages/IntroPage.qml`): check that each picture is in the
+   ambience's colours as the field is, with its accents in the
+   highlight, that the dots below follow the swipe, and that swiping
+   past the last fact lands in the setup screen rather than rubber
+   banding back. "Set up my profile" is that same setup screen, the
+   field behind it unchanged; "I already have a profile" has nothing
+   behind it yet and must say so rather than doing nothing.
    Adding a profile is the other half of that screen, and a relay that
    does not answer is the case worth trying, since a public relay is
    somebody's spare-time server. Type a custom server that does not

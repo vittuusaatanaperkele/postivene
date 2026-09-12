@@ -550,6 +550,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Без регистрация, без телефонен номер</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Профилът ви се създава тук, на телефона. Без телефонен номер, без регистрация във фирма, няма нищо за подписване.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Вие избирате кой може да ви пише</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Няма указател, в който да ви открият. Покажете на приятел код за сканиране или му изпратете връзка и двамата можете да си пишете.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Всяко съобщение е заключено</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Съобщенията са шифровани по целия път, винаги. Сървърите, които ги пренасят, не могат да прочетат и дума.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Групи от равни</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Всички в групата имат еднакви права: всеки може да добави приятел, да я преименува или да я напусне. Никой не командва.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Сървърът само предава нататък</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Релето пази съобщението, докато другият телефон излезе онлайн, и това е всичко. Разговорите ви остават на вашето устройство.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Плъзгайте нататък, за да настроите профила си.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -865,6 +912,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Chatmail релетата се поддържат от доброволци в свободното им време. Ако това не изглежда да работи, върнете се и опитайте друго.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Добре, да настроим профила ви.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Вече имам профил</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Създаване на профил</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Прехвърлянето на профил от друго устройство още не е готово. Работи се по него.</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Сигурен децентрализиран чат</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Сигурни децентрализирани съобщения, базирани на Delta Chat</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Без телефонен номер, без акаунт при нас: профилът ви живее на пощенски сървър по ваш избор.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Какво е Delta Chat?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Добавяне на профил</translation>
+        <source>Set up my profile</source>
+        <translation>Настройване на профил</translation>
     </message>
 </context>
 </TS>

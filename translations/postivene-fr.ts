@@ -550,6 +550,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Pas d’inscription, pas de numéro de téléphone</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Votre profil se crée ici, sur votre téléphone. Pas de numéro, pas de compte chez une entreprise, rien à signer.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>C’est vous qui choisissez qui peut vous écrire</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Il n’existe aucun annuaire où vous trouver. Montrez un code à scanner à un ami ou envoyez-lui un lien, et vous pourrez vous écrire.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Chaque message est sous clé</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Les messages sont chiffrés de bout en bout, toujours. Les serveurs qui les transportent n’en lisent pas un mot.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Des groupes entre égaux</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Dans un groupe, tout le monde a les mêmes droits : chacun peut ajouter quelqu’un, le renommer ou le quitter. Personne ne commande.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Le serveur ne fait que le transmettre</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Un relais garde un message jusqu’à ce que l’autre téléphone soit en ligne, et c’est tout. Vos conversations restent sur votre appareil.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Continuez à faire glisser pour créer votre profil.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -865,6 +912,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Les relais chatmail sont tenus par des bénévoles sur leur temps libre. Si celui-ci ne semble pas fonctionner, revenez en arrière et essayez-en un autre.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Très bien, créons votre profil.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>J’ai déjà un profil</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Créer un profil</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Reprendre un profil depuis un autre appareil n’est pas encore prêt. C’est en cours.</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Messagerie sécurisée et décentralisée</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Messagerie sécurisée et décentralisée fondée sur Delta Chat</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Pas de numéro de téléphone, pas de compte chez nous : votre profil vit sur un serveur de courrier de votre choix.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Qu’est-ce que Delta Chat ?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Ajouter un profil</translation>
+        <source>Set up my profile</source>
+        <translation>Configurer mon profil</translation>
     </message>
 </context>
 </TS>

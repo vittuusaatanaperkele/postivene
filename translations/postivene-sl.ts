@@ -556,6 +556,53 @@
     </message>
 </context>
 <context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Brez registracije, brez telefonske številke</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Vaš profil nastane tu, v telefonu. Brez telefonske številke, brez računa pri podjetju, nič ni treba podpisati.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Vi določite, kdo vas lahko doseže</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Ni imenika, v katerem bi vas našli. Prijatelju pokažite kodo za optično branje ali mu pošljite povezavo, pa si lahko pišeta.</translation>
+    </message>
+    <message>
+        <source>Every message is locked</source>
+        <translation>Vsako sporočilo je zaklenjeno</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
+        <translation>Sporočila so vedno šifrirana vso pot. Strežniki, ki jih prenašajo, iz njih ne preberejo niti besede.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Skupine enakih</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>V skupini imajo vsi enake pravice: vsak lahko doda prijatelja, jo preimenuje ali jo zapusti. Nihče ni glavni.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Strežnik ga samo poda naprej</translation>
+    </message>
+    <message>
+        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Rele zadrži sporočilo, dokler drugi telefon ni na zvezi, in nič drugega. Vaši pogovori ostanejo v vaši napravi.</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Podrsajte naprej in ustvarite profil.</translation>
+    </message>
+</context>
+<context>
     <name>LeaveGroupDialog</name>
     <message>
         <source>Leave group</source>
@@ -875,6 +922,25 @@
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
         <translation>Releje chatmail vzdržujejo prostovoljci v prostem času. Če se zdi, da ta ne deluje, se vrnite in poskusite z drugim.</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Dobro, ustvarimo vaš profil.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Profil že imam</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Ustvari profil</translation>
+    </message>
+    <message>
+        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
+        <translation>Prenos profila iz druge naprave še ni pripravljen. Delo poteka.</translation>
     </message>
 </context>
 <context>
@@ -1226,16 +1292,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Varen decentraliziran klepet</translation>
+        <source>Secure decentralised messaging based on Delta Chat</source>
+        <translation>Varno decentralizirano sporočanje, zgrajeno na Delta Chatu</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Brez telefonske številke, brez računa pri nas: vaš profil živi na poštnem strežniku po vaši izbiri.</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Kaj je Delta Chat?</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Dodaj profil</translation>
+        <source>Set up my profile</source>
+        <translation>Nastavi moj profil</translation>
     </message>
 </context>
 </TS>

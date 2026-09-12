@@ -126,20 +126,29 @@ def mark_module(column, row):
     return False
 
 
+def code_ink(plate, column, row, dice):
+    """What one module of the code is drawn in, or None where it is
+    blank: the corner marks in the ambience's highlight, the timing runs
+    and the made-up data in its primary colour. The dice are rolled only
+    for the data, and in reading order, which is what keeps a code the
+    same from one painting to the next."""
+    if in_mark(column, row):
+        return (plate.lit, FULL) if mark_module(column, row) else None
+    if column == 6 or row == 6:
+        # The timing runs: every other module, starting filled.
+        return (plate.grey, LINE) if (column + row) % 2 == 0 else None
+    return (plate.grey, LINE) if dice.random() < 0.45 else None
+
+
 def draw_invite(plate):
     """The code a friend scans, or the link they are sent."""
     dice = Dice(7)
     for row in range(MODULES):
         for column in range(MODULES):
-            if in_mark(column, row):
-                if mark_module(column, row):
-                    plate.lit.fill(module(column, row), FULL)
-            elif column == 6 or row == 6:
-                # The timing runs: every other module, starting filled.
-                if (column + row) % 2 == 0:
-                    plate.grey.fill(module(column, row), LINE)
-            elif dice.random() < 0.45:
-                plate.grey.fill(module(column, row), LINE)
+            drawn = code_ink(plate, column, row, dice)
+            if drawn is not None:
+                tile, ink = drawn
+                tile.fill(module(column, row), ink)
 
 
 def draw_lock(plate):

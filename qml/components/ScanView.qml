@@ -10,9 +10,15 @@ import Postivene 1.0
  * is the host's -- an invite is followed -- and the core is asked what
  * it is first, the same as for a pasted link.
  *
- * A component of its own, loaded by URL from the QR page: this is the
- * only file that names a Camera, so a device without one costs the
- * scanner side of that page rather than the page.
+ * A component of its own, loaded by URL by the pages that want it -- the
+ * QR page for an invite, the take-over page for the code a device shows
+ * while offering its profile: this is the only file that names a Camera,
+ * so a device without one costs the scanner rather than the page around
+ * it. Both give it the rest of the page, which is what a code needs to
+ * land in enough pixels to read.
+ *
+ * What it is looking for is the host's to say (`hintText`), and so is
+ * whether the link behind the code can be typed instead (`offerLink`).
  *
  * Frames come through `grabToImage`, which is the one way QML on Qt 5.6
  * hands a viewfinder's pixels to anything, and go to the scanner as a
@@ -53,6 +59,18 @@ Item {
     /// reader who opened the panel and then found the code can still
     /// hold the phone up to it.
     property bool typing: false
+
+    /// The line under the viewfinder saying what to point it at. The
+    /// host's words, because what a code means is the host's: an invite
+    /// on the QR page, the other phone's offer of a profile on the
+    /// take-over page.
+    property string hintText: qsTr("Point the camera at someone's invite code")
+
+    /// Whether the link behind the code can be typed instead. An invite
+    /// is a link someone can send, so it can be; the code a device shows
+    /// while offering a profile carries an address and a one-time
+    /// secret, which nobody reads off a screen and types.
+    property bool offerLink: true
 
     /// What was read or typed, once it is worth acting on.
     function found(text) {
@@ -140,9 +158,28 @@ Item {
         }
     }
 
-    // Grabbed small: a code fills a good part of the frame when someone
-    // is holding a phone up to it, and a third of the pixels decode in a
-    // ninth of the time.
+    /// The long side of a grabbed frame, in pixels.
+    ///
+    /// Grabbed small because a code fills a good part of the frame when
+    /// someone is holding a phone up to it, and a third of the pixels
+    /// decode in a ninth of the time.
+    readonly property int grabLongSide: 640
+
+    /// That long side, in the viewfinder's own shape. A grab to a fixed
+    /// square stretches the modules by whatever the viewfinder is not
+    /// square by, and a decoder reading a square symbol as an oblong one
+    /// has that much less to work with.
+    function grabSize() {
+        var longest = Math.max(viewfinder.width, viewfinder.height)
+        if (longest <= 0) {
+            return Qt.size(root.grabLongSide, root.grabLongSide)
+        }
+        // Never upscale: a small viewfinder has no more detail to give.
+        var ratio = Math.min(1, root.grabLongSide / longest)
+        return Qt.size(Math.max(1, Math.round(viewfinder.width * ratio)),
+                       Math.max(1, Math.round(viewfinder.height * ratio)))
+    }
+
     Timer {
         id: grabber
         objectName: "grabber"
@@ -158,7 +195,7 @@ Item {
                 if (result.saveToFile(path)) {
                     scanner.decode(path)
                 }
-            }, Qt.size(640, 640))
+            }, root.grabSize())
         }
     }
 
@@ -194,7 +231,7 @@ Item {
     Button {
         id: typeLinkButton
         objectName: "typeLinkButton"
-        visible: !root.typing && !root.done
+        visible: root.offerLink && !root.typing && !root.done
         anchors {
             horizontalCenter: parent.horizontalCenter
             bottom: hint.top
@@ -207,7 +244,7 @@ Item {
     Column {
         id: linkPanel
         objectName: "linkPanel"
-        visible: root.typing && !root.done
+        visible: root.offerLink && root.typing && !root.done
         anchors {
             left: parent.left
             right: parent.right
@@ -263,6 +300,6 @@ Item {
         visible: !root.done
         text: root.typing
               ? qsTr("Or point the camera at the code")
-              : qsTr("Point the camera at someone's invite code")
+              : root.hintText
     }
 }

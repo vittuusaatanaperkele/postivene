@@ -345,13 +345,31 @@ fn onboarding_pages_drive_the_core_and_navigate() {
     let s = steps.clone();
     single_shot(Duration::from_secs(2), move || {
         record(&s, "welcome-probing", call!("pageProperty", "probing"));
-        record(&s, "welcome-click", call!("click", "createProfileButton"));
+        record(&s, "welcome-click", call!("click", "setupButton"));
+    });
+
+    // Where that lands: the two ways into a profile. One asks where the
+    // reader's existing profile is; the other goes on to the relay
+    // dialog.
+    let s = steps.clone();
+    single_shot(Duration::from_secs(3), move || {
+        record(
+            &s,
+            "start-load",
+            call!("load", page_url("ProfileStartPage.qml")),
+        );
+        record(
+            &s,
+            "start-existing",
+            call!("click", "existingProfileButton"),
+        );
+        record(&s, "start-create", call!("click", "createProfileButton"));
     });
 
     // The dialog: nothing to accept until there is a name; the first
     // relay unless another is picked or one is typed.
     let s = steps.clone();
-    single_shot(Duration::from_secs(3), move || {
+    single_shot(Duration::from_secs(4), move || {
         record(
             &s,
             "dialog-load",
@@ -385,7 +403,7 @@ fn onboarding_pages_drive_the_core_and_navigate() {
     // a dialog's destination, with what the dialog hands it: nothing is
     // asked of the core until the page is the one on screen.
     let s = steps.clone();
-    single_shot(Duration::from_secs(4), move || {
+    single_shot(Duration::from_secs(5), move || {
         record(
             &s,
             "setup-load",
@@ -399,7 +417,7 @@ fn onboarding_pages_drive_the_core_and_navigate() {
 
     let s = steps.clone();
     let journal_early = journal.clone();
-    single_shot(Duration::from_secs(5), move || {
+    single_shot(Duration::from_secs(6), move || {
         let asked_early = common::records(&journal_early).iter().any(|call| {
             call.get("method").and_then(Value::as_str) == Some("add_transport_from_qr")
         });
@@ -408,13 +426,13 @@ fn onboarding_pages_drive_the_core_and_navigate() {
     });
 
     let s = steps.clone();
-    single_shot(Duration::from_secs(7), move || {
+    single_shot(Duration::from_secs(8), move || {
         record(&s, "setup-permille", call!("pageProperty", "permille"));
         record(&s, "setup-error", call!("pageProperty", "errorMessage"));
         record(&s, "setup-busy", call!("pageProperty", "busy"));
     });
 
-    single_shot(Duration::from_secs(10), move || unsafe {
+    single_shot(Duration::from_secs(11), move || unsafe {
         (*engine_ptr).quit();
     });
 
@@ -434,13 +452,15 @@ fn onboarding_pages_drive_the_core_and_navigate() {
 
 /// Every page file must instantiate; nothing below means anything if not.
 fn assert_pages_loaded(steps: &[(String, String)], context: &str) {
-    for step in ["welcome-load", "dialog-load", "setup-load"] {
+    for step in ["welcome-load", "start-load", "dialog-load", "setup-load"] {
         assert_eq!(value_of(steps, step), "ok", "{step} failed. {context}");
     }
 }
 
 /// With no configured account the welcome page stops probing and shows its
-/// buttons, and its button opens the profile page.
+/// buttons; the setup one starts the profile path, and the page it opens
+/// leads both ways from there: to where an existing profile is taken over
+/// from, and on to the relay dialog.
 fn assert_welcome_and_navigation(
     steps: &[(String, String)],
     navigation: &str,
@@ -454,8 +474,16 @@ fn assert_welcome_and_navigation(
     );
     assert_eq!(value_of(steps, "welcome-click"), "ok", "{context}");
     assert!(
+        navigation.contains("push:ProfileStartPage.qml"),
+        "Set up my profile did not start the profile path. {context}"
+    );
+    assert!(
+        navigation.contains("push:ExistingProfilePage.qml"),
+        "I already have a profile did not ask where it is. {context}"
+    );
+    assert!(
         navigation.contains("push:AddProfileDialog.qml"),
-        "Add profile did not open the dialog. {context}"
+        "Create a profile did not open the dialog. {context}"
     );
     assert!(
         navigation.contains("replaceAbove:ChatListPage.qml"),

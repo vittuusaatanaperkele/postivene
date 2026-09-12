@@ -478,6 +478,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Hồ sơ của bạn hiện ở đâu?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Thêm làm thiết bị thứ hai</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Thiết bị đang có hồ sơ vẫn giữ nó. Máy này tham gia cùng, qua cùng một mạng.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Khôi phục từ bản sao lưu</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Một tệp sao lưu do thiết bị kia tạo, đã chép sang điện thoại này.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -544,6 +567,53 @@
     <message>
         <source>Everyone in the group sees the name</source>
         <translation>Mọi người trong nhóm đều thấy tên</translation>
+    </message>
+</context>
+<context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Không đăng ký, không số điện thoại</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Hồ sơ của bạn được tạo ngay tại đây, trên điện thoại. Không cần số điện thoại, không cần tài khoản ở công ty nào, không phải ký gì cả.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Bạn chọn ai có thể liên lạc với mình</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Không có danh bạ nào để người khác tìm ra bạn. Hãy cho bạn bè quét một mã hoặc gửi cho họ một liên kết, rồi hai người có thể nhắn cho nhau.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Nhóm của những người ngang hàng</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Trong nhóm, mọi người có quyền như nhau: ai cũng có thể thêm bạn bè, đổi tên nhóm hoặc rời đi. Không ai là chủ.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Máy chủ chỉ chuyển tiếp</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Cứ vuốt tiếp để tạo hồ sơ của bạn.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Mọi tin nhắn đều được mã hoá</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Tin nhắn luôn được mã hoá suốt chặng đường. Các máy chủ vận chuyển chúng không đọc được một chữ nào.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Máy chủ giữ tin nhắn cho đến khi điện thoại kia trực tuyến, chỉ vậy thôi. Các cuộc trò chuyện của bạn ở lại trên máy bạn.</translation>
     </message>
 </context>
 <context>
@@ -863,6 +933,21 @@
     </message>
 </context>
 <context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Được rồi, hãy tạo hồ sơ cho bạn.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Tôi đã có hồ sơ</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Tạo hồ sơ</translation>
+    </message>
+</context>
+<context>
     <name>ProfilesPage</name>
     <message>
         <source>Add profile</source>
@@ -888,6 +973,10 @@
     <message>
         <source>No profiles</source>
         <translation>Không có hồ sơ</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Thêm làm thiết bị thứ hai</translation>
     </message>
 </context>
 <context>
@@ -935,6 +1024,57 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Đang sửa tin nhắn</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Thiết bị kia chạy Delta Chat mới hơn mức ứng dụng này có thể nhận hồ sơ.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Việc chuyển đã dừng trước khi xong. Cả hai thiết bị phải ở cùng một mạng, với trang này đang mở.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Đó không phải mã mà một thiết bị hiện ra khi đang chia sẻ hồ sơ của nó.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Thêm làm thiết bị thứ hai</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Khôi phục từ bản sao lưu</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Trên thiết bị đang có hồ sơ, hãy tạo bản sao lưu và chép tệp sang điện thoại này. Rồi chọn tệp đó ở đây.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Chọn một tệp sao lưu</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Đang nhận hồ sơ...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Hủy</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Máy này không có camera. Dùng tệp sao lưu thì không cần camera.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Trên thiết bị đang có hồ sơ, mở cài đặt và chọn thêm thiết bị thứ hai. Cả hai phải ở cùng một mạng.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Hướng điện thoại này vào mã hiện ra</translation>
     </message>
 </context>
 <context>
@@ -1211,16 +1351,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Trò chuyện an toàn, phi tập trung</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Delta Chat là gì?</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Không cần số điện thoại, không cần tài khoản với chúng tôi: hồ sơ của bạn nằm trên máy chủ thư do bạn chọn.</translation>
+        <source>Set up my profile</source>
+        <translation>Thiết lập hồ sơ của tôi</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Thêm hồ sơ</translation>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Trò chuyện an toàn, phi tập trung dựa trên Delta Chat</translation>
     </message>
 </context>
 </TS>

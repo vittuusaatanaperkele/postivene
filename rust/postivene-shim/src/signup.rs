@@ -1,4 +1,13 @@
-//! Making a profile: one attempt at a time, each given a deadline.
+//! Making a profile, or taking one over: one attempt at a time, each
+//! given a deadline.
+//!
+//! Two ways in. A profile can be *made*, on a chatmail relay or a mailbox
+//! of the reader's own, which is the long transport call described below.
+//! Or an existing one can be *taken over* from somewhere else -- another
+//! device holding it, over the local network, or a backup file -- which
+//! is the core's import, `restore` below. Both end with an account this
+//! device can write from, both are one at a time, and both can be given
+//! up on, so they share the bookkeeping.
 //!
 //! An attempt is an account for the profile to be built on, the display
 //! name, and then the core's one transport call -- which asks the relay
@@ -57,6 +66,33 @@ pub(crate) enum Transport {
         password: String,
     },
 }
+
+/// Where a profile taken over from elsewhere comes from.
+pub(crate) enum Source {
+    /// `get_backup`: the code another device shows while it offers
+    /// itself, and then a transfer over the local network.
+    Device(String),
+    /// `import_backup`: a backup file the reader points at.
+    File(String),
+}
+
+/// How taking a profile over ended.
+pub(crate) enum Taken {
+    /// The profile is on this device, as `account_id`.
+    Done(u32),
+    /// A reason of this app's own, for the page to put into the reader's
+    /// language: `not-a-backup`, `too-new` or `stalled`.
+    Refused(&'static str),
+    /// The core refused, in its own words.
+    Failed(String),
+}
+
+/// How long a transfer is given. Not a deadline the reader should ever
+/// meet: a backup is megabytes over a local network, and the page shows
+/// it arriving the whole way. It is here so that a transfer whose other
+/// end went away ends by itself rather than leaving a progress bar up
+/// for the rest of the day.
+pub const TRANSFER_DEADLINE: Duration = Duration::from_secs(30 * 60);
 
 /// How an attempt ended.
 pub(crate) enum Outcome {
@@ -186,6 +222,59 @@ impl Attempt {
         }
     }
 
+    /// Take a profile over from elsewhere: an account to put it on, the
+    /// code read first if there is one, and then the core's import --
+    /// which reports itself in `ImexProgress` events the whole way.
+    ///
+    /// A failed import leaves the account behind, so it is removed
+    /// rather than released: unlike a refused signup, which leaves a
+    /// clean unconfigured account for the next attempt to reuse, a
+    /// half-written one is good for nothing.
+    pub(crate) async fn restore(
+        &self,
+        runtime: &CoreRuntime,
+        rpc: Arc<RpcClient>,
+        source: Source,
+    ) -> Taken {
+        let account_id = match self.pick_account(&rpc).await {
+            Ok(account_id) => account_id,
+            Err(err) => return Taken::Failed(err),
+        };
+        if let Source::Device(qr) = &source {
+            if let Err(reason) = from_a_device(&rpc, account_id, qr).await {
+                self.shared.release(account_id);
+                return Taken::Refused(reason);
+            }
+        }
+        // A task of its own, as the transport call is, so that giving up
+        // on it here leaves it to finish and clean up after itself.
+        let call = runtime.spawn(import_call(
+            rpc.clone(),
+            self.shared.clone(),
+            self.wanted.clone(),
+            account_id,
+            source,
+        ));
+        match tokio::time::timeout(self.deadline, call).await {
+            Ok(Ok(Ok(()))) => Taken::Done(account_id),
+            Ok(Ok(Err(err))) => {
+                discard(&rpc, account_id).await;
+                Taken::Failed(err)
+            }
+            Ok(Err(err)) => {
+                discard(&rpc, account_id).await;
+                Taken::Failed(err.to_string())
+            }
+            Err(_) => {
+                self.wanted.store(false, Ordering::SeqCst);
+                let _ = rpc
+                    .call::<_, ()>("stop_ongoing_process", (account_id,))
+                    .await;
+                Taken::Refused("stalled")
+            }
+        }
+    }
+
     /// The account the profile is built on: an unconfigured one no
     /// attempt is still holding, else a fresh one. Reuse keeps a failed
     /// signup from stranding an account per retry; the holding check
@@ -244,6 +333,50 @@ async fn transport_call(
         discard(&rpc, account_id).await;
     }
     result
+}
+
+/// The import call, and the account's release once it has returned. A
+/// profile taken over after the reader gave up is removed here, for the
+/// same reason a late signup's is: nobody asked for it, and left in
+/// place it would be the profile the app opened on next time.
+async fn import_call(
+    rpc: Arc<RpcClient>,
+    shared: Arc<Attempts>,
+    wanted: Arc<AtomicBool>,
+    account_id: u32,
+    source: Source,
+) -> Result<(), String> {
+    let result = match source {
+        Source::Device(qr) => rpc.call::<_, ()>("get_backup", (account_id, qr)).await,
+        Source::File(path) => {
+            rpc.call::<_, ()>("import_backup", (account_id, path, Option::<String>::None))
+                .await
+        }
+    }
+    .map_err(|err| err.to_string());
+    shared.release(account_id);
+    if result.is_ok() && !wanted.load(Ordering::SeqCst) {
+        discard(&rpc, account_id).await;
+    }
+    result
+}
+
+/// Whether the code read is one another device is offering a profile
+/// with. Asked before the transfer is started on it: the core's own
+/// answer to a code that is not one is about protocols, and the reader
+/// is standing there with a camera.
+async fn from_a_device(rpc: &RpcClient, account_id: u32, qr: &str) -> Result<(), &'static str> {
+    let checked: serde_json::Value = rpc
+        .call("check_qr", (account_id, qr))
+        .await
+        .map_err(|_| "not-a-backup")?;
+    match json::str_at(&checked, "kind") {
+        "backup2" => Ok(()),
+        // The other device runs a newer Delta Chat than this core can
+        // read a backup from, which is worth saying as such.
+        "backupTooNew" => Err("too-new"),
+        _ => Err("not-a-backup"),
+    }
 }
 
 /// Remove a profile that was made after the reader gave up on it.

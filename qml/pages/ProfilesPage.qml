@@ -13,7 +13,9 @@ import "../components"
  * time. Picking the profile already shown does nothing. A row's
  * menu leads to the profile's page -- picture, name, address, the rest --
  * and to deleting it. Another profile is made from the plus under the
- * last row, where the group pages put "add members".
+ * last row, where the group pages put "add members", and a profile this
+ * reader already has on another device is taken over from the plus
+ * under that one.
  *
  * Deleting counts down beside the list rather than on the row
  * (PendingRemoval): the row goes whenever the list reloads, and it used
@@ -238,38 +240,71 @@ Page {
             }
         }
 
-        // The way to another profile, where the next one would be
-        // listed: a row shaped like a profile's, with a plus for a
+        // The ways to another profile, where the next one would be
+        // listed: rows shaped like a profile's, with a plus for a
         // picture, as the group pages offer another member. Under the
         // last row rather than in the pulley, which is where a reader
         // who has just read the list is already looking.
         //
-        // What it opens is the welcome page's own flow, which replaces
-        // the stack with the new profile's chat list once the core has
-        // it.
-        footer: ListItem {
-            id: addProfileRow
-            objectName: "addProfileButton"
+        // The first makes one, through the welcome page's own flow,
+        // which replaces the stack with the new profile's chat list once
+        // the core has it. The second takes one over from a device that
+        // has it already -- the same transfer the first screen offers a
+        // reader with no profile at all, which is exactly what somebody
+        // holding their old phone wants from here.
+        footer: Column {
             width: listView.width
-            contentHeight: Theme.itemSizeSmall + 2 * Theme.paddingMedium
 
-            PlusMark {
-                id: plus
-                x: Theme.horizontalPageMargin
-                y: Theme.paddingMedium
+            ListItem {
+                id: addProfileRow
+                objectName: "addProfileButton"
+                width: parent.width
+                contentHeight: Theme.itemSizeSmall + 2 * Theme.paddingMedium
+
+                PlusMark {
+                    id: plus
+                    x: Theme.horizontalPageMargin
+                    y: Theme.paddingMedium
+                }
+
+                Label {
+                    x: plus.x + plus.width + Theme.paddingMedium
+                    width: parent.width - x - Theme.horizontalPageMargin
+                    anchors.verticalCenter: plus.verticalCenter
+                    wrapMode: Text.Wrap
+                    color: addProfileRow.highlighted ? Theme.highlightColor
+                                                     : Theme.primaryColor
+                    text: qsTr("Add profile")
+                }
+
+                onClicked: pageStack.push(Qt.resolvedUrl("AddProfileDialog.qml"), {})
             }
 
-            Label {
-                x: plus.x + plus.width + Theme.paddingMedium
-                width: parent.width - x - Theme.horizontalPageMargin
-                anchors.verticalCenter: plus.verticalCenter
-                wrapMode: Text.Wrap
-                color: addProfileRow.highlighted ? Theme.highlightColor
-                                                 : Theme.primaryColor
-                text: qsTr("Add profile")
-            }
+            ListItem {
+                id: secondDeviceRow
+                objectName: "secondDeviceButton"
+                width: parent.width
+                contentHeight: Theme.itemSizeSmall + 2 * Theme.paddingMedium
 
-            onClicked: pageStack.push(Qt.resolvedUrl("AddProfileDialog.qml"), {})
+                PlusMark {
+                    id: secondPlus
+                    x: Theme.horizontalPageMargin
+                    y: Theme.paddingMedium
+                }
+
+                Label {
+                    x: secondPlus.x + secondPlus.width + Theme.paddingMedium
+                    width: parent.width - x - Theme.horizontalPageMargin
+                    anchors.verticalCenter: secondPlus.verticalCenter
+                    wrapMode: Text.Wrap
+                    color: secondDeviceRow.highlighted ? Theme.highlightColor
+                                                       : Theme.primaryColor
+                    text: qsTr("Add as second device")
+                }
+
+                onClicked: pageStack.push(Qt.resolvedUrl("RestoreProfilePage.qml"),
+                                          { from: "device" })
+            }
         }
 
         // Counted off the model, not off what is drawn: the plus is the

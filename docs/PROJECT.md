@@ -326,8 +326,9 @@ deltachat-rpc-server (bundled binary, subprocess) = the entire core
   picture.** A new reader sees what an old one sees when the app is
   minimised: a field of faces in the ambience's colours, grey in its
   primary and a few lit in its highlight, filling the screen either way
-  up, with the app's name, what it is and the one button in a box the
-  field clears for them. Nobody is known yet, so the faces are made up
+  up, with the app's name, one line saying what it is, and the two ways
+  on, in a box the field clears for them. Nobody is known yet, so the
+  faces are made up
   -- busts in discs and initials on discs, the two kinds of avatar the
   app draws -- and they are painted ahead of time by `tools/faces/`
   (`make faces`) into two masks in `qml/art/`, one per orientation,
@@ -341,6 +342,42 @@ deltachat-rpc-server (bundled binary, subprocess) = the entire core
   The painter is standard-library Python and deterministic, so the
   masks change only when it does, and a build needs neither it nor a
   display.
+- **A newcomer is told what Delta Chat is before being asked to pick a
+  server.** The first screen offers two ways on rather than one, because
+  a reader who has never heard of Delta Chat and a reader who came for
+  it want different next screens. "Tell me about Delta Chat" is five
+  facts, one per screen, swiped through (`pages/IntroPage.qml`): a
+  profile made on the device, no directory to be found in, encryption
+  that is simply always on, groups without an owner, a relay that only
+  carries messages. They follow delta.chat's own FAQ with the technical
+  half left out, each over a drawing painted the way the faces are
+  (`tools/faces/scenes.py`, `components/InkArt.qml`), and a drag past
+  the last one goes on to the setup path rather than stopping -- a drag
+  and nothing else, since turning the phone moves the view too and is
+  not a reader asking for anything. "Set up my profile" goes there
+  directly: the choice between creating a profile -- the relay dialog,
+  which is where a server is picked -- and having one already. Neither
+  of those two screens draws the field: it is the welcome, and behind a
+  drawing or a question it would be one pattern too many.
+- **A profile that exists already is taken over, not made again.** Both
+  ways the other Delta Chat apps offer are here, and both are the core's
+  import: from a device that still has the profile, which offers it over
+  the local network behind a code this phone reads (`get_backup`), and
+  from a backup file that device wrote (`import_backup`). The pages are
+  `ExistingProfilePage.qml`, which asks which, and
+  `RestoreProfilePage.qml`, which does either -- one page, because
+  everything after the first step is the same bar and the same answers.
+  A transfer is an attempt in the same sense a signup is (`signup.rs`):
+  one at a time, cancellable, and an answer that arrives after the
+  reader gave up brings a profile nobody asked for, so it is removed
+  rather than kept. Two things are this app's own rather than the core's:
+  the code is classified before the transfer starts, because "not a
+  second device's code" said in protocol terms is no use to somebody
+  holding a camera; and IO is started on what arrives, because an
+  imported account has none running and a profile that does not fetch is
+  not a profile. The same take-over is reachable from the profiles list,
+  under the plus that makes a new one, for the reader whose old phone is
+  in their other hand.
   Adding a profile is the other half of that screen, and the relay is
   the part of it nobody here controls: a public relay is somebody's
   spare-time server, and one that is down holds the core's transport

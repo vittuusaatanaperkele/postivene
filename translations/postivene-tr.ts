@@ -478,6 +478,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Profiliniz şu anda nerede?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>İkinci cihaz olarak ekle</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Profili olan cihaz onu tutmaya devam eder. Bu cihaz aynı ağ üzerinden katılır.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Yedekten geri yükle</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Diğer cihazın yazdığı, bu telefona kopyalanmış bir yedek dosyası.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -544,6 +567,53 @@
     <message>
         <source>Everyone in the group sees the name</source>
         <translation>Adı gruptaki herkes görür</translation>
+    </message>
+</context>
+<context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Kayıt yok, telefon numarası yok</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Profiliniz burada, telefonunuzda oluşur. Telefon numarası yok, bir şirkette hesap yok, imzalanacak bir şey yok.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Size kimin ulaşabileceğine siz karar verirsiniz</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Sizi bulabilecekleri bir rehber yok. Bir arkadaşınıza taranacak bir kod gösterin ya da bir bağlantı gönderin, sonra yazışabilirsiniz.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Eşitlerin grupları</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Grupta herkesin hakları aynıdır: herkes birini ekleyebilir, adını değiştirebilir ya da ayrılabilir. Kimse başkan değildir.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Sunucu yalnızca iletir</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Profilinizi kurmak için kaydırmaya devam edin.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Her ileti şifrelenir</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>İletiler her zaman baştan sona şifrelenir. Onları taşıyan sunucular tek kelime okuyamaz.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Sunucu, diğer telefon çevrimiçi olana kadar iletiyi tutar, yaptığı tek şey budur. Sohbetleriniz cihazınızda kalır.</translation>
     </message>
 </context>
 <context>
@@ -863,6 +933,21 @@
     </message>
 </context>
 <context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Pekâlâ, profilinizi kuralım.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Zaten bir profilim var</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Profil oluştur</translation>
+    </message>
+</context>
+<context>
     <name>ProfilesPage</name>
     <message>
         <source>Add profile</source>
@@ -888,6 +973,10 @@
     <message>
         <source>No profiles</source>
         <translation>Profil yok</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>İkinci cihaz olarak ekle</translation>
     </message>
 </context>
 <context>
@@ -935,6 +1024,57 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Mesaj düzenleniyor</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Diğer cihazda, bu uygulamanın profil alabileceğinden daha yeni bir Delta Chat var.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Aktarım bitmeden durdu. İki cihaz da aynı ağda kalmalı ve bu sayfa açık durmalı.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Bu, bir cihazın profilini sunarken gösterdiği kod değil.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>İkinci cihaz olarak ekle</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Yedekten geri yükle</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Profilinizin bulunduğu cihazda bir yedek alın ve dosyayı bu telefona kopyalayın. Sonra buradan seçin.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Bir yedek dosyası seç</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Profil alınıyor...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>İptal</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Bu cihazda kamera yok. Yedek dosyasıyla kamerasız da olur.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Profilinizin bulunduğu cihazda ayarları açın ve ikinci cihaz eklemeyi seçin. İkisi de aynı ağda olmalı.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Bu telefonu gösterilen koda tutun</translation>
     </message>
 </context>
 <context>
@@ -1211,16 +1351,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Güvenli, merkezsiz sohbet</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Delta Chat nedir?</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Telefon numarası yok, bizde hesap yok: profiliniz sizin seçtiğiniz bir posta sunucusunda yaşar.</translation>
+        <source>Set up my profile</source>
+        <translation>Profilimi kur</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Profil ekle</translation>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Delta Chat üzerine kurulu güvenli, merkeziyetsiz sohbet</translation>
     </message>
 </context>
 </TS>

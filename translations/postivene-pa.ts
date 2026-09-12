@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>ਤੁਹਾਡੀ ਪ੍ਰੋਫ਼ਾਈਲ ਹੁਣ ਕਿੱਥੇ ਹੈ?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>ਦੂਜੇ ਜੰਤਰ ਵਜੋਂ ਸ਼ਾਮਲ ਕਰੋ</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>ਜਿਸ ਜੰਤਰ ਉੱਤੇ ਇਹ ਹੈ, ਉਹ ਇਸਨੂੰ ਰੱਖਦਾ ਹੈ। ਇਹ ਜੰਤਰ ਉਸੇ ਨੈੱਟਵਰਕ ਰਾਹੀਂ ਜੁੜ ਜਾਂਦਾ ਹੈ।</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>ਬੈਕਅੱਪ ਤੋਂ ਮੁੜ-ਸਥਾਪਿਤ ਕਰੋ</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>ਦੂਜੇ ਜੰਤਰ ਦੀ ਬਣਾਈ ਬੈਕਅੱਪ ਫ਼ਾਈਲ, ਇਸ ਫ਼ੋਨ ਉੱਤੇ ਕਾਪੀ ਕੀਤੀ ਹੋਈ।</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -547,6 +570,53 @@
     <message>
         <source>Everyone in the group sees the name</source>
         <translation>ਗਰੁੱਪ ਵਿੱਚ ਹਰ ਕੋਈ ਨਾਂ ਵੇਖਦਾ ਹੈ</translation>
+    </message>
+</context>
+<context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>ਨਾ ਸਾਈਨ-ਅੱਪ, ਨਾ ਫ਼ੋਨ ਨੰਬਰ</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>ਤੁਹਾਡੀ ਪ੍ਰੋਫ਼ਾਈਲ ਇੱਥੇ ਹੀ, ਤੁਹਾਡੇ ਫ਼ੋਨ ਵਿੱਚ ਬਣਦੀ ਹੈ। ਨਾ ਫ਼ੋਨ ਨੰਬਰ ਚਾਹੀਦਾ, ਨਾ ਕਿਸੇ ਕੰਪਨੀ ਦਾ ਖਾਤਾ, ਨਾ ਕੁਝ ਦਸਤਖ਼ਤ ਕਰਨ ਨੂੰ।</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>ਕੌਣ ਤੁਹਾਡੇ ਤੱਕ ਪਹੁੰਚ ਸਕਦਾ ਹੈ, ਇਹ ਤੁਸੀਂ ਚੁਣਦੇ ਹੋ</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>ਅਜਿਹੀ ਕੋਈ ਸੂਚੀ ਨਹੀਂ ਜਿਸ ਵਿੱਚ ਤੁਸੀਂ ਲੱਭੇ ਜਾਓ। ਦੋਸਤ ਨੂੰ ਸਕੈਨ ਕਰਨ ਲਈ ਕੋਡ ਵਿਖਾਓ ਜਾਂ ਲਿੰਕ ਭੇਜੋ, ਫਿਰ ਤੁਸੀਂ ਦੋਵੇਂ ਲਿਖ ਸਕਦੇ ਹੋ।</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>ਬਰਾਬਰੀ ਵਾਲੇ ਗਰੁੱਪ</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>ਗਰੁੱਪ ਵਿੱਚ ਸਭ ਦੇ ਹੱਕ ਬਰਾਬਰ ਹਨ: ਕੋਈ ਵੀ ਦੋਸਤ ਜੋੜ ਸਕਦਾ ਹੈ, ਨਾਂ ਬਦਲ ਸਕਦਾ ਹੈ ਜਾਂ ਛੱਡ ਸਕਦਾ ਹੈ। ਕੋਈ ਮਾਲਕ ਨਹੀਂ ਹੁੰਦਾ।</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>ਸਰਵਰ ਸਿਰਫ਼ ਅੱਗੇ ਪਹੁੰਚਾਉਂਦਾ ਹੈ</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>ਪ੍ਰੋਫ਼ਾਈਲ ਬਣਾਉਣ ਲਈ ਸਵਾਈਪ ਕਰਦੇ ਰਹੋ।</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>ਹਰ ਸੁਨੇਹਾ ਐਨਕ੍ਰਿਪਟ ਹੁੰਦਾ ਹੈ</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>ਸੁਨੇਹੇ ਹਮੇਸ਼ਾ ਪੂਰੇ ਰਾਹ ਐਨਕ੍ਰਿਪਟ ਰਹਿੰਦੇ ਹਨ। ਉਹਨਾਂ ਨੂੰ ਲੈ ਜਾਣ ਵਾਲੇ ਸਰਵਰ ਇੱਕ ਸ਼ਬਦ ਵੀ ਨਹੀਂ ਪੜ੍ਹ ਸਕਦੇ।</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>ਦੂਜਾ ਫ਼ੋਨ ਆਨਲਾਈਨ ਹੋਣ ਤੱਕ ਸਰਵਰ ਸੁਨੇਹਾ ਰੱਖਦਾ ਹੈ, ਬੱਸ ਇੰਨਾ ਹੀ। ਤੁਹਾਡੀਆਂ ਗੱਲਾਂ ਤੁਹਾਡੇ ਹੀ ਜੰਤਰ ਉੱਤੇ ਰਹਿੰਦੀਆਂ ਹਨ।</translation>
     </message>
 </context>
 <context>
@@ -868,6 +938,21 @@
     </message>
 </context>
 <context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>ਠੀਕ ਹੈ, ਤੁਹਾਡੀ ਪ੍ਰੋਫ਼ਾਈਲ ਬਣਾਈਏ।</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>ਮੇਰੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ ਪ੍ਰੋਫ਼ਾਈਲ ਹੈ</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>ਪ੍ਰੋਫ਼ਾਈਲ ਬਣਾਓ</translation>
+    </message>
+</context>
+<context>
     <name>ProfilesPage</name>
     <message>
         <source>Add profile</source>
@@ -893,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>ਕੋਈ ਪ੍ਰੋਫ਼ਾਈਲ ਨਹੀਂ</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>ਦੂਜੇ ਜੰਤਰ ਵਜੋਂ ਸ਼ਾਮਲ ਕਰੋ</translation>
     </message>
 </context>
 <context>
@@ -940,6 +1029,57 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>ਸੁਨੇਹਾ ਸੋਧਿਆ ਜਾ ਰਿਹਾ ਹੈ</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>ਦੂਜੇ ਜੰਤਰ ਉੱਤੇ ਇੰਨਾ ਨਵਾਂ Delta Chat ਹੈ ਕਿ ਇਹ ਐਪ ਉੱਥੋਂ ਪ੍ਰੋਫ਼ਾਈਲ ਨਹੀਂ ਲੈ ਸਕਦੀ।</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>ਤਬਾਦਲਾ ਪੂਰਾ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਰੁਕ ਗਿਆ। ਦੋਵੇਂ ਜੰਤਰ ਇੱਕੋ ਨੈੱਟਵਰਕ ਉੱਤੇ ਰਹਿਣੇ ਚਾਹੀਦੇ ਹਨ, ਇਹ ਸਫ਼ਾ ਖੁੱਲ੍ਹਾ ਰੱਖ ਕੇ।</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>ਕੋਈ ਜੰਤਰ ਆਪਣੀ ਪ੍ਰੋਫ਼ਾਈਲ ਦਿੰਦੇ ਵੇਲੇ ਜੋ ਕੋਡ ਵਿਖਾਉਂਦਾ ਹੈ, ਇਹ ਉਹ ਨਹੀਂ।</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>ਦੂਜੇ ਜੰਤਰ ਵਜੋਂ ਸ਼ਾਮਲ ਕਰੋ</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>ਬੈਕਅੱਪ ਤੋਂ ਮੁੜ-ਸਥਾਪਿਤ ਕਰੋ</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>ਜਿਸ ਜੰਤਰ ਉੱਤੇ ਤੁਹਾਡੀ ਪ੍ਰੋਫ਼ਾਈਲ ਹੈ, ਉੱਥੇ ਬੈਕਅੱਪ ਬਣਾਓ ਅਤੇ ਫ਼ਾਈਲ ਇਸ ਫ਼ੋਨ ਉੱਤੇ ਕਾਪੀ ਕਰੋ। ਫਿਰ ਇੱਥੇ ਉਹ ਚੁਣੋ।</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>ਬੈਕਅੱਪ ਫ਼ਾਈਲ ਚੁਣੋ</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>ਪ੍ਰੋਫ਼ਾਈਲ ਲਈ ਜਾ ਰਹੀ ਹੈ...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>ਰੱਦ ਕਰੋ</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>ਇਸ ਜੰਤਰ ਉੱਤੇ ਕੈਮਰਾ ਨਹੀਂ ਹੈ। ਬੈਕਅੱਪ ਫ਼ਾਈਲ ਨਾਲ ਕੈਮਰੇ ਤੋਂ ਬਿਨਾਂ ਵੀ ਹੋ ਜਾਂਦਾ ਹੈ।</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>ਜਿਸ ਜੰਤਰ ਉੱਤੇ ਤੁਹਾਡੀ ਪ੍ਰੋਫ਼ਾਈਲ ਹੈ, ਉੱਥੇ ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ ਅਤੇ ਦੂਜਾ ਜੰਤਰ ਸ਼ਾਮਲ ਕਰਨਾ ਚੁਣੋ। ਦੋਵੇਂ ਇੱਕੋ ਨੈੱਟਵਰਕ ਉੱਤੇ ਹੋਣ।</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>ਜੋ ਕੋਡ ਦਿਸੇ, ਉਸ ਅੱਗੇ ਇਹ ਫ਼ੋਨ ਰੱਖੋ</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1356,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>ਸੁਰੱਖਿਅਤ ਵਿਕੇਂਦਰੀਕ੍ਰਿਤ ਚੈਟ</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Delta Chat ਕੀ ਹੈ?</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>ਨਾ ਫ਼ੋਨ ਨੰਬਰ, ਨਾ ਸਾਡੇ ਕੋਲ ਕੋਈ ਖਾਤਾ: ਤੁਹਾਡੀ ਪ੍ਰੋਫ਼ਾਈਲ ਤੁਹਾਡੇ ਚੁਣੇ ਮੇਲ ਸਰਵਰ ਉੱਤੇ ਰਹਿੰਦੀ ਹੈ।</translation>
+        <source>Set up my profile</source>
+        <translation>ਮੇਰੀ ਪ੍ਰੋਫ਼ਾਈਲ ਬਣਾਓ</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>ਪ੍ਰੋਫ਼ਾਈਲ ਸ਼ਾਮਲ ਕਰੋ</translation>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Delta Chat ਉੱਤੇ ਆਧਾਰਿਤ ਸੁਰੱਖਿਅਤ, ਵਿਕੇਂਦਰਿਤ ਚੈਟ</translation>
     </message>
 </context>
 </TS>

@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>¿Dónde está tu perfil ahora?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Añadir como segundo dispositivo</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>El dispositivo que lo tiene se lo queda. Este se suma, por la misma red.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Restaurar desde una copia</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Un archivo de copia que escribió el otro dispositivo, copiado a este teléfono.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -547,6 +570,53 @@
     <message>
         <source>Everyone in the group sees the name</source>
         <translation>Todos en el grupo ven el nombre</translation>
+    </message>
+</context>
+<context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Sin registro, sin número de teléfono</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Tu perfil se crea aquí, en tu teléfono. Sin número de teléfono, sin cuenta en ninguna empresa, sin nada que firmar.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Tú eliges quién puede escribirte</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>No hay ningún directorio donde encontrarte. Muéstrale a alguien un código para escanear o envíale un enlace, y podrán escribirse.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Grupos entre iguales</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>En un grupo todos tienen los mismos derechos: cualquiera puede añadir a alguien, cambiarle el nombre o salir. Nadie manda.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>El servidor solo lo pasa</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Sigue deslizando para crear tu perfil.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Cada mensaje va cifrado</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Los mensajes van cifrados de extremo a extremo, siempre. Los servidores que los transportan no pueden leer ni una palabra.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Un servidor guarda el mensaje hasta que el otro teléfono está en línea, y nada más. Tus conversaciones se quedan en tu dispositivo.</translation>
     </message>
 </context>
 <context>
@@ -868,6 +938,21 @@
     </message>
 </context>
 <context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Muy bien, vamos a crear tu perfil.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Ya tengo un perfil</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Crear un perfil</translation>
+    </message>
+</context>
+<context>
     <name>ProfilesPage</name>
     <message>
         <source>Add profile</source>
@@ -893,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>No hay perfiles</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Añadir como segundo dispositivo</translation>
     </message>
 </context>
 <context>
@@ -940,6 +1029,57 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Editando mensaje</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>El otro dispositivo usa un Delta Chat más nuevo del que esta aplicación puede recibir un perfil.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>La transferencia se detuvo antes de terminar. Los dos dispositivos tienen que seguir en la misma red, con esta página abierta.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Ese no es el código que muestra un dispositivo mientras ofrece su perfil.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Añadir como segundo dispositivo</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Restaurar desde una copia</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>En el dispositivo que tiene tu perfil, haz una copia de seguridad y pasa el archivo a este teléfono. Luego elígelo aquí.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Elegir un archivo de copia</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Trayendo el perfil...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Cancelar</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Este dispositivo no tiene cámara. Con un archivo de copia se puede sin ella.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>En el dispositivo que tiene tu perfil, abre los ajustes y elige añadir un segundo dispositivo. Los dos tienen que estar en la misma red.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Apunta este teléfono al código que muestre</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1356,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Chat seguro y descentralizado</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>¿Qué es Delta Chat?</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Sin número de teléfono ni cuenta con nosotros: tu perfil vive en un servidor de correo que tú eliges.</translation>
+        <source>Set up my profile</source>
+        <translation>Configurar mi perfil</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Añadir perfil</translation>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Chat seguro y descentralizado basado en Delta Chat</translation>
     </message>
 </context>
 </TS>

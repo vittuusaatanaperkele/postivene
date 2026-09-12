@@ -478,6 +478,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>你的個人檔案現在在哪裡？</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>新增為第二台裝置</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>擁有它的那台裝置仍然保留它。這台透過同一個網路加入。</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>從備份還原</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>另一台裝置寫出的備份檔案，複製到這支手機上。</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -544,6 +567,53 @@
     <message>
         <source>Everyone in the group sees the name</source>
         <translation>群組中的每個人都看得到名稱</translation>
+    </message>
+</context>
+<context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>不必註冊，不必電話號碼</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>你的個人檔案就在這支手機上建立。不需要電話號碼，不需要在任何公司開戶，也沒有什麼要簽。</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>誰可以聯絡你，由你決定</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>沒有可以查到你的名錄。給朋友看一個 QR Code，或者傳一條連結給對方，你們就能互相寫信了。</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>人人平等的群組</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>群組裡所有人的權限相同：任何人都可以加入朋友、改名或離開。沒有誰說了算。</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>伺服器只負責轉交</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>繼續滑動即可建立個人檔案。</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>每一則訊息都是加密的</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>訊息一律全程加密。傳輸它們的伺服器一個字也讀不到。</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>伺服器會把訊息留著，直到對方的手機上線，它只做這一件事。你的對話留在你自己的裝置上。</translation>
     </message>
 </context>
 <context>
@@ -863,6 +933,21 @@
     </message>
 </context>
 <context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>好，我們來建立你的個人檔案。</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>我已經有個人檔案</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>建立個人檔案</translation>
+    </message>
+</context>
+<context>
     <name>ProfilesPage</name>
     <message>
         <source>Add profile</source>
@@ -888,6 +973,10 @@
     <message>
         <source>No profiles</source>
         <translation>沒有個人檔案</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>新增為第二台裝置</translation>
     </message>
 </context>
 <context>
@@ -935,6 +1024,57 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>正在編輯訊息</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>另一台裝置上的 Delta Chat 比本應用程式能接收個人檔案的版本更新。</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>傳輸在完成前停止了。兩台裝置要留在同一個網路裡，並保持此頁面開啟。</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>這不是裝置在提供個人檔案時顯示的那個碼。</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>新增為第二台裝置</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>從備份還原</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>在有你個人檔案的裝置上建立備份，把檔案複製到這支手機，然後在這裡選擇它。</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>選擇備份檔案</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>正在接收個人檔案…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>這台裝置沒有相機。用備份檔案也可以，不需要相機。</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>在有你個人檔案的裝置上開啟設定，選擇新增第二台裝置。兩台裝置要在同一個網路裡。</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>把這支手機對準它顯示的碼</translation>
     </message>
 </context>
 <context>
@@ -1211,16 +1351,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>安全的去中心化聊天</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Delta Chat 是什麼？</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>不需要電話號碼，也不需要在我們這裡註冊帳號：你的個人檔案存放在你自己選擇的郵件伺服器上。</translation>
+        <source>Set up my profile</source>
+        <translation>設定我的個人檔案</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>新增個人檔案</translation>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>以 Delta Chat 為基礎的安全去中心化聊天</translation>
     </message>
 </context>
 </TS>

@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Kus sinu profiil praegu on?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Lisa teise seadmena</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Seade, kus see on, jätab selle endale. See siin liitub, sama võrgu kaudu.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Taasta varukoopiast</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Varukoopia fail, mille teine seade kirjutas, sellesse telefoni kopeerituna.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -547,6 +570,53 @@
     <message>
         <source>Everyone in the group sees the name</source>
         <translation>Nime näevad kõik grupis</translation>
+    </message>
+</context>
+<context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Ei mingit registreerimist ega telefoninumbrit</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Sinu profiil sünnib siinsamas telefonis. Telefoninumbrit pole vaja, ettevõtte kontot samuti mitte, allkirjastada pole midagi.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Sina otsustad, kes saab sulle kirjutada</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Pole kataloogi, kust sind üles leitaks. Näita sõbrale skannitavat koodi või saada talle link, ja siis saate kirjutada.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Võrdsete grupid</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Grupis on kõigil samad õigused: igaüks võib lisada sõbra, grupi ümber nimetada või sealt lahkuda. Ülemust pole.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Server üksnes annab selle edasi</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Libista edasi, et profiil seadistada.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Iga sõnum on krüptitud</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Sõnumid on alati kogu tee krüptitud. Serverid, mis neid edasi toimetavad, ei loe neist sõnagi.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Server hoiab sõnumit, kuni teine telefon on võrgus, ja rohkem ta ei teegi. Sinu vestlused jäävad sinu seadmesse.</translation>
     </message>
 </context>
 <context>
@@ -868,6 +938,21 @@
     </message>
 </context>
 <context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Hästi, teeme sulle profiili.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Mul on juba profiil</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Loo profiil</translation>
+    </message>
+</context>
+<context>
     <name>ProfilesPage</name>
     <message>
         <source>Add profile</source>
@@ -893,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>Profiile pole</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Lisa teise seadmena</translation>
     </message>
 </context>
 <context>
@@ -940,6 +1029,57 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Sõnumi muutmine</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Teises seadmes on uuem Delta Chat, kui see rakendus profiili üle võtta oskab.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Ülekanne katkes enne lõppu. Mõlemad seadmed peavad jääma samasse võrku ja see leht lahti.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>See ei ole kood, mida seade näitab, kui ta oma profiili pakub.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Lisa teise seadmena</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Taasta varukoopiast</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Tee profiiliga seadmes varukoopia ja kopeeri fail sellesse telefoni. Vali see siis siit.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Vali varukoopia fail</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Profiili üle võtmas...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Loobu</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Selles seadmes pole kaamerat. Varukoopia failiga saab ka ilma.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Ava profiiliga seadmes seaded ja vali teise seadme lisamine. Mõlemad seadmed peavad olema samas võrgus.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Suuna see telefon koodile, mida ta näitab</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1356,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Turvaline hajutatud vestlus</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Mis on Delta Chat?</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Ei telefoninumbrit ega kontot meie juures: sinu profiil elab sinu valitud meiliserveris.</translation>
+        <source>Set up my profile</source>
+        <translation>Seadista minu profiil</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Lisa profiil</translation>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Turvaline hajus vestlus Delta Chati peal</translation>
     </message>
 </context>
 </TS>

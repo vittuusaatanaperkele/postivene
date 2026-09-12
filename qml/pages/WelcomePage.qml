@@ -12,10 +12,16 @@ import "../components"
  * What it looks like is what the cover looks like once there are
  * people: a field of faces in the ambience's colours, a few of them lit,
  * filling the screen either way up -- and in the middle, where the
- * field clears for them, the app's name, what it is, and the button.
+ * field clears for them, the app's name, what it is, and the way on.
  * There is no second chance at a first impression, so the field is a
  * picture (components/FaceField.qml): one texture, one pass, drawn the
  * frame the page is.
+ *
+ * Two ways on rather than one. A reader who has never heard of Delta
+ * Chat is a swipe away from being told (IntroPage.qml); a reader who
+ * knows what they came for goes straight to the setup path
+ * (ProfileStartPage.qml). Neither is the relay dialog: picking a server
+ * is a question for somebody who has already decided.
  */
 Page {
     id: page
@@ -74,11 +80,21 @@ Page {
         anchors.fill: parent
         source: page.width > page.height ? "../art/faces-landscape.png"
                                          : "../art/faces-portrait.png"
+        // Fainter than the component's own default. The field is the
+        // welcome, not the reading matter, and what it is painted from
+        // carries more ink than the flat masks it started as: both
+        // channels scale the colour and its alpha together, so less ink
+        // is more of the ambience showing through.
+        ink: 0.45
+        litInk: 0.8
         clearX: words.x + words.width / 2
         clearY: words.y + words.height / 2
         clearWidth: words.width
         clearHeight: words.height
-        clearRadius: Theme.paddingLarge
+        // Room around the words rather than up against them: the field
+        // is cleared this far out from the column before it begins to
+        // fade back in.
+        clearRadius: Theme.itemSizeExtraSmall
         clearFeather: Theme.itemSizeLarge
     }
 
@@ -110,39 +126,49 @@ Page {
             color: Theme.highlightColor
         }
 
+        // One line under the name, and only one: what the app is, in
+        // the words its own site uses.
         Label {
             objectName: "tagline"
             width: parent.width
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.Wrap
             textFormat: Text.PlainText
-            text: qsTr("Secure decentralized chat")
+            text: qsTr("Secure decentralised chat based on Delta Chat")
             font.pixelSize: Theme.fontSizeLarge
             color: Theme.primaryColor
-        }
-
-        Item { width: 1; height: Theme.paddingMedium }
-
-        Label {
-            objectName: "intro"
-            width: parent.width
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: Text.Wrap
-            color: Theme.secondaryHighlightColor
-            font.pixelSize: Theme.fontSizeSmall
-            text: core.status.indexOf("error") === 0
-                  ? core.status
-                  : qsTr("No phone number, no account with us: your profile lives on a mail server of your choosing.")
         }
 
         Item { width: 1; height: Theme.paddingLarge }
 
         Button {
-            objectName: "createProfileButton"
+            objectName: "aboutButton"
             anchors.horizontalCenter: parent.horizontalCenter
-            text: qsTr("Add profile")
+            text: qsTr("Tell me about Delta Chat")
+            onClicked: pageStack.push(Qt.resolvedUrl("IntroPage.qml"), {})
+        }
+
+        Button {
+            objectName: "setupButton"
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: qsTr("Set up my profile")
             enabled: core.status === "ready"
-            onClicked: pageStack.push(Qt.resolvedUrl("AddProfileDialog.qml"), {})
+            onClicked: pageStack.push(Qt.resolvedUrl("ProfileStartPage.qml"), {})
+        }
+
+        // The one thing that can go wrong before anything has been
+        // asked for: the core did not start. Said here, where the
+        // buttons that it stops are.
+        Label {
+            objectName: "coreError"
+            width: parent.width
+            visible: core.status.indexOf("error") === 0
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.Wrap
+            textFormat: Text.PlainText
+            font.pixelSize: Theme.fontSizeSmall
+            color: Theme.errorColor
+            text: core.status
         }
     }
 

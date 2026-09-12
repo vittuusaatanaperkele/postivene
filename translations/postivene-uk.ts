@@ -480,6 +480,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Де зараз ваш профіль?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Додати як другий пристрій</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Пристрій, на якому він є, його й залишає. Цей приєднується тією ж мережею.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Відновити з резервної копії</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Файл резервної копії, записаний іншим пристроєм і скопійований на цей телефон.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -550,6 +573,53 @@
     <message>
         <source>Everyone in the group sees the name</source>
         <translation>Назву бачать усі в групі</translation>
+    </message>
+</context>
+<context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Без реєстрації, без номера телефону</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Ваш профіль створюється тут, у телефоні. Ні номера телефону, ні облікового запису в якійсь компанії, нічого підписувати.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Ви самі обираєте, хто може вам написати</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Немає жодного каталогу, у якому вас знайдуть. Покажіть другові код для сканування або надішліть посилання, і ви зможете листуватися.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Групи рівних</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>У групі всі мають однакові права: будь-хто може додати друга, перейменувати її або вийти. Начальника немає.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Сервер лише передає його далі</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Гортайте далі, щоб налаштувати профіль.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Кожне повідомлення зашифроване</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Повідомлення завжди зашифровані на всьому шляху. Сервери, які їх переносять, не прочитають жодного слова.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Сервер тримає повідомлення, доки інший телефон не з’явиться в мережі, і більше нічого. Ваші розмови залишаються на вашому пристрої.</translation>
     </message>
 </context>
 <context>
@@ -873,6 +943,21 @@
     </message>
 </context>
 <context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Гаразд, налаштуймо ваш профіль.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>У мене вже є профіль</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Створити профіль</translation>
+    </message>
+</context>
+<context>
     <name>ProfilesPage</name>
     <message>
         <source>Add profile</source>
@@ -898,6 +983,10 @@
     <message>
         <source>No profiles</source>
         <translation>Профілів немає</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Додати як другий пристрій</translation>
     </message>
 </context>
 <context>
@@ -945,6 +1034,57 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Зміна повідомлення</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>На іншому пристрої новіший Delta Chat, ніж той, з якого цей застосунок уміє переносити профіль.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Передавання спинилося, не дійшовши до кінця. Обидва пристрої мають залишатися в одній мережі, а ця сторінка — відкритою.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Це не той код, який пристрій показує, поки пропонує свій профіль.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Додати як другий пристрій</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Відновити з резервної копії</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>На пристрої з вашим профілем зробіть резервну копію й скопіюйте файл на цей телефон. Потім виберіть його тут.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Вибрати файл резервної копії</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Профіль переноситься...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Скасувати</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>На цьому пристрої немає камери. З файлом резервної копії вона й не потрібна.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>На пристрої з вашим профілем відкрийте налаштування й виберіть додавання другого пристрою. Обидва мають бути в одній мережі.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Наведіть цей телефон на показаний код</translation>
     </message>
 </context>
 <context>
@@ -1221,16 +1361,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Безпечний децентралізований чат</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Що таке Delta Chat?</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Без номера телефону, без облікового запису в нас: ваш профіль живе на поштовому сервері на ваш вибір.</translation>
+        <source>Set up my profile</source>
+        <translation>Налаштувати мій профіль</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Додати профіль</translation>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Захищений децентралізований чат на основі Delta Chat</translation>
     </message>
 </context>
 </TS>

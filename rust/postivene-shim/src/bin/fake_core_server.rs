@@ -413,6 +413,15 @@ impl State {
         id
     }
 
+    /// Queue one import/export progress event, as the core does while a
+    /// backup is read or written: 0 is a failure, 1000 is done.
+    fn imex(&mut self, account_id: u32, progress: u32) {
+        self.events.push_back(json!({
+            "contextId": account_id,
+            "event": {"kind": "ImexProgress", "progress": progress},
+        }));
+    }
+
     /// Configure an account and queue the progress events the core emits:
     /// permille steps, then 1000 for done.
     fn configure(&mut self, account_id: u32) {
@@ -708,6 +717,39 @@ async fn add_transport_from_qr(
     ok(id, &Value::Null)
 }
 
+/// Take a profile over, from another device or from a file: the import
+/// the real core runs, reported the way it reports one -- `ImexProgress`
+/// events as it goes, then the account configured.
+///
+/// Keyed on what it is handed, like the transport call: `fail` refuses,
+/// `slow` waits (and answers a `stop_ongoing_process` that arrives
+/// meanwhile, unless it is `deaf`).
+async fn import_into(state: &Arc<Mutex<State>>, id: &Value, account: u32, from: &str) -> Value {
+    if should_fail(from) {
+        return err(id, "backup could not be read");
+    }
+    if !state.lock().await.configuring.insert(account) {
+        return err(id, "There is already another ongoing process running.");
+    }
+    state.lock().await.imex(account, 300);
+    let stopped = if from.contains("slow") {
+        tokio::time::sleep(delay_or("POSTIVENE_FAKE_SLOW_MS", 3000)).await;
+        !from.contains("deaf") && state.lock().await.stopped.contains(&account)
+    } else {
+        false
+    };
+    let mut state = state.lock().await;
+    state.configuring.remove(&account);
+    state.stopped.remove(&account);
+    if stopped {
+        state.imex(account, 0);
+        return err(id, "Transfer was stopped");
+    }
+    state.imex(account, 1000);
+    state.configure(account);
+    ok(id, &Value::Null)
+}
+
 /// A reply delay in milliseconds, from `var`, or `default` when unset.
 fn delay_or(var: &str, default: u64) -> std::time::Duration {
     std::time::Duration::from_millis(
@@ -991,6 +1033,13 @@ async fn serve() {
                 "add_transport_from_qr" => {
                     let qr = positional(1).as_str().unwrap_or_default().to_string();
                     add_transport_from_qr(&state, &id, account_id(), &qr).await
+                }
+                // Both are the core's import, and both are keyed on
+                // what they are handed: the code the other device shows,
+                // or the path of a backup file.
+                "get_backup" | "import_backup" => {
+                    let from = positional(1).as_str().unwrap_or_default().to_string();
+                    import_into(&state, &id, account_id(), &from).await
                 }
                 "add_or_update_transport" => {
                     let param = positional(1);
@@ -1376,6 +1425,15 @@ async fn serve() {
                     } else if content.starts_with("dcaccount:") || content.starts_with("DCACCOUNT:")
                     {
                         "account"
+                    } else if content.starts_with("DCBACKUP2:") {
+                        // What a device offering itself as a first
+                        // device shows; `toonew` in it stands in for a
+                        // backup from a newer Delta Chat than this core.
+                        if content.contains("toonew") {
+                            "backupTooNew"
+                        } else {
+                            "backup2"
+                        }
                     } else {
                         "text"
                     };

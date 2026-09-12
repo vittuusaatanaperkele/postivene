@@ -265,8 +265,9 @@ install -Dm 755 "$builddir/%{name}" \
 # path, then a source-tree-relative fallback for local dev) finds it.
 # Only what the engine reads. A stray editor backup or .orig under qml/
 # would otherwise ship, and Harbour would then have an opinion about it.
-# The .png files are qml/art/: the face masks the first screen draws,
-# painted ahead of time by tools/faces/ (docs/PROJECT.md).
+# The .png files are qml/art/: the face masks the first screen draws and
+# the pictures the introduction puts over each fact, painted ahead of
+# time by tools/faces/ (docs/PROJECT.md).
 (cd qml && find . -type f \( -name '*.qml' -o -name '*.js' -o -name '*.png' -o -name qmldir \) -exec \
     install -Dm 644 "{}" "%{buildroot}%{appdatadir}/qml/{}" \; )
 

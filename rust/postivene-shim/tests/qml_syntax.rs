@@ -731,7 +731,7 @@ fn file_urls_are_encoded_per_segment() {
     );
 }
 
-/// Only the four picker pages name a `Sailfish.Pickers` type.
+/// Only the picker pages name a `Sailfish.Pickers` type.
 ///
 /// Those types resolve when the file that names them is loaded, so a type
 /// that is not there on some future release takes that whole file down
@@ -739,8 +739,19 @@ fn file_urls_are_encoded_per_segment() {
 /// connected to -- the cost is one button; in a page it is the page.
 /// `SettingsPage` had its own `ImagePickerPage` for the profile picture,
 /// and with it its own unguarded copy of the pick handler.
+///
+/// Named one by one rather than matched by prefix: three of them belong
+/// to the attachment tray and one to taking a profile over from a backup
+/// file, and adding to the list should be a decision rather than a side
+/// effect of what a file is called.
 #[test]
 fn only_the_picker_pages_import_sailfish_pickers() {
+    const ALLOWED: [&str; 4] = [
+        "AttachAppPage.qml",
+        "AttachLibraryPage.qml",
+        "AttachPhotoPage.qml",
+        "BackupFilePage.qml",
+    ];
     let mut offenders = Vec::new();
     for file in qml_files() {
         let name = file
@@ -751,17 +762,16 @@ fn only_the_picker_pages_import_sailfish_pickers() {
         let imports_pickers = code
             .lines()
             .any(|line| line.trim_start().starts_with("import Sailfish.Pickers"));
-        let is_picker_page = name.starts_with("Attach") && name.ends_with("Page.qml");
-        if imports_pickers && !is_picker_page {
+        if imports_pickers && !ALLOWED.contains(&name.as_str()) {
             offenders.push(file.display().to_string());
         }
     }
     assert!(
         offenders.is_empty(),
-        "these import Sailfish.Pickers outside the Attach*Page.qml files, so \
-         a picker type that is missing takes the whole page down rather than \
-         one button; push the picker page by URL and connect to its `picked` \
-         signal, as SettingsPage.pickPicture does:\n  {}",
+        "these import Sailfish.Pickers outside {ALLOWED:?}, so a picker type \
+         that is missing takes the whole page down rather than one button; \
+         push the picker page by URL and connect to its `picked` signal, as \
+         SettingsPage.pickPicture does:\n  {}",
         offenders.join("\n  ")
     );
 }

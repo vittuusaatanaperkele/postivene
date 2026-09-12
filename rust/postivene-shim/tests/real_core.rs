@@ -105,6 +105,10 @@ fn the_real_core_accepts_the_shapes_we_send() {
                 onProfile_error: errors = errors + '|' + message
                 onProfile_created: created = created + 1
                 onQr_checked: qrKind = kind
+                // Taking a profile over goes through the same reading of
+                // the API, so its failures belong in the same report.
+                onRestore_failed: errors = errors + '|' + message
+                onRestore_refused: errors = errors + '|refused=' + reason
                 // In the report too: 'not started' from every call says
                 // only that the core never came up; the status says why.
                 onStatus_changed: errors = errors + '|status=' + core.status
@@ -130,12 +134,27 @@ fn the_real_core_accepts_the_shapes_we_send() {
         }
     });
 
-    let qr = core_ptr;
+    let qr = core_ptr.clone();
     single_shot(Duration::from_secs(9), move || {
         if let Some(this) = qr.as_pinned() {
             // Account 1 exists by now.
             this.borrow_mut()
                 .check_qr(1, QString::from("dcaccount:postivene-test.invalid"));
+        }
+    });
+
+    // The import's own shape, on a file that is not there: the core
+    // answers that it cannot read it, which is a delivery failure like
+    // the unreachable server above and not a complaint about params.
+    // Its sibling `get_backup` cannot be reached without a second device
+    // offering a profile, so what stands behind that one is the fake
+    // core, written from the same reading of the API, and the code check
+    // in front of it.
+    let backup = core_ptr;
+    single_shot(Duration::from_secs(11), move || {
+        if let Some(this) = backup.as_pinned() {
+            this.borrow_mut()
+                .restore_from_file(QString::from("/nonexistent/postivene-test.tar"));
         }
     });
 

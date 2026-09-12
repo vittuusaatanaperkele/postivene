@@ -281,17 +281,21 @@ class Tile:
 
     Coordinates are the avatar's own: the disc is the unit circle, y
     down, and `scale` turns that into pixels. Everything drawn is clipped
-    to the disc, so a shape can spill over its edge freely.
+    to the disc, so a shape can spill over its edge freely -- unless the
+    tile is asked for the whole square, which is what the intro pictures
+    (scenes.py) are drawn on.
     """
 
-    def __init__(self, size):
+    def __init__(self, size, clip=True):
         self.size = size
         self.scale = size / 2.0
         self.rows = [[0.0] * size for _ in range(size)]
-        self.clip = Ellipse(self.scale, self.scale, self.scale - 0.5)
+        self.clip = Ellipse(self.scale, self.scale, self.scale - 0.5) if clip else None
 
     def fill(self, shape, ink):
-        shape = Scaled(shape, self.scale) & self.clip
+        shape = Scaled(shape, self.scale)
+        if self.clip is not None:
+            shape = shape & self.clip
         for py in range(self.size):
             diff, partial, lo, hi = self.coverage(shape, py)
             if lo <= hi:
@@ -536,7 +540,10 @@ def paint(master):
     grid = list(cells(width, height, master["columns"]))
     rng = Dice(master["seed"])
     lit = choose_lit(grid, master, rng)
-    gap = max(2, round(grid[0][2] * 0.025))
+    # The gap the cover leaves: it draws each avatar `Theme.paddingSmall`
+    # narrower than its cell, which on Silica's own baseline (a cell of
+    # 80, a padding of 6) is three quarters of a tenth of one.
+    gap = max(2, round(grid[0][2] * 0.075))
     for index, (x, y, size, _) in enumerate(grid):
         tile = draw_avatar(size - gap, master["seed"] * 1000 + index)
         stamp(green if (x, y) in lit else red, width, height, tile, x, y)

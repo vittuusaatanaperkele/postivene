@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Hvor er profilen din nå?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Legg til som andre enhet</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Enheten som har den, beholder den. Denne kobler seg til, over det samme nettverket.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Gjenopprett fra en sikkerhetskopi</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>En sikkerhetskopi den andre enheten skrev, kopiert over på denne telefonen.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -547,6 +570,53 @@
     <message>
         <source>Everyone in the group sees the name</source>
         <translation>Alle i gruppen ser navnet</translation>
+    </message>
+</context>
+<context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Ingen registrering, intet telefonnummer</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Profilen din blir laget her på telefonen. Ikke noe telefonnummer, ingen konto hos et selskap, ingenting å skrive under på.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Du bestemmer hvem som kan nå deg</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Det finnes ingen katalog å bli funnet i. Vis en venn en kode å skanne, eller send en lenke, så kan dere skrive sammen.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Grupper mellom likemenn</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Alle i en gruppe har de samme rettighetene: hvem som helst kan legge til en venn, gi den nytt navn eller forlate den. Ingen bestemmer.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Tjeneren bare sender den videre</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Sveip videre for å sette opp profilen din.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Hver melding er kryptert</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Meldinger er alltid kryptert hele veien. Tjenerne som frakter dem, kan ikke lese et ord.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>En tjener holder på meldingen til den andre telefonen er på nett, og mer gjør den ikke. Samtalene dine blir på enheten din.</translation>
     </message>
 </context>
 <context>
@@ -868,6 +938,21 @@
     </message>
 </context>
 <context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Greit, la oss sette opp profilen din.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Jeg har allerede en profil</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Opprett en profil</translation>
+    </message>
+</context>
+<context>
     <name>ProfilesPage</name>
     <message>
         <source>Add profile</source>
@@ -893,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>Ingen profiler</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Legg til som andre enhet</translation>
     </message>
 </context>
 <context>
@@ -940,6 +1029,57 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Redigerer melding</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Den andre enheten kjører en nyere Delta Chat enn denne appen kan overta en profil fra.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Overføringen stoppet før den ble ferdig. Begge enhetene må bli på det samme nettverket, med denne siden åpen.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Det er ikke koden en enhet viser mens den tilbyr profilen sin.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Legg til som andre enhet</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Gjenopprett fra en sikkerhetskopi</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>På enheten som har profilen din: lag en sikkerhetskopi og kopier filen over på denne telefonen. Velg den så her.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Velg en sikkerhetskopi</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Overtar profilen...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Avbryt</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Det er ikke noe kamera på denne enheten. Med en sikkerhetskopi går det uten.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>På enheten som har profilen din: åpne innstillingene og velg å legge til en andre enhet. Begge må være på det samme nettverket.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Hold denne telefonen mot koden den viser</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1356,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Sikker desentralisert chat</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Hva er Delta Chat?</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Ingen telefonnummer, ingen konto hos oss: profilen din bor på en e-posttjener du velger selv.</translation>
+        <source>Set up my profile</source>
+        <translation>Sett opp profilen min</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Legg til profil</translation>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Sikker desentralisert chat bygd på Delta Chat</translation>
     </message>
 </context>
 </TS>

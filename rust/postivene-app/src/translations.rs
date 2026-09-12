@@ -155,7 +155,7 @@ mod tests {
             r"
             import QtQuick 2.0
             Item {
-                function plain() { return qsTranslate('WelcomePage', 'Add profile') }
+                function plain() { return qsTranslate('WelcomePage', 'Set up my profile') }
                 function one() { return qsTranslate('GroupPage', '%n member(s)', '', 1) }
                 function many() { return qsTranslate('GroupPage', '%n member(s)', '', 3) }
                 function untranslated() { return qsTranslate('Nowhere', 'not in any catalog') }
@@ -183,7 +183,7 @@ mod tests {
                 .map(|(_, value)| value.clone())
                 .unwrap_or_default()
         };
-        assert_eq!(value("plain"), "Profil hinzufügen", "seen: {seen:?}");
+        assert_eq!(value("plain"), "Profil einrichten", "seen: {seen:?}");
         assert_eq!(value("one"), "1 Mitglied", "seen: {seen:?}");
         assert_eq!(value("many"), "3 Mitglieder", "seen: {seen:?}");
         assert_eq!(

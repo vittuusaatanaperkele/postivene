@@ -480,6 +480,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Kur dabar yra jūsų profilis?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Pridėti kaip antrą įrenginį</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Įrenginys, kuriame jis yra, jį pasilieka. Šis prisijungia tuo pačiu tinklu.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Atkurti iš atsarginės kopijos</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Atsarginės kopijos failas, kurį įrašė kitas įrenginys, nukopijuotas į šį telefoną.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -550,6 +573,53 @@
     <message>
         <source>Everyone in the group sees the name</source>
         <translation>Pavadinimą mato visi grupėje</translation>
+    </message>
+</context>
+<context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Jokios registracijos, jokio telefono numerio</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Jūsų profilis sukuriamas čia pat, telefone. Nereikia nei telefono numerio, nei įmonės paskyros, nieko nereikia pasirašyti.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Jūs nusprendžiate, kas gali jums parašyti</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Nėra jokio sąrašo, kuriame jus rastų. Parodykite draugui nuskaitomą kodą arba nusiųskite nuorodą, ir galėsite susirašinėti.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Lygiųjų grupės</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Grupėje visi turi vienodas teises: bet kas gali pridėti draugą, pervadinti ją ar iš jos išeiti. Niekas čia nevadovauja.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Serveris ją tik perduoda toliau</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Braukite toliau, kad susikurtumėte profilį.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Kiekviena žinutė užšifruota</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Žinutės visada šifruojamos visą kelią. Serveriai, kurie jas gabena, neperskaito nė žodžio.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Serveris laiko žinutę, kol kitas telefonas prisijungs, ir daugiau nieko nedaro. Jūsų pokalbiai lieka jūsų įrenginyje.</translation>
     </message>
 </context>
 <context>
@@ -873,6 +943,21 @@
     </message>
 </context>
 <context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Gerai, sukurkime jums profilį.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Jau turiu profilį</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Sukurti profilį</translation>
+    </message>
+</context>
+<context>
     <name>ProfilesPage</name>
     <message>
         <source>Add profile</source>
@@ -898,6 +983,10 @@
     <message>
         <source>No profiles</source>
         <translation>Profilių nėra</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Pridėti kaip antrą įrenginį</translation>
     </message>
 </context>
 <context>
@@ -945,6 +1034,57 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Redaguojama žinutė</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Kitame įrenginyje veikia naujesnis Delta Chat, nei iš kurio ši programa gali perimti profilį.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Perkėlimas sustojo nebaigtas. Abu įrenginiai turi likti tame pačiame tinkle, o šis puslapis – atvertas.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Tai ne tas kodas, kurį įrenginys rodo siūlydamas savo profilį.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Pridėti kaip antrą įrenginį</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Atkurti iš atsarginės kopijos</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Įrenginyje, kuriame yra jūsų profilis, sukurkite atsarginę kopiją ir nukopijuokite failą į šį telefoną. Tada pasirinkite jį čia.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Pasirinkti atsarginės kopijos failą</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Perimamas profilis...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Atšaukti</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Šiame įrenginyje kameros nėra. Su atsarginės kopijos failu jos ir nereikia.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Įrenginyje, kuriame yra jūsų profilis, atverkite nustatymus ir pasirinkite pridėti antrą įrenginį. Abu turi būti tame pačiame tinkle.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Nukreipkite šį telefoną į rodomą kodą</translation>
     </message>
 </context>
 <context>
@@ -1221,16 +1361,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Saugus decentralizuotas pokalbis</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Kas yra Delta Chat?</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Jokio telefono numerio, jokios paskyros pas mus: jūsų profilis gyvena jūsų pasirinktame pašto serveryje.</translation>
+        <source>Set up my profile</source>
+        <translation>Nustatyti mano profilį</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Pridėti profilį</translation>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Saugūs decentralizuoti pokalbiai, paremti Delta Chat</translation>
     </message>
 </context>
 </TS>

@@ -145,6 +145,14 @@ const PROBE_QML: &str = r"
             item.clicked()
             return 'ok'
         }
+        // And the plus under that one: a profile this reader already has
+        // on another device.
+        function addSecondDevice() {
+            var item = findIn(loader.item, 'secondDeviceButton')
+            if (!item) { return 'missing:secondDeviceButton' }
+            item.clicked()
+            return 'ok'
+        }
     }
 ";
 
@@ -222,6 +230,13 @@ fn switching_profile_leaves_one_chat_list_on_the_stack() {
         // of this page.
         (*steps_ptr).push(("add", call!("addProfile")));
         (*steps_ptr).push(("added", (*stack_ptr).pinned().borrow().stack.to_string()));
+        // And the plus under it, for a profile that exists already on
+        // the phone in the reader's other hand.
+        (*steps_ptr).push(("second", call!("addSecondDevice")));
+        (*steps_ptr).push((
+            "took-over",
+            (*stack_ptr).pinned().borrow().stack.to_string(),
+        ));
         (*steps_ptr).push(("tap", call!("tapFirstRow")));
     });
 
@@ -276,6 +291,18 @@ fn switching_profile_leaves_one_chat_list_on_the_stack() {
         "adding a profile did not open the add-profile dialog on top: \
          {}. {context}",
         value("added")
+    );
+    assert_eq!(
+        value("second"),
+        "ok",
+        "no second plus under the profile list, so a profile on another \
+         device cannot be taken over from here. {context}"
+    );
+    assert!(
+        value("took-over").ends_with(",RestoreProfilePage.qml"),
+        "the second plus did not open the take-over page on top: {}. \
+         {context}",
+        value("took-over")
     );
     // Also the guard that the list really had rows: with no accounts there
     // is no row to tap and nothing here would be under test.

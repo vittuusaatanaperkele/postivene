@@ -478,6 +478,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Hol van most a profilja?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Hozzáadás második eszközként</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Az az eszköz, amelyiken van, megtartja. Ez csatlakozik hozzá, ugyanazon a hálózaton.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Visszaállítás mentésből</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>A másik eszköz által írt mentésfájl, erre a telefonra másolva.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -544,6 +567,53 @@
     <message>
         <source>Everyone in the group sees the name</source>
         <translation>A nevet a csoport minden tagja látja</translation>
+    </message>
+</context>
+<context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Nincs regisztráció, nincs telefonszám</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>A profilja itt, a telefonján készül el. Nem kell telefonszám, nem kell fiók egy cégnél, nincs mit aláírni.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Ön dönti el, ki érheti el</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Nincs névjegyzék, amelyben megtalálnák. Mutasson egy ismerősének beolvasható kódot, vagy küldjön neki hivatkozást, és már írhatnak egymásnak.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Egyenlők csoportjai</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>A csoportban mindenkinek ugyanannyi joga van: bárki hozzáadhat valakit, átnevezheti vagy elhagyhatja. Senki sem főnök.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>A kiszolgáló csak továbbadja</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Lapozzon tovább a profil beállításához.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Minden üzenet titkosítva van</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Az üzenetek mindig végig titkosítva utaznak. A kiszolgálók, amelyek szállítják őket, egy szót sem olvashatnak.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>A kiszolgáló addig őrzi az üzenetet, amíg a másik telefon el nem érhető, és mást nem tesz. A beszélgetései a készülékén maradnak.</translation>
     </message>
 </context>
 <context>
@@ -863,6 +933,21 @@
     </message>
 </context>
 <context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Rendben, állítsuk be a profilját.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Már van profilom</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Profil létrehozása</translation>
+    </message>
+</context>
+<context>
     <name>ProfilesPage</name>
     <message>
         <source>Add profile</source>
@@ -888,6 +973,10 @@
     <message>
         <source>No profiles</source>
         <translation>Nincs profil</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Hozzáadás második eszközként</translation>
     </message>
 </context>
 <context>
@@ -935,6 +1024,57 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Üzenet szerkesztése</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>A másik eszközön újabb Delta Chat fut, mint amelyikből ez az alkalmazás profilt tud átvenni.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Az átvitel a vége előtt megállt. Mindkét eszköznek ugyanazon a hálózaton kell maradnia, ezzel az oldallal nyitva.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Ez nem az a kód, amit egy eszköz mutat, amíg a profilját felkínálja.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Hozzáadás második eszközként</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Visszaállítás mentésből</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>A profilt tartalmazó eszközön készítsen mentést, és másolja a fájlt erre a telefonra. Utána válassza ki itt.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Mentésfájl kiválasztása</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>A profil átvétele...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Mégse</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Ezen az eszközön nincs kamera. Mentésfájllal kamera nélkül is megy.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>A profilt tartalmazó eszközön nyissa meg a beállításokat, és válassza a második eszköz hozzáadását. Mindkettőnek ugyanazon a hálózaton kell lennie.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Tartsa ezt a telefont a megjelenő kód elé</translation>
     </message>
 </context>
 <context>
@@ -1211,16 +1351,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Biztonságos, decentralizált csevegés</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Mi az a Delta Chat?</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Nincs telefonszám, nincs fiók nálunk: a profilja egy Ön által választott levelezőkiszolgálón él.</translation>
+        <source>Set up my profile</source>
+        <translation>Profil beállítása</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Profil hozzáadása</translation>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Biztonságos, decentralizált csevegés a Delta Chatre építve</translation>
     </message>
 </context>
 </TS>

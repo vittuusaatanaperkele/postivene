@@ -419,6 +419,34 @@ removed from the store even after approval. Not an option.
    nothing stutters on the way in: the field is one picture and one
    shader (`components/FaceField.qml`), and the headless tests can load
    it but cannot see it drawn.
+   The two ways on from that screen are worth walking once each, and
+   neither draws the field behind it. "Tell me about Delta Chat" is
+   five facts swiped through one at a time (`pages/IntroPage.qml`):
+   check that each picture is in the ambience's colours, with its
+   accents in the highlight, that the dots below follow the swipe, and
+   that swiping past the last fact lands in the setup screen rather
+   than rubber banding back. Then turn the phone on that last fact and
+   check it stays put: the view moves when the screen does, and that
+   used to carry the reader off the page with no finger on it. "Set up
+   my profile" is that same setup screen. "I already have a profile"
+   asks where it is, and both answers want two devices to check
+   properly: with another Delta Chat holding a profile, open its
+   settings, offer it as a second device and read the code here -- the
+   bar should move and the app should land in that profile's chat list,
+   fetching -- and with a backup file copied onto the phone, the file
+   browser should list it (it filters to .tar) and import it the same
+   way. The viewfinder on the device half has to run from under the
+   line of instructions down to the foot of the page, the way the QR
+   page's does, and it should read a code held up to it at arm's
+   length within a second or two. A viewfinder that is a strip with the
+   page scrolling under it is the bug this had: a code is read out of
+   the pixels it lands in, and half a page of camera did not give it
+   enough of them. There is no "enter the link" button on this one --
+   the code carries an address and a one-time secret, which nobody
+   types. Worth trying on a phone without a camera too, or with the
+   camera denied: the page has to fall back to saying so rather than
+   showing a dead viewfinder, and the backup half has to work
+   regardless.
    Adding a profile is the other half of that screen, and a relay that
    does not answer is the case worth trying, since a public relay is
    somebody's spare-time server. Type a custom server that does not

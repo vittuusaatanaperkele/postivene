@@ -480,6 +480,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Kde je váš profil teď?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Přidat jako druhé zařízení</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Zařízení, které jej má, si jej nechá. Toto se přidá přes stejnou síť.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Obnovit ze zálohy</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Soubor se zálohou, který zapsalo druhé zařízení, zkopírovaný do tohoto telefonu.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -550,6 +573,53 @@
     <message>
         <source>Everyone in the group sees the name</source>
         <translation>Jméno vidí všichni ve skupině</translation>
+    </message>
+</context>
+<context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>Žádná registrace, žádné telefonní číslo</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>Váš profil vznikne tady v telefonu. Žádné telefonní číslo, žádný účet u firmy, není co podepisovat.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>Vy určujete, kdo se vám ozve</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>Neexistuje seznam, ve kterém by vás někdo našel. Ukažte kamarádovi kód k naskenování nebo mu pošlete odkaz a můžete si psát.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>Skupiny rovných</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>Ve skupině mají všichni stejná práva: kdokoli může přidat kamaráda, přejmenovat ji nebo z ní odejít. Nikdo tu nevelí.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>Server ji jen předá dál</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Přejeďte dál a nastavte si profil.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Každá zpráva je šifrovaná</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Zprávy jsou vždy šifrované po celou cestu. Servery, které je přenášejí, z nich nepřečtou ani slovo.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Server podrží zprávu, dokud není druhý telefon online, a nic víc nedělá. Vaše konverzace zůstávají ve vašem zařízení.</translation>
     </message>
 </context>
 <context>
@@ -873,6 +943,21 @@
     </message>
 </context>
 <context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>Dobrá, pojďme vám nastavit profil.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>Profil už mám</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>Vytvořit profil</translation>
+    </message>
+</context>
+<context>
     <name>ProfilesPage</name>
     <message>
         <source>Add profile</source>
@@ -898,6 +983,10 @@
     <message>
         <source>No profiles</source>
         <translation>Žádné profily</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Přidat jako druhé zařízení</translation>
     </message>
 </context>
 <context>
@@ -945,6 +1034,57 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Úprava zprávy</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Na druhém zařízení běží novější Delta Chat, než ze kterého umí tato aplikace profil převzít.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Přenos skončil dřív, než byl hotový. Obě zařízení musí zůstat ve stejné síti a tato stránka otevřená.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Tohle není kód, který zařízení ukazuje, když nabízí svůj profil.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Přidat jako druhé zařízení</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Obnovit ze zálohy</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Na zařízení s vaším profilem vytvořte zálohu a zkopírujte soubor do tohoto telefonu. Pak jej tady vyberte.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Vybrat soubor se zálohou</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Přebírám profil...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Zrušit</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Na tomto zařízení není fotoaparát. Se souborem zálohy to jde i bez něj.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>Na zařízení s vaším profilem otevřete nastavení a zvolte přidání druhého zařízení. Obě zařízení musí být ve stejné síti.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>Namiřte tento telefon na kód, který ukáže</translation>
     </message>
 </context>
 <context>
@@ -1221,16 +1361,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>Bezpečný decentralizovaný chat</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Co je Delta Chat?</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>Žádné telefonní číslo, žádný účet u nás: váš profil žije na poštovním serveru podle vaší volby.</translation>
+        <source>Set up my profile</source>
+        <translation>Nastavit profil</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>Přidat profil</translation>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Bezpečný decentralizovaný chat postavený na Delta Chatu</translation>
     </message>
 </context>
 </TS>

@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>మీ ప్రొఫైల్ ఇప్పుడు ఎక్కడ ఉంది?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>రెండో పరికరంగా చేర్చు</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>అది ఉన్న పరికరం దాన్ని ఉంచుకుంటుంది. ఇది అదే నెట్‌వర్క్ ద్వారా చేరుతుంది.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>బ్యాకప్ నుండి పునరుద్ధరించు</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>మరో పరికరం రాసిన బ్యాకప్ ఫైల్, ఈ ఫోన్‌కు కాపీ చేసినది.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -547,6 +570,53 @@
     <message>
         <source>Everyone in the group sees the name</source>
         <translation>గుంపులో అందరూ పేరును చూస్తారు</translation>
+    </message>
+</context>
+<context>
+    <name>IntroPage</name>
+    <message>
+        <source>No sign-up, no phone number</source>
+        <translation>సైన్-అప్ లేదు, ఫోన్ నంబర్ లేదు</translation>
+    </message>
+    <message>
+        <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
+        <translation>మీ ప్రొఫైల్ ఇక్కడే, మీ ఫోన్‌లోనే తయారవుతుంది. ఫోన్ నంబర్ అక్కర్లేదు, ఏ కంపెనీలోనూ ఖాతా అక్కర్లేదు, సంతకం చేయాల్సిందీ ఏమీ లేదు.</translation>
+    </message>
+    <message>
+        <source>You choose who can reach you</source>
+        <translation>మిమ్మల్ని ఎవరు చేరుకోవచ్చో మీరే నిర్ణయిస్తారు</translation>
+    </message>
+    <message>
+        <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
+        <translation>మిమ్మల్ని వెతికి పట్టుకునేందుకు ఏ జాబితా లేదు. స్నేహితుడికి స్కాన్ చేసే కోడ్ చూపండి లేదా లింక్ పంపండి, ఆ తర్వాత మీరిద్దరూ రాసుకోవచ్చు.</translation>
+    </message>
+    <message>
+        <source>Groups of equals</source>
+        <translation>సమానుల గుంపులు</translation>
+    </message>
+    <message>
+        <source>Everyone in a group has the same rights: anyone can add a friend, rename it or leave. Nobody is in charge.</source>
+        <translation>గుంపులో అందరికీ ఒకే హక్కులు: ఎవరైనా స్నేహితుడిని చేర్చవచ్చు, పేరు మార్చవచ్చు లేదా వెళ్లిపోవచ్చు. ఎవరూ పెద్ద కాదు.</translation>
+    </message>
+    <message>
+        <source>The server only passes it on</source>
+        <translation>సర్వర్ దాన్ని ముందుకు అందించడమే చేస్తుంది</translation>
+    </message>
+    <message>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>ప్రొఫైల్ సిద్ధం చేయడానికి స్వైప్ చేస్తూ ఉండండి.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>ప్రతి సందేశమూ గుప్తీకరించబడుతుంది</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>సందేశాలు ఎప్పుడూ దారి పొడవునా గుప్తీకరించి ఉంటాయి. వాటిని చేరవేసే సర్వర్లు ఒక్క పదం కూడా చదవలేవు.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>రెండో ఫోన్ ఆన్‌లైన్‌కు వచ్చే వరకు సర్వర్ సందేశాన్ని ఉంచుతుంది, అంతే. మీ సంభాషణలు మీ పరికరంలోనే ఉంటాయి.</translation>
     </message>
 </context>
 <context>
@@ -868,6 +938,21 @@
     </message>
 </context>
 <context>
+    <name>ProfileStartPage</name>
+    <message>
+        <source>Alright, let&apos;s get you set up.</source>
+        <translation>సరే, మీ ప్రొఫైల్ సిద్ధం చేద్దాం.</translation>
+    </message>
+    <message>
+        <source>I already have a profile</source>
+        <translation>నాకు ఇప్పటికే ప్రొఫైల్ ఉంది</translation>
+    </message>
+    <message>
+        <source>Create a profile</source>
+        <translation>ప్రొఫైల్ సృష్టించు</translation>
+    </message>
+</context>
+<context>
     <name>ProfilesPage</name>
     <message>
         <source>Add profile</source>
@@ -893,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>ప్రొఫైల్‌లు లేవు</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>రెండో పరికరంగా చేర్చు</translation>
     </message>
 </context>
 <context>
@@ -940,6 +1029,57 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>సందేశాన్ని సవరిస్తున్నారు</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>ఈ యాప్ ప్రొఫైల్ తీసుకోగలిగిన దానికంటే కొత్త Delta Chat మరో పరికరంలో ఉంది.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>బదిలీ పూర్తయ్యేలోపే ఆగిపోయింది. రెండు పరికరాలూ ఒకే నెట్‌వర్క్‌లో ఉండాలి, ఈ పేజీ తెరిచి ఉంచాలి.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>ఒక పరికరం తన ప్రొఫైల్ ఇస్తున్నప్పుడు చూపే కోడ్ ఇది కాదు.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>రెండో పరికరంగా చేర్చు</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>బ్యాకప్ నుండి పునరుద్ధరించు</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>మీ ప్రొఫైల్ ఉన్న పరికరంలో బ్యాకప్ చేసి ఫైల్‌ను ఈ ఫోన్‌కు కాపీ చేయండి. తర్వాత దాన్ని ఇక్కడ ఎంచుకోండి.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>బ్యాకప్ ఫైల్ ఎంచుకో</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>ప్రొఫైల్ తీసుకోబడుతోంది...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>రద్దు చేయి</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>ఈ పరికరంలో కెమెరా లేదు. బ్యాకప్ ఫైల్‌తో కెమెరా లేకుండానే అవుతుంది.</translation>
+    </message>
+    <message>
+        <source>On your other device, open Settings and choose to add a second device. Both phones have to be on the same network.</source>
+        <translation>మీ ప్రొఫైల్ ఉన్న పరికరంలో సెట్టింగ్‌లు తెరిచి రెండో పరికరాన్ని చేర్చడాన్ని ఎంచుకోండి. రెండూ ఒకే నెట్‌వర్క్‌లో ఉండాలి.</translation>
+    </message>
+    <message>
+        <source>Hold the phone up to the code it shows</source>
+        <translation>అది చూపే కోడ్‌కు ఈ ఫోన్‌ను చూపండి</translation>
     </message>
 </context>
 <context>
@@ -1216,16 +1356,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralized chat</source>
-        <translation>సురక్షిత వికేంద్రీకృత చాట్</translation>
+        <source>Tell me about Delta Chat</source>
+        <translation>Delta Chat అంటే ఏమిటి?</translation>
     </message>
     <message>
-        <source>No phone number, no account with us: your profile lives on a mail server of your choosing.</source>
-        <translation>ఫోన్ నంబర్ లేదు, మా వద్ద ఖాతా లేదు: మీ ప్రొఫైల్ మీరు ఎంచుకున్న మెయిల్ సర్వర్‌లో ఉంటుంది.</translation>
+        <source>Set up my profile</source>
+        <translation>నా ప్రొఫైల్ సిద్ధం చేయి</translation>
     </message>
     <message>
-        <source>Add profile</source>
-        <translation>ప్రొఫైల్ చేర్చు</translation>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Delta Chat ఆధారంగా సురక్షితమైన, వికేంద్రీకృత చాట్</translation>
     </message>
 </context>
 </TS>

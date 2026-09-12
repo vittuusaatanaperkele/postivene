@@ -26,8 +26,7 @@ import "../components"
 Page {
     id: page
 
-    // Both ways up: the field has a master for each, and the facts are
-    // a column either way.
+    // Both ways up: a fact is a column either way.
     allowedOrientations: Orientation.All
 
     // Set once the reader has swiped past the end, so that the drag that
@@ -171,7 +170,7 @@ Page {
     }
 
     // Where the reader is, and -- on the last fact -- what one more
-    // swipe does. Both sit inside the cleared box.
+    // swipe does. Below the fact, clear of it in both orientations.
     Column {
         anchors {
             horizontalCenter: parent.horizontalCenter

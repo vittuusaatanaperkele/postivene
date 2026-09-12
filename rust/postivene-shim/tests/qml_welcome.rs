@@ -119,28 +119,45 @@ fn png_header(file: &str) -> (u32, u32, u8, u8, u8) {
     (at(16), at(20), bytes[24], bytes[25], bytes[28])
 }
 
+/// A phone's short side. The masters are only ever scaled down, so
+/// anything narrower than this would be drawn bigger than it was
+/// painted.
+const SHORT_SIDE: u32 = 800;
+
 /// The masks are what the shader reads: two channels of an 8-bit RGB
 /// PNG, not interlaced (Qt loads either, but a mask re-exported as
-/// grayscale or with an alpha channel would tint the field wrong), at
-/// a phone's size each way up.
+/// grayscale or with an alpha channel would tint the field wrong), one
+/// master per orientation and neither of them small.
+///
+/// The exact size is not pinned: the field is redrawn from time to time
+/// and the shader crops rather than stretches, so what matters is the
+/// shape of the channels, which way up each master runs, and that there
+/// are pixels enough.
 #[test]
 fn the_face_masks_are_the_shape_the_shader_reads() {
-    for (file, width, height) in [
-        ("faces-portrait.png", 1080, 2520),
-        ("faces-landscape.png", 2520, 1080),
-    ] {
-        let (w, h, depth, colour, interlace) = png_header(file);
-        assert_eq!(
-            (w, h),
-            (width, height),
-            "qml/art/{file} is not {width}x{height}"
-        );
+    for (file, upright) in [("faces-portrait.png", true), ("faces-landscape.png", false)] {
+        let (width, height, depth, colour, interlace) = png_header(file);
         assert_eq!(depth, 8, "qml/art/{file} is not 8 bits per channel");
         assert_eq!(
             colour, 2,
             "qml/art/{file} is not RGB: the shader reads red and green"
         );
         assert_eq!(interlace, 0, "qml/art/{file} is interlaced");
+        let (long, short) = if upright {
+            (height, width)
+        } else {
+            (width, height)
+        };
+        assert!(
+            long > short,
+            "qml/art/{file} is {width}x{height}, which is not the master \
+             for the orientation it is named after"
+        );
+        assert!(
+            short >= SHORT_SIDE,
+            "qml/art/{file} is only {short} across its short side; a phone \
+             would draw it bigger than it was painted"
+        );
     }
 }
 

@@ -45,7 +45,10 @@ const PICTURES: [&str; 5] = [
     "intro-group.png",
     "intro-relay.png",
 ];
-const PICTURE_SIZE: u32 = 480;
+/// The smallest a picture may be painted: it is shown at about two
+/// fifths of a phone's width, so anything under this would be drawn
+/// bigger than it was painted.
+const SMALLEST_PICTURE: u32 = 400;
 
 /// Silica's `pageStack`, recorded rather than performed: where the end of
 /// the walk leads, and how often.
@@ -187,22 +190,33 @@ fn png_header(file: &str) -> (u32, u32, u8, u8, u8) {
 
 /// The pictures are what the shader reads: two channels of an 8-bit RGB
 /// PNG, square, not interlaced. One re-exported as grayscale or with an
-/// alpha channel would lose its accents or tint them wrong.
+/// alpha channel would lose its accents or tint them wrong, and one that
+/// is not square would be drawn stretched, since `InkArt` does not
+/// letterbox.
+///
+/// How big is not pinned, only how small: the pictures are redrawn from
+/// time to time, and a phone scales whatever they are down to the box it
+/// has for them.
 #[test]
 fn the_intro_pictures_are_the_shape_the_shader_reads() {
     for file in PICTURES {
         let (width, height, depth, colour, interlace) = png_header(file);
-        assert_eq!(
-            (width, height),
-            (PICTURE_SIZE, PICTURE_SIZE),
-            "qml/art/{file} is not {PICTURE_SIZE} square"
-        );
         assert_eq!(depth, 8, "qml/art/{file} is not 8 bits per channel");
         assert_eq!(
             colour, 2,
             "qml/art/{file} is not RGB: the shader reads red and green"
         );
         assert_eq!(interlace, 0, "qml/art/{file} is interlaced");
+        assert_eq!(
+            width, height,
+            "qml/art/{file} is {width}x{height}, and a picture that is not \
+             square is drawn stretched"
+        );
+        assert!(
+            width >= SMALLEST_PICTURE,
+            "qml/art/{file} is only {width} square; a phone would draw it \
+             bigger than it was painted"
+        );
     }
 }
 

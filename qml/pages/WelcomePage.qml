@@ -80,6 +80,13 @@ Page {
         anchors.fill: parent
         source: page.width > page.height ? "../art/faces-landscape.png"
                                          : "../art/faces-portrait.png"
+        // Fainter than the component's own default. The field is the
+        // welcome, not the reading matter, and what it is painted from
+        // carries more ink than the flat masks it started as: both
+        // channels scale the colour and its alpha together, so less ink
+        // is more of the ambience showing through.
+        ink: 0.45
+        litInk: 0.8
         clearX: words.x + words.width / 2
         clearY: words.y + words.height / 2
         clearWidth: words.width

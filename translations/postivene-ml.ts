@@ -568,14 +568,6 @@
         <translation>നിങ്ങളെ കണ്ടെത്താൻ ഒരു പട്ടികയുമില്ല. സുഹൃത്തിന് സ്കാൻ ചെയ്യാൻ ഒരു കോഡ് കാണിക്കുക അല്ലെങ്കിൽ ഒരു ലിങ്ക് അയയ്ക്കുക, പിന്നെ നിങ്ങൾക്ക് പരസ്പരം എഴുതാം.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>ഓരോ സന്ദേശവും പൂട്ടിയിരിക്കുന്നു</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>സന്ദേശങ്ങൾ എപ്പോഴും വഴി മുഴുവൻ എൻക്രിപ്റ്റ് ചെയ്തിരിക്കും. അവ വഹിക്കുന്ന സെർവറുകൾക്ക് ഒരു വാക്കുപോലും വായിക്കാനാവില്ല.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>തുല്യരുടെ കൂട്ടങ്ങൾ</translation>
     </message>
@@ -588,12 +580,20 @@
         <translation>സെർവർ അത് കൈമാറുക മാത്രം ചെയ്യുന്നു</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>മറ്റേ ഫോൺ ഓൺലൈനാകുന്നതുവരെ റിലേ സന്ദേശം സൂക്ഷിക്കുന്നു, അത്രമാത്രം. നിങ്ങളുടെ സംഭാഷണങ്ങൾ നിങ്ങളുടെ ഉപകരണത്തിൽത്തന്നെ നിൽക്കും.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>പ്രൊഫൈൽ ഒരുക്കാൻ സ്വൈപ്പ് ചെയ്തുകൊണ്ടിരിക്കുക.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>ഓരോ സന്ദേശവും എൻക്രിപ്റ്റ് ചെയ്തിരിക്കുന്നു</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>സന്ദേശങ്ങൾ എപ്പോഴും വഴി മുഴുവൻ എൻക്രിപ്റ്റ് ചെയ്തിരിക്കും. അവ എത്തിക്കുന്ന സെർവറുകൾക്ക് ഒരു വാക്കുപോലും വായിക്കാനാവില്ല.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>മറ്റേ ഫോൺ ഓൺലൈനാകുന്നതുവരെ സെർവർ സന്ദേശം സൂക്ഷിക്കുന്നു, അത്രമാത്രം. നിങ്ങളുടെ സംഭാഷണങ്ങൾ നിങ്ങളുടെ ഉപകരണത്തിൽത്തന്നെ നിൽക്കും.</translation>
     </message>
 </context>
 <context>
@@ -1282,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Delta Chat അടിസ്ഥാനമാക്കിയ സുരക്ഷിതവും വികേന്ദ്രീകൃതവുമായ സന്ദേശവിനിമയം</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Delta Chat എന്താണ്?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>എന്റെ പ്രൊഫൈൽ ഒരുക്കുക</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Delta Chat അടിസ്ഥാനമാക്കിയ സുരക്ഷിതവും വികേന്ദ്രീകൃതവുമായ ചാറ്റ്</translation>
     </message>
 </context>
 </TS>

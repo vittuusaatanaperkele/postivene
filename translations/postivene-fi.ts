@@ -568,14 +568,6 @@
         <translation>Mitään luetteloa, josta sinut löytäisi, ei ole. Näytä kaverille skannattava koodi tai lähetä hänelle linkki, niin voitte kirjoittaa toisillenne.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Jokainen viesti on lukossa</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Viestit on aina salattu koko matkan. Palvelimet, jotka niitä kuljettavat, eivät lue niistä sanaakaan.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Ryhmiä vertaisten kesken</translation>
     </message>
@@ -588,12 +580,20 @@
         <translation>Palvelin vain välittää sen eteenpäin</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Välityspalvelin pitää viestin, kunnes toinen puhelin on verkossa, eikä tee muuta. Keskustelusi pysyvät laitteessasi.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Pyyhkäise eteenpäin ja luo profiilisi.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Jokainen viesti on salattu</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Viestit on aina salattu koko matkan. Palvelimet, jotka niitä kuljettavat, eivät lue niistä sanaakaan.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Palvelin pitää viestin, kunnes toinen puhelin on verkossa, eikä tee muuta. Keskustelusi pysyvät laitteessasi.</translation>
     </message>
 </context>
 <context>
@@ -1282,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Turvallista hajautettua viestintää Delta Chatin päällä</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Mikä Delta Chat on?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Luo profiilini</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Turvallinen hajautettu keskustelu Delta Chatin päällä</translation>
     </message>
 </context>
 </TS>

@@ -1,13 +1,11 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import "../components"
 
 /*
  * Where the setup path begins: reached from the first screen, and from
  * the end of the walk through what Delta Chat is (IntroPage.qml). The
- * screen is the first screen again -- the same field of faces in the
- * ambience's colours, the same box cleared for the words -- so that
- * going on feels like the same room rather than a new one.
+ * field of faces stays on the first screen, where it is the welcome; a
+ * page asking a question wants nothing behind the question.
  *
  * Two ways from here. Creating a profile is the one that works today and
  * goes straight to the relay dialog. Bringing one over from another
@@ -22,19 +20,6 @@ Page {
 
     // Set by the button that has nothing behind it yet.
     property bool askedForExisting: false
-
-    FaceField {
-        objectName: "faceField"
-        anchors.fill: parent
-        source: page.width > page.height ? "../art/faces-landscape.png"
-                                         : "../art/faces-portrait.png"
-        clearX: words.x + words.width / 2
-        clearY: words.y + words.height / 2
-        clearWidth: words.width
-        clearHeight: words.height
-        clearRadius: Theme.paddingLarge
-        clearFeather: Theme.itemSizeLarge
-    }
 
     Column {
         id: words

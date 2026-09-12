@@ -571,14 +571,6 @@
         <translation>Nie ma żadnego spisu, w którym można cię znaleźć. Pokaż znajomemu kod do zeskanowania albo wyślij mu odnośnik, a będziecie mogli pisać.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Każda wiadomość jest zamknięta na klucz</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Wiadomości są zawsze zaszyfrowane na całej drodze. Serwery, które je niosą, nie przeczytają ani słowa.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Grupy równych sobie</translation>
     </message>
@@ -591,12 +583,20 @@
         <translation>Serwer tylko przekazuje ją dalej</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Przekaźnik trzyma wiadomość, dopóki drugi telefon nie będzie w sieci, i nic więcej nie robi. Twoje rozmowy zostają na twoim urządzeniu.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Przesuwaj dalej, aby założyć profil.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Każda wiadomość jest zaszyfrowana</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Wiadomości są zawsze zaszyfrowane na całej drodze. Serwery, które je przewożą, nie przeczytają ani słowa.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Serwer trzyma wiadomość, dopóki drugi telefon nie będzie w sieci, i nic więcej nie robi. Twoje rozmowy zostają na twoim urządzeniu.</translation>
     </message>
 </context>
 <context>
@@ -1287,16 +1287,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Bezpieczne, zdecentralizowane wiadomości oparte na Delta Chat</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Czym jest Delta Chat?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Skonfiguruj mój profil</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Bezpieczny, zdecentralizowany czat oparty na Delta Chat</translation>
     </message>
 </context>
 </TS>

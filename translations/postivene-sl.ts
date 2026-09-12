@@ -574,14 +574,6 @@
         <translation>Ni imenika, v katerem bi vas našli. Prijatelju pokažite kodo za optično branje ali mu pošljite povezavo, pa si lahko pišeta.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Vsako sporočilo je zaklenjeno</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Sporočila so vedno šifrirana vso pot. Strežniki, ki jih prenašajo, iz njih ne preberejo niti besede.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Skupine enakih</translation>
     </message>
@@ -594,12 +586,20 @@
         <translation>Strežnik ga samo poda naprej</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Rele zadrži sporočilo, dokler drugi telefon ni na zvezi, in nič drugega. Vaši pogovori ostanejo v vaši napravi.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Podrsajte naprej in ustvarite profil.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Vsako sporočilo je šifrirano</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Sporočila so vedno šifrirana vso pot. Strežniki, ki jih prenašajo, ne preberejo niti besede.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Strežnik zadrži sporočilo, dokler drugi telefon ni na zvezi, in nič drugega. Vaši pogovori ostanejo v vaši napravi.</translation>
     </message>
 </context>
 <context>
@@ -1292,16 +1292,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Varno decentralizirano sporočanje, zgrajeno na Delta Chatu</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Kaj je Delta Chat?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Nastavi moj profil</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Varno decentralizirano klepetanje, zgrajeno na Delta Chatu</translation>
     </message>
 </context>
 </TS>

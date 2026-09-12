@@ -571,14 +571,6 @@
         <translation>Немає жодного каталогу, у якому вас знайдуть. Покажіть другові код для сканування або надішліть посилання, і ви зможете листуватися.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Кожне повідомлення замкнене</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Повідомлення завжди зашифровані на всьому шляху. Сервери, які їх несуть, не прочитають жодного слова.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Групи рівних</translation>
     </message>
@@ -591,12 +583,20 @@
         <translation>Сервер лише передає його далі</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Сервер тримає повідомлення, доки інший телефон не з’явиться в мережі, і більше нічого. Ваші розмови залишаються на вашому пристрої.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Гортайте далі, щоб налаштувати профіль.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Кожне повідомлення зашифроване</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Повідомлення завжди зашифровані на всьому шляху. Сервери, які їх переносять, не прочитають жодного слова.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Сервер тримає повідомлення, доки інший телефон не з’явиться в мережі, і більше нічого. Ваші розмови залишаються на вашому пристрої.</translation>
     </message>
 </context>
 <context>
@@ -1287,16 +1287,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Захищене децентралізоване листування на основі Delta Chat</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Що таке Delta Chat?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Налаштувати мій профіль</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Захищений децентралізований чат на основі Delta Chat</translation>
     </message>
 </context>
 </TS>

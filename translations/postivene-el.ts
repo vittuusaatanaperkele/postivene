@@ -568,14 +568,6 @@
         <translation>Δεν υπάρχει κατάλογος για να σας βρουν. Δείξτε σε έναν φίλο έναν κωδικό για σάρωση ή στείλτε του έναν σύνδεσμο, και μπορείτε να γράφετε οι δυο σας.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Κάθε μήνυμα είναι κλειδωμένο</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Τα μηνύματα είναι πάντα κρυπτογραφημένα σε όλη τη διαδρομή. Οι διακομιστές που τα μεταφέρουν δεν διαβάζουν ούτε λέξη.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Ομάδες ίσων</translation>
     </message>
@@ -588,12 +580,20 @@
         <translation>Ο διακομιστής απλώς το προωθεί</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Ο διακομιστής κρατά ένα μήνυμα ώσπου να συνδεθεί το άλλο τηλέφωνο, και τίποτα άλλο. Οι συνομιλίες σας μένουν στη συσκευή σας.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Συνεχίστε να σύρετε για να ρυθμίσετε το προφίλ σας.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Κάθε μήνυμα είναι κρυπτογραφημένο</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Τα μηνύματα είναι πάντα κρυπτογραφημένα σε όλη τη διαδρομή. Οι διακομιστές που τα μεταφέρουν δεν διαβάζουν ούτε λέξη.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Ο διακομιστής κρατά ένα μήνυμα ώσπου να συνδεθεί το άλλο τηλέφωνο, και τίποτα άλλο. Οι συνομιλίες σας μένουν στη συσκευή σας.</translation>
     </message>
 </context>
 <context>
@@ -1282,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Ασφαλή αποκεντρωμένα μηνύματα βασισμένα στο Delta Chat</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Τι είναι το Delta Chat;</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Ρύθμιση του προφίλ μου</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Ασφαλής αποκεντρωμένη συνομιλία βασισμένη στο Delta Chat</translation>
     </message>
 </context>
 </TS>

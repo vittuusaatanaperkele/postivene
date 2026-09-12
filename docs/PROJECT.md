@@ -351,12 +351,15 @@ deltachat-rpc-server (bundled binary, subprocess) = the entire core
   that is simply always on, groups without an owner, a relay that only
   carries messages. They follow delta.chat's own FAQ with the technical
   half left out, each over a drawing painted the way the faces are
-  (`tools/faces/scenes.py`, `components/InkArt.qml`), and swiping past
-  the last one goes on to the setup path rather than stopping. "Set up
-  my profile" goes there directly: the same field, the same cleared box,
-  and the choice between creating a profile -- the relay dialog, which
-  is where a server is picked -- and bringing one over from another
-  device, which is not built yet and says so.
+  (`tools/faces/scenes.py`, `components/InkArt.qml`), and a drag past
+  the last one goes on to the setup path rather than stopping -- a drag
+  and nothing else, since turning the phone moves the view too and is
+  not a reader asking for anything. "Set up my profile" goes there
+  directly: the choice between creating a profile -- the relay dialog,
+  which is where a server is picked -- and bringing one over from
+  another device, which is not built yet and says so. Neither of those
+  two screens draws the field: it is the welcome, and behind a drawing
+  or a question it would be one pattern too many.
   Adding a profile is the other half of that screen, and the relay is
   the part of it nobody here controls: a public relay is somebody's
   spare-time server, and one that is down holds the core's transport

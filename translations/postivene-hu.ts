@@ -565,14 +565,6 @@
         <translation>Nincs névjegyzék, amelyben megtalálnák. Mutasson egy ismerősének beolvasható kódot, vagy küldjön neki hivatkozást, és már írhatnak egymásnak.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Minden üzenet zárva van</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Az üzenetek mindig végig titkosítva utaznak. A kiszolgálók, amelyek viszik őket, egy szót sem olvashatnak belőlük.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Egyenlők csoportjai</translation>
     </message>
@@ -585,12 +577,20 @@
         <translation>A kiszolgáló csak továbbadja</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>A továbbító addig őrzi az üzenetet, amíg a másik telefon el nem érhető, és mást nem tesz. A beszélgetései a készülékén maradnak.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Lapozzon tovább a profil beállításához.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Minden üzenet titkosítva van</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Az üzenetek mindig végig titkosítva utaznak. A kiszolgálók, amelyek szállítják őket, egy szót sem olvashatnak.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>A kiszolgáló addig őrzi az üzenetet, amíg a másik telefon el nem érhető, és mást nem tesz. A beszélgetései a készülékén maradnak.</translation>
     </message>
 </context>
 <context>
@@ -1277,16 +1277,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Biztonságos, decentralizált üzenetküldés a Delta Chatre építve</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Mi az a Delta Chat?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Profil beállítása</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Biztonságos, decentralizált csevegés a Delta Chatre építve</translation>
     </message>
 </context>
 </TS>

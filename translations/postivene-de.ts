@@ -557,23 +557,15 @@
     </message>
     <message>
         <source>Your profile is made here on your phone. No phone number, no account with a company, nothing to sign.</source>
-        <translation>Ihr Profil entsteht hier auf dem Telefon. Keine Telefonnummer, kein Konto bei einer Firma, nichts zu unterschreiben.</translation>
+        <translation>Dein Profil entsteht hier auf dem Telefon. Keine Telefonnummer, kein Konto bei einer Firma, nichts zu unterschreiben.</translation>
     </message>
     <message>
         <source>You choose who can reach you</source>
-        <translation>Sie entscheiden, wer Sie erreichen kann</translation>
+        <translation>Du entscheidest, wer dich erreichen kann</translation>
     </message>
     <message>
         <source>There is no directory to be found in. Show a friend a code to scan, or send them a link, and the two of you can write.</source>
-        <translation>Es gibt kein Verzeichnis, in dem man Sie findet. Zeigen Sie jemandem einen Code zum Scannen oder schicken Sie einen Link, dann können Sie einander schreiben.</translation>
-    </message>
-    <message>
-        <source>Every message is locked</source>
-        <translation>Jede Nachricht ist verschlossen</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Nachrichten sind immer auf dem ganzen Weg verschlüsselt. Die Server, die sie befördern, lesen kein Wort davon.</translation>
+        <translation>Es gibt kein Verzeichnis, in dem man dich findet. Zeig jemandem einen Code zum Scannen oder schick einen Link, dann könnt ihr einander schreiben.</translation>
     </message>
     <message>
         <source>Groups of equals</source>
@@ -588,12 +580,20 @@
         <translation>Der Server reicht sie nur weiter</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Ein Relay hält eine Nachricht, bis das andere Telefon online ist, mehr tut es nicht. Ihre Chats bleiben auf Ihrem Gerät.</translation>
+        <source>Keep swiping to set up your profile.</source>
+        <translation>Weiter wischen, um dein Profil einzurichten.</translation>
     </message>
     <message>
-        <source>Keep swiping to set up your profile.</source>
-        <translation>Weiter wischen, um Ihr Profil einzurichten.</translation>
+        <source>Every message is encrypted</source>
+        <translation>Jede Nachricht ist verschlüsselt</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Nachrichten sind immer auf dem ganzen Weg verschlüsselt. Server, die sie transportieren, können kein Wort mitlesen.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Ein Server hält eine Nachricht, bis das andere Telefon online ist, mehr tut er nicht. Deine Chats bleiben auf deinem Gerät.</translation>
     </message>
 </context>
 <context>
@@ -911,14 +911,14 @@
     </message>
     <message>
         <source>Chatmail relays are run by volunteers in their spare time. If this one does not seem to work, go back and try another one.</source>
-        <translation>Chatmail-Relays werden von Freiwilligen in ihrer Freizeit betrieben. Wenn dieses nicht zu funktionieren scheint, gehen Sie zurück und versuchen Sie ein anderes.</translation>
+        <translation>Chatmail-Relays werden von Freiwilligen in ihrer Freizeit betrieben. Wenn dieses nicht zu funktionieren scheint, geh zurück und versuch ein anderes.</translation>
     </message>
 </context>
 <context>
     <name>ProfileStartPage</name>
     <message>
         <source>Alright, let&apos;s get you set up.</source>
-        <translation>Gut, richten wir Ihr Profil ein.</translation>
+        <translation>Gut, richten wir dein Profil ein.</translation>
     </message>
     <message>
         <source>I already have a profile</source>
@@ -1200,7 +1200,7 @@
     </message>
     <message>
         <source>In a muted group, a reply to one of your messages still notifies you.</source>
-        <translation>In einer stummgeschalteten Gruppe benachrichtigt eine Antwort auf eine Ihrer Nachrichten Sie trotzdem.</translation>
+        <translation>In einer stummgeschalteten Gruppe wirst du trotzdem benachrichtigt, wenn jemand auf eine deiner Nachrichten antwortet.</translation>
     </message>
     <message>
         <source>Enter sends the message</source>
@@ -1282,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Sichere dezentrale Nachrichten auf Basis von Delta Chat</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Was ist Delta Chat?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Profil einrichten</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Sicherer dezentraler Chat auf Basis von Delta Chat</translation>
     </message>
 </context>
 </TS>

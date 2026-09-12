@@ -7,6 +7,13 @@
 //! the one that offers the way on, and that pulling past it asks for the
 //! next page exactly once. What it looks like is a manual check
 //! (docs/HARBOUR.md).
+//!
+//! Turning the phone is here because it went wrong on one: the view's
+//! width changes before the content it has scrolled does, which measured
+//! as a pull past the last fact and carried the reader off the page with
+//! no finger on it. Only a drag asks for the next page now, so a turn --
+//! and any other move the reader did not make -- has to leave the walk
+//! where it is.
 
 // Qt harness: needs `unsafe` for `env::set_var` before Qt starts
 // (`unused_unsafe` because it is only unsafe from edition 2024 on),
@@ -121,14 +128,30 @@ const PROBE_QML: &str = r"
             view.contentX = parseInt(index) * view.width
             return '' + view.currentIndex
         }
-        // A pull that carries the view past the last fact, which is what
-        // a reader who keeps swiping does.
+        // The view carried past the last fact without a finger on it,
+        // which is what a turn of the phone amounts to.
         function pullPastEnd(extra) {
             var view = findIn(loader.item, 'slides')
             if (!view) { return 'missing:slides' }
             view.contentX = view.contentWidth - view.width + parseFloat(extra)
             return 'ok'
         }
+        // The phone turned, and turned back.
+        function turn(width, height) {
+            if (!loader.item) { return 'no-page' }
+            loader.item.width = parseInt(width)
+            loader.item.height = parseInt(height)
+            return 'ok'
+        }
+        // What a drag past the last fact ends in, which is the only way
+        // a page can be asked for from here.
+        function pullByHand() {
+            if (!loader.item) { return 'no-page' }
+            loader.item.advanceIfPastEnd()
+            return 'ok'
+        }
+        // Where the walk has navigated to, as the probe recorded it.
+        function navigation() { return '' + pageStack.log }
     }
 ";
 
@@ -242,14 +265,23 @@ fn the_introduction_walks_the_facts_and_ends_in_the_setup_path() {
         r("hint-late", call!("get", "swipeHint", "visible"));
     });
 
-    // Past the last fact, twice: the second pull must not ask again. The
-    // last fact exists to be read from only now: a view makes a delegate
-    // when it comes near, not when the page is loaded.
+    // The last fact exists to be read from only now: a view makes a
+    // delegate when it comes near, not when the page is loaded. Then the
+    // two ways the view can end up past the end -- a turn of the phone,
+    // which is not a reader asking for anything, and a drag, which is --
+    // and a second drag, which must not ask again.
     let r = record.clone();
     single_shot(Duration::from_secs(3), move || {
         r("last-picture", call!("picture", "slideArt4"));
+        r("turn", call!("turn", "2520", "1080"));
+        r("after-turn", call!("navigation"));
+        r("turn-back", call!("turn", "1080", "2520"));
+        r("after-turn-back", call!("navigation"));
         r("pull", call!("pullPastEnd", "240"));
-        r("pull-again", call!("pullPastEnd", "480"));
+        r("after-pull", call!("navigation"));
+        r("by-hand", call!("pullByHand"));
+        r("after-hand", call!("navigation"));
+        r("by-hand-again", call!("pullByHand"));
     });
 
     single_shot(Duration::from_secs(4), move || unsafe {
@@ -318,8 +350,30 @@ fn assert_walk(steps: &[(String, String)], navigation: &str) {
         "the last fact does not say what one more swipe does. {context}"
     );
     assert_eq!(
+        value("after-turn"),
+        "",
+        "turning the phone on the last fact left the walk on its own. \
+         {context}"
+    );
+    assert_eq!(
+        value("after-turn-back"),
+        "",
+        "turning the phone back left the walk on its own. {context}"
+    );
+    assert_eq!(
+        value("after-pull"),
+        "",
+        "the view carried past the end with no finger on it asked for the \
+         next page. {context}"
+    );
+    assert_eq!(
+        value("after-hand"),
+        "replace:ProfileStartPage.qml|",
+        "a pull past the last fact did not land in the setup path. {context}"
+    );
+    assert_eq!(
         navigation, "replace:ProfileStartPage.qml|",
-        "pulling past the last fact did not land in the setup path exactly \
+        "pulling past the last fact asked for the setup path more than \
          once. {context}"
     );
 }

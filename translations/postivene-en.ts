@@ -568,14 +568,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation type="unfinished"></translation>
     </message>
@@ -588,11 +580,19 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <source>Keep swiping to set up your profile.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Keep swiping to set up your profile.</source>
+        <source>Every message is encrypted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1282,15 +1282,15 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Set up my profile</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

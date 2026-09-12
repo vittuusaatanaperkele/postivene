@@ -88,31 +88,58 @@ def draw_profile(plate):
     plate.lit.fill(badge - plus, FULL)
 
 
-# The three corners of a scannable code, which is what it is recognised
-# by; the squares between them are only pattern.
-CORNERS = ((-0.54, -0.54), (0.54, -0.54), (-0.54, 0.54))
+# A scannable code the size a small one really is: twenty-one modules
+# across, with the three corner marks, the separators around them and the
+# timing runs between them where a reader of codes expects to find them.
+# Only the data modules are made up.
+MODULES = 21
+SPAN = 1.80
+MODULE = SPAN / MODULES
+# The corner marks, by the module their seven-by-seven block starts at.
+MARKS = ((0, 0), (MODULES - 7, 0), (0, MODULES - 7))
 
 
-def corner(cx, cy):
-    """One corner mark: a square ring with a square in it."""
-    outer = Box(cx - 0.30, cy - 0.30, cx + 0.30, cy + 0.30, 0.07)
-    inner = Box(cx - 0.20, cy - 0.20, cx + 0.20, cy + 0.20, 0.04)
-    return (outer - inner) | Box(cx - 0.12, cy - 0.12, cx + 0.12, cy + 0.12, 0.03)
+def module(column, row):
+    """One module of the code. A hair wider than its cell on every side,
+    so that neighbours meet rather than leave a seam where the edge
+    pixel is shared."""
+    x = -SPAN / 2 + column * MODULE
+    y = -SPAN / 2 + row * MODULE
+    bleed = MODULE * 0.02
+    return Box(x - bleed, y - bleed, x + MODULE + bleed, y + MODULE + bleed)
+
+
+def in_mark(column, row):
+    """Whether a module belongs to a corner mark or its separator, which
+    is what keeps the made-up half out of the half a scanner reads."""
+    return any(mx - 1 <= column <= mx + 7 and my - 1 <= row <= my + 7
+               for mx, my in MARKS)
+
+
+def mark_module(column, row):
+    """Whether a module of a corner mark is drawn: the seven-by-seven
+    ring, and the three-by-three block inside it."""
+    for mx, my in MARKS:
+        if mx <= column <= mx + 6 and my <= row <= my + 6:
+            dx, dy = abs(column - (mx + 3)), abs(row - (my + 3))
+            return max(dx, dy) == 3 or max(dx, dy) <= 1
+    return False
 
 
 def draw_invite(plate):
     """The code a friend scans, or the link they are sent."""
-    for cx, cy in CORNERS:
-        plate.lit.fill(corner(cx, cy), FULL)
     dice = Dice(7)
-    step = 0.16
-    for row in range(9):
-        for column in range(9):
-            x, y = -0.64 + column * step, -0.64 + row * step
-            near_corner = any(abs(x - cx) < 0.40 and abs(y - cy) < 0.40
-                              for cx, cy in CORNERS)
-            if not near_corner and dice.random() < 0.52:
-                plate.grey.fill(Box(x - 0.06, y - 0.06, x + 0.06, y + 0.06, 0.02), LINE)
+    for row in range(MODULES):
+        for column in range(MODULES):
+            if in_mark(column, row):
+                if mark_module(column, row):
+                    plate.lit.fill(module(column, row), FULL)
+            elif column == 6 or row == 6:
+                # The timing runs: every other module, starting filled.
+                if (column + row) % 2 == 0:
+                    plate.grey.fill(module(column, row), LINE)
+            elif dice.random() < 0.45:
+                plate.grey.fill(module(column, row), LINE)
 
 
 def draw_lock(plate):
@@ -150,7 +177,9 @@ def draw_relay(plate):
             | stroke(0.62, -0.06, 0.0, 0.34, 0.06)) & body
     plate.grey.fill(flap, LINE)
     plate.lit.fill(ring(0, 0.02, 0.86, 0.76, 0.07) & HalfPlane(0, -1, 0.32), FULL)
-    plate.lit.fill(Polygon([(0.60, -0.44), (0.92, -0.38), (0.72, -0.10)]), FULL)
+    # The head, at the right-hand end of the arc and pointing the way the
+    # arc is going -- down towards the envelope, not back along itself.
+    plate.lit.fill(Polygon([(0.88, -0.10), (0.60, -0.28), (0.87, -0.45)]), FULL)
 
 
 SCENES = (

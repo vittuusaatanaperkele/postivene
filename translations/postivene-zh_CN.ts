@@ -565,14 +565,6 @@
         <translation>没有可以查到你的名录。给朋友看一个二维码，或者发给对方一个链接，你们就能互相写信了。</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>每条消息都是锁着的</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>消息始终全程加密。传递它们的服务器一个字也读不到。</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>人人平等的群组</translation>
     </message>
@@ -585,12 +577,20 @@
         <translation>服务器只负责转交</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>中继会把消息存着，直到对方手机上线，它只做这一件事。你的聊天留在你自己的设备上。</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>继续滑动即可创建个人资料。</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>每条消息都是加密的</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>消息始终全程加密。传输它们的服务器一个字也读不到。</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>服务器会把消息存着，直到对方手机上线，它只做这一件事。你的聊天留在你自己的设备上。</translation>
     </message>
 </context>
 <context>
@@ -1277,16 +1277,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>基于 Delta Chat 的安全去中心化通讯</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Delta Chat 是什么？</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>设置我的个人资料</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>基于 Delta Chat 的安全去中心化聊天</translation>
     </message>
 </context>
 </TS>

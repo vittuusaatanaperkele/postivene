@@ -568,14 +568,6 @@
         <translation>ਅਜਿਹੀ ਕੋਈ ਸੂਚੀ ਨਹੀਂ ਜਿਸ ਵਿੱਚ ਤੁਸੀਂ ਲੱਭੇ ਜਾਓ। ਦੋਸਤ ਨੂੰ ਸਕੈਨ ਕਰਨ ਲਈ ਕੋਡ ਵਿਖਾਓ ਜਾਂ ਲਿੰਕ ਭੇਜੋ, ਫਿਰ ਤੁਸੀਂ ਦੋਵੇਂ ਲਿਖ ਸਕਦੇ ਹੋ।</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>ਹਰ ਸੁਨੇਹੇ ਨੂੰ ਜਿੰਦਰਾ ਲੱਗਾ ਹੈ</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>ਸੁਨੇਹੇ ਹਮੇਸ਼ਾ ਪੂਰੇ ਰਾਹ ਐਨਕ੍ਰਿਪਟ ਰਹਿੰਦੇ ਹਨ। ਉਹਨਾਂ ਨੂੰ ਲੈ ਜਾਣ ਵਾਲੇ ਸਰਵਰ ਇੱਕ ਸ਼ਬਦ ਵੀ ਨਹੀਂ ਪੜ੍ਹ ਸਕਦੇ।</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>ਬਰਾਬਰੀ ਵਾਲੇ ਗਰੁੱਪ</translation>
     </message>
@@ -588,12 +580,20 @@
         <translation>ਸਰਵਰ ਸਿਰਫ਼ ਅੱਗੇ ਪਹੁੰਚਾਉਂਦਾ ਹੈ</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>ਦੂਜਾ ਫ਼ੋਨ ਆਨਲਾਈਨ ਹੋਣ ਤੱਕ ਰਿਲੇ ਸੁਨੇਹਾ ਰੱਖਦਾ ਹੈ, ਬੱਸ ਇੰਨਾ ਹੀ। ਤੁਹਾਡੀਆਂ ਗੱਲਾਂ ਤੁਹਾਡੇ ਹੀ ਜੰਤਰ ਉੱਤੇ ਰਹਿੰਦੀਆਂ ਹਨ।</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>ਪ੍ਰੋਫ਼ਾਈਲ ਬਣਾਉਣ ਲਈ ਸਵਾਈਪ ਕਰਦੇ ਰਹੋ।</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>ਹਰ ਸੁਨੇਹਾ ਐਨਕ੍ਰਿਪਟ ਹੁੰਦਾ ਹੈ</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>ਸੁਨੇਹੇ ਹਮੇਸ਼ਾ ਪੂਰੇ ਰਾਹ ਐਨਕ੍ਰਿਪਟ ਰਹਿੰਦੇ ਹਨ। ਉਹਨਾਂ ਨੂੰ ਲੈ ਜਾਣ ਵਾਲੇ ਸਰਵਰ ਇੱਕ ਸ਼ਬਦ ਵੀ ਨਹੀਂ ਪੜ੍ਹ ਸਕਦੇ।</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>ਦੂਜਾ ਫ਼ੋਨ ਆਨਲਾਈਨ ਹੋਣ ਤੱਕ ਸਰਵਰ ਸੁਨੇਹਾ ਰੱਖਦਾ ਹੈ, ਬੱਸ ਇੰਨਾ ਹੀ। ਤੁਹਾਡੀਆਂ ਗੱਲਾਂ ਤੁਹਾਡੇ ਹੀ ਜੰਤਰ ਉੱਤੇ ਰਹਿੰਦੀਆਂ ਹਨ।</translation>
     </message>
 </context>
 <context>
@@ -1282,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Delta Chat ਉੱਤੇ ਆਧਾਰਿਤ ਸੁਰੱਖਿਅਤ, ਵਿਕੇਂਦਰਿਤ ਸੁਨੇਹੇ</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Delta Chat ਕੀ ਹੈ?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>ਮੇਰੀ ਪ੍ਰੋਫ਼ਾਈਲ ਬਣਾਓ</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Delta Chat ਉੱਤੇ ਆਧਾਰਿਤ ਸੁਰੱਖਿਅਤ, ਵਿਕੇਂਦਰਿਤ ਚੈਟ</translation>
     </message>
 </context>
 </TS>

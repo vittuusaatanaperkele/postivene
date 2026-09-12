@@ -568,14 +568,6 @@
         <translation>Não existe nenhuma lista onde te encontrar. Mostre a um amigo um código para escanear ou mande um link, e vocês já podem se escrever.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Cada mensagem vai trancada</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>As mensagens vão sempre criptografadas de ponta a ponta. Os servidores que as carregam não leem uma palavra.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Grupos entre iguais</translation>
     </message>
@@ -588,12 +580,20 @@
         <translation>O servidor só passa adiante</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Um relay guarda a mensagem até o outro celular ficar on-line, e só. Suas conversas ficam no seu aparelho.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Continue deslizando para criar seu perfil.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Cada mensagem vai criptografada</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>As mensagens vão sempre criptografadas de ponta a ponta. Os servidores que as transportam não leem uma palavra.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Um servidor guarda a mensagem até o outro celular ficar on-line, e só. Suas conversas ficam no seu aparelho.</translation>
     </message>
 </context>
 <context>
@@ -1282,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Mensagens seguras e descentralizadas baseadas no Delta Chat</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>O que é o Delta Chat?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Configurar meu perfil</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Conversas seguras e descentralizadas baseadas no Delta Chat</translation>
     </message>
 </context>
 </TS>

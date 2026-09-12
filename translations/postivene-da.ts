@@ -568,14 +568,6 @@
         <translation>Der findes ingen fortegnelse, du kan findes i. Vis en ven en kode at skanne, eller send et link, så kan I skrive sammen.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Hver besked er låst</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Beskeder er altid krypteret hele vejen. De servere, der bærer dem, kan ikke læse et eneste ord.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Grupper mellem ligemænd</translation>
     </message>
@@ -588,12 +580,20 @@
         <translation>Serveren sender den bare videre</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Et relæ holder på beskeden, indtil den anden telefon er online, og mere gør det ikke. Dine samtaler bliver på din enhed.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Bliv ved med at stryge for at oprette din profil.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Hver besked er krypteret</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Beskeder er altid krypteret hele vejen. De servere, der transporterer dem, kan ikke læse et eneste ord.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>En server holder på beskeden, indtil den anden telefon er online, og mere gør den ikke. Dine samtaler bliver på din enhed.</translation>
     </message>
 </context>
 <context>
@@ -1282,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Sikre decentrale beskeder baseret på Delta Chat</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Hvad er Delta Chat?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Opret min profil</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Sikker decentral chat baseret på Delta Chat</translation>
     </message>
 </context>
 </TS>

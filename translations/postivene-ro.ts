@@ -571,14 +571,6 @@
         <translation>Nu există niciun catalog în care să fiți găsit. Arătați-i unui prieten un cod de scanat sau trimiteți-i o legătură, și veți putea să vă scrieți.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Fiecare mesaj este încuiat</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Mesajele sunt criptate pe tot drumul, întotdeauna. Serverele care le duc nu citesc niciun cuvânt.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Grupuri între egali</translation>
     </message>
@@ -591,12 +583,20 @@
         <translation>Serverul doar îl trece mai departe</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Un releu ține mesajul până când celălalt telefon este online, și atât. Conversațiile rămân pe dispozitivul dumneavoastră.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Glisați mai departe pentru a vă configura profilul.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Fiecare mesaj este criptat</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Mesajele sunt criptate pe tot drumul, întotdeauna. Serverele care le transportă nu citesc niciun cuvânt.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Un server ține mesajul până când celălalt telefon este online, și atât. Conversațiile rămân pe dispozitivul dumneavoastră.</translation>
     </message>
 </context>
 <context>
@@ -1287,16 +1287,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Mesagerie sigură și descentralizată, bazată pe Delta Chat</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Ce este Delta Chat?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Configurează-mi profilul</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Discuții sigure și descentralizate, bazate pe Delta Chat</translation>
     </message>
 </context>
 </TS>

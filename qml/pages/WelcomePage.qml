@@ -84,7 +84,10 @@ Page {
         clearY: words.y + words.height / 2
         clearWidth: words.width
         clearHeight: words.height
-        clearRadius: Theme.paddingLarge
+        // Room around the words rather than up against them: the field
+        // is cleared this far out from the column before it begins to
+        // fade back in.
+        clearRadius: Theme.itemSizeExtraSmall
         clearFeather: Theme.itemSizeLarge
     }
 
@@ -124,7 +127,7 @@ Page {
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.Wrap
             textFormat: Text.PlainText
-            text: qsTr("Secure decentralised messaging based on Delta Chat")
+            text: qsTr("Secure decentralised chat based on Delta Chat")
             font.pixelSize: Theme.fontSizeLarge
             color: Theme.primaryColor
         }

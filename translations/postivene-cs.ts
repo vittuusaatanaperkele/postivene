@@ -571,14 +571,6 @@
         <translation>Neexistuje seznam, ve kterém by vás někdo našel. Ukažte kamarádovi kód k naskenování nebo mu pošlete odkaz a můžete si psát.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Každá zpráva je zamčená</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Zprávy jsou vždy šifrované po celou cestu. Servery, které je přenášejí, z nich nepřečtou ani slovo.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Skupiny rovných</translation>
     </message>
@@ -591,12 +583,20 @@
         <translation>Server ji jen předá dál</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Relé podrží zprávu, dokud není druhý telefon online, a nic víc nedělá. Vaše konverzace zůstávají ve vašem zařízení.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Přejeďte dál a nastavte si profil.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Každá zpráva je šifrovaná</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Zprávy jsou vždy šifrované po celou cestu. Servery, které je přenášejí, z nich nepřečtou ani slovo.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Server podrží zprávu, dokud není druhý telefon online, a nic víc nedělá. Vaše konverzace zůstávají ve vašem zařízení.</translation>
     </message>
 </context>
 <context>
@@ -1287,16 +1287,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Bezpečné decentralizované zprávy postavené na Delta Chatu</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Co je Delta Chat?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Nastavit profil</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Bezpečný decentralizovaný chat postavený na Delta Chatu</translation>
     </message>
 </context>
 </TS>

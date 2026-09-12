@@ -568,14 +568,6 @@
         <translation>Er is geen gids waarin je gevonden wordt. Laat een vriend een code zien om te scannen of stuur een link, en dan kunnen jullie schrijven.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Elk bericht zit op slot</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Berichten zijn altijd de hele weg versleuteld. De servers die ze dragen, lezen er geen woord van.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Groepen van gelijken</translation>
     </message>
@@ -588,12 +580,20 @@
         <translation>De server geeft het alleen maar door</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Een relay houdt een bericht vast tot de andere telefoon online is, meer doet het niet. Je gesprekken blijven op je apparaat.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Blijf vegen om je profiel in te stellen.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Elk bericht is versleuteld</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Berichten zijn altijd de hele weg versleuteld. Servers die ze vervoeren, lezen er geen woord van.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Een server houdt een bericht vast tot de andere telefoon online is, meer doet hij niet. Je gesprekken blijven op je apparaat.</translation>
     </message>
 </context>
 <context>
@@ -1282,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Veilig, gedecentraliseerd berichtenverkeer op basis van Delta Chat</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Wat is Delta Chat?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Mijn profiel instellen</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Veilig, gedecentraliseerd chatten op basis van Delta Chat</translation>
     </message>
 </context>
 </TS>

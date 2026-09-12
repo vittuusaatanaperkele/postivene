@@ -17,10 +17,11 @@ import "../components"
  * who has had enough swipes back instead, and the first screen still
  * offers both directions.
  *
- * The field of faces carries on behind, as on the first screen, with the
- * room for the words cut out of it (components/FaceField.qml); the
- * pictures are the same two-channel masks in the ambience's own colours
- * (components/InkArt.qml, tools/faces/scenes.py).
+ * The field of faces belongs to the first screen and stays there: here
+ * the picture over each fact is the thing to look at, and a field of
+ * faces behind it is one pattern too many. The pictures are the same
+ * two-channel masks in the ambience's own colours, drawn by
+ * components/InkArt.qml and painted by tools/faces/scenes.py.
  */
 Page {
     id: page
@@ -49,8 +50,8 @@ Page {
         },
         {
             picture: "../art/intro-lock.png",
-            title: qsTr("Every message is locked"),
-            body: qsTr("Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.")
+            title: qsTr("Every message is encrypted"),
+            body: qsTr("Messages are encrypted the whole way, always. Servers that transport them cannot read a word.")
         },
         {
             picture: "../art/intro-group.png",
@@ -60,7 +61,7 @@ Page {
         {
             picture: "../art/intro-relay.png",
             title: qsTr("The server only passes it on"),
-            body: qsTr("A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.")
+            body: qsTr("A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.")
         }
     ]
 
@@ -91,24 +92,6 @@ Page {
         }
     }
 
-    // The field, under everything, with the middle of the page cleared
-    // for the fact on it. A fixed box rather than one that follows the
-    // words: the words are a different height on every fact and in every
-    // language, and a hole that changed size at each swipe would be the
-    // thing the eye followed.
-    FaceField {
-        objectName: "faceField"
-        anchors.fill: parent
-        source: page.width > page.height ? "../art/faces-landscape.png"
-                                         : "../art/faces-portrait.png"
-        clearX: page.width / 2
-        clearY: page.height / 2
-        clearWidth: page.width - 2 * Theme.horizontalPageMargin
-        clearHeight: page.height * 0.66
-        clearRadius: Theme.paddingLarge
-        clearFeather: Theme.itemSizeLarge
-    }
-
     ListView {
         id: slides
         objectName: "slides"
@@ -121,7 +104,21 @@ Page {
         // for the next page.
         boundsBehavior: Flickable.DragOverBounds
         model: page.facts
-        onContentXChanged: page.advanceIfPastEnd()
+
+        // Only a drag asks for the next page. Turning the phone changes
+        // the view's width, and the content it has already scrolled is
+        // measured against the old one for an instant: on a device that
+        // read as a pull past the last fact and carried the reader off
+        // the page with no finger on it.
+        onContentXChanged: {
+            if (slides.dragging) {
+                page.advanceIfPastEnd()
+            }
+        }
+        // And what the turn leaves behind is half of two facts, so the
+        // one being read is put back squarely on screen.
+        onWidthChanged: slides.positionViewAtIndex(slides.currentIndex,
+                                                   ListView.Beginning)
 
         delegate: Item {
             width: slides.width

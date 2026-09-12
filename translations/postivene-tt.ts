@@ -565,14 +565,6 @@
         <translation>Сезне табарлык бернинди исемлек тә юк. Дустыгызга сканерлау өчен код күрсәтегез яки сылтама җибәрегез, аннары икегез дә яза аласыз.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Һәр хәбәр бикле</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Хәбәрләр һәрвакыт бөтен юл буена шифрлана. Аларны ташучы серверлар бер сүз дә укый алмый.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Тигезләр төркеме</translation>
     </message>
@@ -585,12 +577,20 @@
         <translation>Сервер аны алга тапшыра гына</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Икенче телефон челтәргә чыкканчы реле хәбәрне саклый, шул гына. Сөйләшүләрегез үз җиһазыгызда кала.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Профиль ясау өчен свайп итүне дәвам итегез.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Һәр хәбәр шифрлана</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Хәбәрләр һәрвакыт бөтен юл буена шифрлана. Аларны ташучы серверлар бер сүз дә укый алмый.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Икенче телефон челтәргә чыкканчы сервер хәбәрне саклый, шул гына. Сөйләшүләрегез үз җиһазыгызда кала.</translation>
     </message>
 </context>
 <context>
@@ -1277,16 +1277,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Delta Chat нигезендәге куркынычсыз, үзәксезләндерелгән хәбәрләшү</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Delta Chat нәрсә ул?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Профилемне көйләргә</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Delta Chat нигезендәге куркынычсыз, үзәксезләндерелгән чат</translation>
     </message>
 </context>
 </TS>

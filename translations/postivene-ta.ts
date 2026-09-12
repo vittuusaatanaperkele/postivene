@@ -568,14 +568,6 @@
         <translation>உங்களைத் தேடிக் கண்டுபிடிக்க எந்தப் பட்டியலும் இல்லை. நண்பருக்கு ஸ்கேன் செய்யக் குறியீட்டைக் காட்டுங்கள் அல்லது இணைப்பை அனுப்புங்கள், பிறகு இருவரும் எழுதலாம்.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>ஒவ்வொரு செய்தியும் பூட்டப்பட்டுள்ளது</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>செய்திகள் எப்போதும் முழு வழியிலும் மறையாக்கம் செய்யப்பட்டிருக்கும். அவற்றைச் சுமக்கும் சேவையகங்களால் ஒரு சொல்லும் படிக்க முடியாது.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>சமமானவர்களின் குழுக்கள்</translation>
     </message>
@@ -588,12 +580,20 @@
         <translation>சேவையகம் அதை அனுப்பி வைப்பது மட்டுமே</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>மற்ற தொலைபேசி இணையத்தில் வரும் வரை ரிலே செய்தியை வைத்திருக்கும், அவ்வளவுதான். உங்கள் உரையாடல்கள் உங்கள் சாதனத்திலேயே இருக்கும்.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>சுயவிவரத்தை அமைக்கத் தொடர்ந்து விரலை இழுக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>ஒவ்வொரு செய்தியும் மறையாக்கம் செய்யப்படுகிறது</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>செய்திகள் எப்போதும் முழு வழியிலும் மறையாக்கம் செய்யப்பட்டிருக்கும். அவற்றைக் கொண்டு செல்லும் சேவையகங்களால் ஒரு சொல்லும் படிக்க முடியாது.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>மற்ற தொலைபேசி இணையத்தில் வரும் வரை சேவையகம் செய்தியை வைத்திருக்கும், அவ்வளவுதான். உங்கள் உரையாடல்கள் உங்கள் சாதனத்திலேயே இருக்கும்.</translation>
     </message>
 </context>
 <context>
@@ -1282,16 +1282,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Delta Chat அடிப்படையிலான பாதுகாப்பான, பரவலாக்கப்பட்ட செய்தியிடல்</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Delta Chat என்றால் என்ன?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>என் சுயவிவரத்தை அமை</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Delta Chat அடிப்படையிலான பாதுகாப்பான, பரவலாக்கப்பட்ட அரட்டை</translation>
     </message>
 </context>
 </TS>

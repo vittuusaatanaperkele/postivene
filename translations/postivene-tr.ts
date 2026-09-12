@@ -565,14 +565,6 @@
         <translation>Sizi bulabilecekleri bir rehber yok. Bir arkadaşınıza taranacak bir kod gösterin ya da bir bağlantı gönderin, sonra yazışabilirsiniz.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Her ileti kilitlidir</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>İletiler her zaman baştan sona şifrelenir. Onları taşıyan sunucular tek kelime okuyamaz.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Eşitlerin grupları</translation>
     </message>
@@ -585,12 +577,20 @@
         <translation>Sunucu yalnızca iletir</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Aktarıcı, diğer telefon çevrimiçi olana kadar iletiyi tutar, yaptığı tek şey budur. Sohbetleriniz cihazınızda kalır.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Profilinizi kurmak için kaydırmaya devam edin.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Her ileti şifrelenir</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>İletiler her zaman baştan sona şifrelenir. Onları taşıyan sunucular tek kelime okuyamaz.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Sunucu, diğer telefon çevrimiçi olana kadar iletiyi tutar, yaptığı tek şey budur. Sohbetleriniz cihazınızda kalır.</translation>
     </message>
 </context>
 <context>
@@ -1277,16 +1277,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Delta Chat üzerine kurulu güvenli, merkeziyetsiz mesajlaşma</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Delta Chat nedir?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Profilimi kur</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Delta Chat üzerine kurulu güvenli, merkeziyetsiz sohbet</translation>
     </message>
 </context>
 </TS>

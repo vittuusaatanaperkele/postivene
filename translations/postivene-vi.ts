@@ -565,14 +565,6 @@
         <translation>Không có danh bạ nào để người khác tìm ra bạn. Hãy cho bạn bè quét một mã hoặc gửi cho họ một liên kết, rồi hai người có thể nhắn cho nhau.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Mọi tin nhắn đều được khoá</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Tin nhắn luôn được mã hoá suốt chặng đường. Các máy chủ mang chúng đi không đọc được một chữ nào.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Nhóm của những người ngang hàng</translation>
     </message>
@@ -585,12 +577,20 @@
         <translation>Máy chủ chỉ chuyển tiếp</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Máy chủ chuyển tiếp giữ tin nhắn cho đến khi điện thoại kia trực tuyến, chỉ vậy thôi. Các cuộc trò chuyện của bạn ở lại trên máy bạn.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Cứ vuốt tiếp để tạo hồ sơ của bạn.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Mọi tin nhắn đều được mã hoá</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Tin nhắn luôn được mã hoá suốt chặng đường. Các máy chủ vận chuyển chúng không đọc được một chữ nào.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Máy chủ giữ tin nhắn cho đến khi điện thoại kia trực tuyến, chỉ vậy thôi. Các cuộc trò chuyện của bạn ở lại trên máy bạn.</translation>
     </message>
 </context>
 <context>
@@ -1277,16 +1277,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Nhắn tin an toàn, phi tập trung dựa trên Delta Chat</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Delta Chat là gì?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Thiết lập hồ sơ của tôi</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Trò chuyện an toàn, phi tập trung dựa trên Delta Chat</translation>
     </message>
 </context>
 </TS>

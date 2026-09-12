@@ -571,14 +571,6 @@
         <translation>Нет никакого каталога, в котором вас найдут. Покажите другу код для сканирования или отправьте ему ссылку, и вы сможете переписываться.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Каждое сообщение под замком</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Сообщения всегда зашифрованы на всём пути. Серверы, которые их переносят, не прочтут ни слова.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Группы равных</translation>
     </message>
@@ -591,12 +583,20 @@
         <translation>Сервер только передаёт его дальше</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Сервер хранит сообщение, пока другой телефон не выйдет в сеть, и больше ничего не делает. Ваши переписки остаются на вашем устройстве.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Листайте дальше, чтобы создать профиль.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Каждое сообщение зашифровано</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Сообщения всегда зашифрованы на всём пути. Серверы, которые их передают, не прочтут ни слова.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Сервер хранит сообщение, пока другой телефон не выйдет в сеть, и больше ничего не делает. Ваши переписки остаются на вашем устройстве.</translation>
     </message>
 </context>
 <context>
@@ -1287,16 +1287,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Безопасные децентрализованные сообщения на основе Delta Chat</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Что такое Delta Chat?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Настроить мой профиль</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Безопасный децентрализованный чат на основе Delta Chat</translation>
     </message>
 </context>
 </TS>

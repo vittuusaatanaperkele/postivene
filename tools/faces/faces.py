@@ -540,7 +540,10 @@ def paint(master):
     grid = list(cells(width, height, master["columns"]))
     rng = Dice(master["seed"])
     lit = choose_lit(grid, master, rng)
-    gap = max(2, round(grid[0][2] * 0.025))
+    # The gap the cover leaves: it draws each avatar `Theme.paddingSmall`
+    # narrower than its cell, which on Silica's own baseline (a cell of
+    # 80, a padding of 6) is three quarters of a tenth of one.
+    gap = max(2, round(grid[0][2] * 0.075))
     for index, (x, y, size, _) in enumerate(grid):
         tile = draw_avatar(size - gap, master["seed"] * 1000 + index)
         stamp(green if (x, y) in lit else red, width, height, tile, x, y)

@@ -571,14 +571,6 @@
         <translation>Nėra jokio sąrašo, kuriame jus rastų. Parodykite draugui nuskaitomą kodą arba nusiųskite nuorodą, ir galėsite susirašinėti.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Kiekviena žinutė užrakinta</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Žinutės visada šifruojamos visą kelią. Serveriai, kurie jas neša, neperskaito nė žodžio.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Lygiųjų grupės</translation>
     </message>
@@ -591,12 +583,20 @@
         <translation>Serveris ją tik perduoda toliau</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Retransliatorius laiko žinutę, kol kitas telefonas prisijungs, ir daugiau nieko nedaro. Jūsų pokalbiai lieka jūsų įrenginyje.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Braukite toliau, kad susikurtumėte profilį.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Kiekviena žinutė užšifruota</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Žinutės visada šifruojamos visą kelią. Serveriai, kurie jas gabena, neperskaito nė žodžio.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Serveris laiko žinutę, kol kitas telefonas prisijungs, ir daugiau nieko nedaro. Jūsų pokalbiai lieka jūsų įrenginyje.</translation>
     </message>
 </context>
 <context>
@@ -1287,16 +1287,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Saugios decentralizuotos žinutės, paremtos Delta Chat</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Kas yra Delta Chat?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Nustatyti mano profilį</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Saugūs decentralizuoti pokalbiai, paremti Delta Chat</translation>
     </message>
 </context>
 </TS>

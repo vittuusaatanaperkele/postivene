@@ -571,14 +571,6 @@
         <translation>Nav nekāda saraksta, kurā jūs atrast. Parādiet draugam skenējamu kodu vai nosūtiet saiti, un jūs abi varēsiet rakstīties.</translation>
     </message>
     <message>
-        <source>Every message is locked</source>
-        <translation>Katra ziņa ir aizslēgta</translation>
-    </message>
-    <message>
-        <source>Messages are encrypted the whole way, always. The servers that carry them cannot read a word of what you write.</source>
-        <translation>Ziņas vienmēr ir šifrētas visā ceļā. Serveri, kas tās pārnēsā, nenolasa ne vārda.</translation>
-    </message>
-    <message>
         <source>Groups of equals</source>
         <translation>Vienlīdzīgo grupas</translation>
     </message>
@@ -591,12 +583,20 @@
         <translation>Serveris to tikai nodod tālāk</translation>
     </message>
     <message>
-        <source>A relay holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
-        <translation>Relejs patur ziņu, līdz otrs tālrunis ir tiešsaistē, un neko vairāk nedara. Jūsu sarunas paliek jūsu ierīcē.</translation>
-    </message>
-    <message>
         <source>Keep swiping to set up your profile.</source>
         <translation>Velciet tālāk, lai izveidotu profilu.</translation>
+    </message>
+    <message>
+        <source>Every message is encrypted</source>
+        <translation>Katra ziņa ir šifrēta</translation>
+    </message>
+    <message>
+        <source>Messages are encrypted the whole way, always. Servers that transport them cannot read a word.</source>
+        <translation>Ziņas vienmēr ir šifrētas visā ceļā. Serveri, kas tās pārvadā, nenolasa ne vārda.</translation>
+    </message>
+    <message>
+        <source>A server holds a message until the other phone is online, and that is all it does. Your chats stay on your device.</source>
+        <translation>Serveris patur ziņu, līdz otrs tālrunis ir tiešsaistē, un neko vairāk nedara. Jūsu sarunas paliek jūsu ierīcē.</translation>
     </message>
 </context>
 <context>
@@ -1287,16 +1287,16 @@
 <context>
     <name>WelcomePage</name>
     <message>
-        <source>Secure decentralised messaging based on Delta Chat</source>
-        <translation>Droša decentralizēta ziņapmaiņa, kuras pamatā ir Delta Chat</translation>
-    </message>
-    <message>
         <source>Tell me about Delta Chat</source>
         <translation>Kas ir Delta Chat?</translation>
     </message>
     <message>
         <source>Set up my profile</source>
         <translation>Iestatīt manu profilu</translation>
+    </message>
+    <message>
+        <source>Secure decentralised chat based on Delta Chat</source>
+        <translation>Droša decentralizēta tērzēšana, kuras pamatā ir Delta Chat</translation>
     </message>
 </context>
 </TS>

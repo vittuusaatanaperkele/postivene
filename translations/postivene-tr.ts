@@ -478,6 +478,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Profiliniz şu anda nerede?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>İkinci cihaz olarak ekle</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Profili olan cihaz onu tutmaya devam eder. Bu cihaz aynı ağ üzerinden katılır.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Yedekten geri yükle</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Diğer cihazın yazdığı, bu telefona kopyalanmış bir yedek dosyası.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -923,10 +946,6 @@
         <source>Create a profile</source>
         <translation>Profil oluştur</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>Başka bir cihazdan profil getirmek henüz hazır değil. Üzerinde çalışılıyor.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -954,6 +973,10 @@
     <message>
         <source>No profiles</source>
         <translation>Profil yok</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>İkinci cihaz olarak ekle</translation>
     </message>
 </context>
 <context>
@@ -1001,6 +1024,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Mesaj düzenleniyor</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Diğer cihazda, bu uygulamanın profil alabileceğinden daha yeni bir Delta Chat var.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Aktarım bitmeden durdu. İki cihaz da aynı ağda kalmalı ve bu sayfa açık durmalı.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Bu, bir cihazın profilini sunarken gösterdiği kod değil.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>İkinci cihaz olarak ekle</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Yedekten geri yükle</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>Profilinizin bulunduğu cihazda ayarları açın ve ikinci cihaz eklemeyi seçin. Bu telefonu gösterilen koda tutun. İkisi de aynı ağda olmalı.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Profilinizin bulunduğu cihazda bir yedek alın ve dosyayı bu telefona kopyalayın. Sonra buradan seçin.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Bir yedek dosyası seç</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Profil alınıyor...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>İptal</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Bu cihazda kamera yok. Yedek dosyasıyla kamerasız da olur.</translation>
     </message>
 </context>
 <context>

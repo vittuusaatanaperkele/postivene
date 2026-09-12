@@ -480,6 +480,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Unde este profilul dumneavoastră acum?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Adaugă ca al doilea dispozitiv</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Dispozitivul care îl are îl păstrează. Acesta se alătură, prin aceeași rețea.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Restaurează dintr-o copie de siguranță</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Un fișier de copie scris de celălalt dispozitiv, copiat pe acest telefon.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -933,10 +956,6 @@
         <source>Create a profile</source>
         <translation>Creează un profil</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>Aducerea unui profil de pe alt dispozitiv nu este încă gata. Se lucrează la ea.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -964,6 +983,10 @@
     <message>
         <source>No profiles</source>
         <translation>Niciun profil</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Adaugă ca al doilea dispozitiv</translation>
     </message>
 </context>
 <context>
@@ -1011,6 +1034,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Se editează mesajul</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Celălalt dispozitiv are un Delta Chat mai nou decât cel de la care aplicația poate prelua un profil.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Transferul s-a oprit înainte de final. Ambele dispozitive trebuie să rămână în aceeași rețea, cu această pagină deschisă.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Acesta nu este codul pe care un dispozitiv îl arată cât timp își oferă profilul.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Adaugă ca al doilea dispozitiv</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Restaurează dintr-o copie de siguranță</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>Pe dispozitivul care are profilul, deschideți setările și alegeți adăugarea unui al doilea dispozitiv. Îndreptați acest telefon spre codul afișat. Ambele trebuie să fie în aceeași rețea.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Pe dispozitivul care are profilul, faceți o copie de siguranță și copiați fișierul pe acest telefon. Apoi alegeți-l aici.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Alege un fișier de copie</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Se preia profilul...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Anulează</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Pe acest dispozitiv nu există cameră. Cu un fișier de copie se poate și fără.</translation>
     </message>
 </context>
 <context>

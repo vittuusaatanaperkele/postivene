@@ -428,9 +428,17 @@ removed from the store even after approval. Not an option.
    than rubber banding back. Then turn the phone on that last fact and
    check it stays put: the view moves when the screen does, and that
    used to carry the reader off the page with no finger on it. "Set up
-   my profile" is that same setup screen; "I already have a profile"
-   has nothing behind it yet and must say so rather than doing
-   nothing.
+   my profile" is that same setup screen. "I already have a profile"
+   asks where it is, and both answers want two devices to check
+   properly: with another Delta Chat holding a profile, open its
+   settings, offer it as a second device and read the code here -- the
+   bar should move and the app should land in that profile's chat list,
+   fetching -- and with a backup file copied onto the phone, the file
+   browser should list it (it filters to .tar) and import it the same
+   way. Worth trying on a phone without a camera too, or with the
+   camera denied: the page has to fall back to saying so rather than
+   showing a dead viewfinder, and the backup half has to work
+   regardless.
    Adding a profile is the other half of that screen, and a relay that
    does not answer is the case worth trying, since a public relay is
    somebody's spare-time server. Type a custom server that does not

@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Var finns din profil nu?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Lägg till som andra enhet</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Enheten som har den behåller den. Den här ansluter, över samma nätverk.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Återställ från en säkerhetskopia</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>En säkerhetskopia som den andra enheten skrev, kopierad till den här telefonen.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -928,10 +951,6 @@
         <source>Create a profile</source>
         <translation>Skapa en profil</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>Att flytta en profil från en annan enhet är inte klart ännu. Det arbetas på det.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -959,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>Inga profiler</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Lägg till som andra enhet</translation>
     </message>
 </context>
 <context>
@@ -1006,6 +1029,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Redigerar meddelande</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Den andra enheten kör en nyare Delta Chat än vad den här appen kan ta över en profil från.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Överföringen stannade innan den blev klar. Båda enheterna måste vara kvar på samma nätverk, med den här sidan öppen.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Det är inte koden en enhet visar medan den erbjuder sin profil.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Lägg till som andra enhet</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Återställ från en säkerhetskopia</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>På enheten som har din profil: öppna inställningarna och välj att lägga till en andra enhet. Håll den här telefonen mot koden som visas. Båda måste vara på samma nätverk.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>På enheten som har din profil: gör en säkerhetskopia och kopiera filen till den här telefonen. Välj den sedan här.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Välj en säkerhetskopia</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Tar över profilen...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Avbryt</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Det finns ingen kamera på den här enheten. Med en säkerhetskopia går det utan.</translation>
     </message>
 </context>
 <context>

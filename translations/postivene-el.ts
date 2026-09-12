@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Πού βρίσκεται τώρα το προφίλ σας;</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Προσθήκη ως δεύτερη συσκευή</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Η συσκευή που το έχει το κρατά. Αυτή προστίθεται, μέσω του ίδιου δικτύου.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Επαναφορά από αντίγραφο ασφαλείας</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Ένα αρχείο αντιγράφου που έγραψε η άλλη συσκευή, αντιγραμμένο σε αυτό το τηλέφωνο.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -928,10 +951,6 @@
         <source>Create a profile</source>
         <translation>Δημιουργία προφίλ</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>Η μεταφορά προφίλ από άλλη συσκευή δεν είναι έτοιμη ακόμη. Ετοιμάζεται.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -959,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>Δεν υπάρχουν προφίλ</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Προσθήκη ως δεύτερη συσκευή</translation>
     </message>
 </context>
 <context>
@@ -1006,6 +1029,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Επεξεργασία μηνύματος</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Η άλλη συσκευή έχει νεότερο Delta Chat από αυτό που μπορεί να διαβάσει αυτή η εφαρμογή.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Η μεταφορά σταμάτησε πριν ολοκληρωθεί. Και οι δύο συσκευές πρέπει να μείνουν στο ίδιο δίκτυο, με αυτή τη σελίδα ανοιχτή.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Αυτός δεν είναι ο κωδικός που δείχνει μια συσκευή όσο προσφέρει το προφίλ της.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Προσθήκη ως δεύτερη συσκευή</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Επαναφορά από αντίγραφο ασφαλείας</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>Στη συσκευή που έχει το προφίλ σας, ανοίξτε τις ρυθμίσεις και επιλέξτε την προσθήκη δεύτερης συσκευής. Στρέψτε αυτό το τηλέφωνο στον κωδικό που εμφανίζει. Και οι δύο συσκευές πρέπει να είναι στο ίδιο δίκτυο.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Στη συσκευή που έχει το προφίλ σας, φτιάξτε ένα αντίγραφο ασφαλείας και αντιγράψτε το αρχείο σε αυτό το τηλέφωνο. Μετά επιλέξτε το εδώ.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Επιλογή αρχείου αντιγράφου</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Το προφίλ μεταφέρεται...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Ακύρωση</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Δεν υπάρχει κάμερα σε αυτή τη συσκευή. Με ένα αρχείο αντιγράφου γίνεται και χωρίς.</translation>
     </message>
 </context>
 <context>

@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಈಗ ಎಲ್ಲಿದೆ?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>ಎರಡನೇ ಸಾಧನವಾಗಿ ಸೇರಿಸಿ</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>ಅದು ಇರುವ ಸಾಧನ ಅದನ್ನೇ ಇಟ್ಟುಕೊಳ್ಳುತ್ತದೆ. ಇದು ಅದೇ ಜಾಲದ ಮೂಲಕ ಸೇರಿಕೊಳ್ಳುತ್ತದೆ.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>ಬ್ಯಾಕಪ್‌ನಿಂದ ಮರಳಿ ಪಡೆಯಿರಿ</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>ಇನ್ನೊಂದು ಸಾಧನ ಬರೆದ ಬ್ಯಾಕಪ್ ಫೈಲ್, ಈ ಫೋನಿಗೆ ನಕಲಿಸಿದ್ದು.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -928,10 +951,6 @@
         <source>Create a profile</source>
         <translation>ಪ್ರೊಫೈಲ್ ರಚಿಸಿ</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>ಬೇರೆ ಸಾಧನದಿಂದ ಪ್ರೊಫೈಲ್ ತರುವುದು ಇನ್ನೂ ಸಿದ್ಧವಿಲ್ಲ. ಅದರ ಕೆಲಸ ನಡೆಯುತ್ತಿದೆ.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -959,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>ಪ್ರೊಫೈಲ್‌ಗಳಿಲ್ಲ</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>ಎರಡನೇ ಸಾಧನವಾಗಿ ಸೇರಿಸಿ</translation>
     </message>
 </context>
 <context>
@@ -1006,6 +1029,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>ಸಂದೇಶವನ್ನು ಸಂಪಾದಿಸಲಾಗುತ್ತಿದೆ</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>ಇನ್ನೊಂದು ಸಾಧನದಲ್ಲಿ ಈ ಅಪ್ಲಿಕೇಶನ್ ಪ್ರೊಫೈಲ್ ಪಡೆಯಬಲ್ಲದಕ್ಕಿಂತ ಹೊಸ Delta Chat ಇದೆ.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>ವರ್ಗಾವಣೆ ಮುಗಿಯುವ ಮೊದಲೇ ನಿಂತಿತು. ಎರಡೂ ಸಾಧನಗಳು ಒಂದೇ ಜಾಲದಲ್ಲಿ ಉಳಿಯಬೇಕು, ಈ ಪುಟ ತೆರೆದಿರಬೇಕು.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>ಸಾಧನವೊಂದು ತನ್ನ ಪ್ರೊಫೈಲ್ ನೀಡುವಾಗ ತೋರಿಸುವ ಕೋಡ್ ಇದಲ್ಲ.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>ಎರಡನೇ ಸಾಧನವಾಗಿ ಸೇರಿಸಿ</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>ಬ್ಯಾಕಪ್‌ನಿಂದ ಮರಳಿ ಪಡೆಯಿರಿ</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಇರುವ ಸಾಧನದಲ್ಲಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆದು ಎರಡನೇ ಸಾಧನ ಸೇರಿಸುವುದನ್ನು ಆರಿಸಿ. ಅದು ತೋರಿಸುವ ಕೋಡ್‌ಗೆ ಈ ಫೋನನ್ನು ಹಿಡಿಯಿರಿ. ಎರಡೂ ಒಂದೇ ಜಾಲದಲ್ಲಿರಬೇಕು.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಇರುವ ಸಾಧನದಲ್ಲಿ ಬ್ಯಾಕಪ್ ಮಾಡಿ ಫೈಲನ್ನು ಈ ಫೋನಿಗೆ ನಕಲಿಸಿ. ಆಮೇಲೆ ಅದನ್ನು ಇಲ್ಲಿ ಆರಿಸಿ.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>ಬ್ಯಾಕಪ್ ಫೈಲ್ ಆರಿಸಿ</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>ಪ್ರೊಫೈಲ್ ಪಡೆಯಲಾಗುತ್ತಿದೆ...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>ರದ್ದುಮಾಡಿ</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>ಈ ಸಾಧನದಲ್ಲಿ ಕ್ಯಾಮೆರಾ ಇಲ್ಲ. ಬ್ಯಾಕಪ್ ಫೈಲ್‌ನಿಂದ ಕ್ಯಾಮೆರಾ ಇಲ್ಲದೆಯೂ ಆಗುತ್ತದೆ.</translation>
     </message>
 </context>
 <context>

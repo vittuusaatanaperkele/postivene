@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>మీ ప్రొఫైల్ ఇప్పుడు ఎక్కడ ఉంది?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>రెండో పరికరంగా చేర్చు</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>అది ఉన్న పరికరం దాన్ని ఉంచుకుంటుంది. ఇది అదే నెట్‌వర్క్ ద్వారా చేరుతుంది.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>బ్యాకప్ నుండి పునరుద్ధరించు</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>మరో పరికరం రాసిన బ్యాకప్ ఫైల్, ఈ ఫోన్‌కు కాపీ చేసినది.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -928,10 +951,6 @@
         <source>Create a profile</source>
         <translation>ప్రొఫైల్ సృష్టించు</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>మరో పరికరం నుండి ప్రొఫైల్ తీసుకురావడం ఇంకా సిద్ధం కాలేదు. దానిపై పని జరుగుతోంది.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -959,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>ప్రొఫైల్‌లు లేవు</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>రెండో పరికరంగా చేర్చు</translation>
     </message>
 </context>
 <context>
@@ -1006,6 +1029,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>సందేశాన్ని సవరిస్తున్నారు</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>ఈ యాప్ ప్రొఫైల్ తీసుకోగలిగిన దానికంటే కొత్త Delta Chat మరో పరికరంలో ఉంది.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>బదిలీ పూర్తయ్యేలోపే ఆగిపోయింది. రెండు పరికరాలూ ఒకే నెట్‌వర్క్‌లో ఉండాలి, ఈ పేజీ తెరిచి ఉంచాలి.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>ఒక పరికరం తన ప్రొఫైల్ ఇస్తున్నప్పుడు చూపే కోడ్ ఇది కాదు.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>రెండో పరికరంగా చేర్చు</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>బ్యాకప్ నుండి పునరుద్ధరించు</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>మీ ప్రొఫైల్ ఉన్న పరికరంలో సెట్టింగ్‌లు తెరిచి రెండో పరికరాన్ని చేర్చడాన్ని ఎంచుకోండి. అది చూపే కోడ్‌కు ఈ ఫోన్‌ను చూపండి. రెండూ ఒకే నెట్‌వర్క్‌లో ఉండాలి.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>మీ ప్రొఫైల్ ఉన్న పరికరంలో బ్యాకప్ చేసి ఫైల్‌ను ఈ ఫోన్‌కు కాపీ చేయండి. తర్వాత దాన్ని ఇక్కడ ఎంచుకోండి.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>బ్యాకప్ ఫైల్ ఎంచుకో</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>ప్రొఫైల్ తీసుకోబడుతోంది...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>రద్దు చేయి</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>ఈ పరికరంలో కెమెరా లేదు. బ్యాకప్ ఫైల్‌తో కెమెరా లేకుండానే అవుతుంది.</translation>
     </message>
 </context>
 <context>

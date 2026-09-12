@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>உங்கள் சுயவிவரம் இப்போது எங்கே உள்ளது?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>இரண்டாவது சாதனமாகச் சேர்</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>அது உள்ள சாதனம் அதை வைத்திருக்கும். இது அதே வலையமைப்பின் வழியாகச் சேர்ந்துகொள்ளும்.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>காப்புப் பிரதியிலிருந்து மீட்டெடு</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>மற்ற சாதனம் உருவாக்கிய காப்புக் கோப்பு, இந்தத் தொலைபேசிக்கு நகலெடுக்கப்பட்டது.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -928,10 +951,6 @@
         <source>Create a profile</source>
         <translation>சுயவிவரத்தை உருவாக்கு</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>மற்றொரு சாதனத்திலிருந்து சுயவிவரத்தைக் கொண்டு வருவது இன்னும் தயாராகவில்லை. அதன் பணி நடக்கிறது.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -959,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>சுயவிவரங்கள் இல்லை</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>இரண்டாவது சாதனமாகச் சேர்</translation>
     </message>
 </context>
 <context>
@@ -1006,6 +1029,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>செய்தி திருத்தப்படுகிறது</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>இந்தச் செயலி சுயவிவரத்தைப் பெறக்கூடியதை விட மற்ற சாதனத்தில் புதிய Delta Chat உள்ளது.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>இடமாற்றம் முடிவதற்கு முன்பே நின்றுவிட்டது. இரு சாதனங்களும் ஒரே வலையமைப்பில் இருக்க வேண்டும், இந்தப் பக்கம் திறந்திருக்க வேண்டும்.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>ஒரு சாதனம் தன் சுயவிவரத்தை வழங்கும்போது காட்டும் குறியீடு இதுவல்ல.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>இரண்டாவது சாதனமாகச் சேர்</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>காப்புப் பிரதியிலிருந்து மீட்டெடு</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>உங்கள் சுயவிவரம் உள்ள சாதனத்தில் அமைப்புகளைத் திறந்து இரண்டாவது சாதனத்தைச் சேர்ப்பதைத் தேர்ந்தெடுக்கவும். அது காட்டும் குறியீட்டை நோக்கி இந்தத் தொலைபேசியைப் பிடிக்கவும். இரண்டும் ஒரே வலையமைப்பில் இருக்க வேண்டும்.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>உங்கள் சுயவிவரம் உள்ள சாதனத்தில் ஒரு காப்புப் பிரதி எடுத்து, கோப்பை இந்தத் தொலைபேசிக்கு நகலெடுக்கவும். பிறகு அதை இங்கே தேர்ந்தெடுக்கவும்.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>காப்புக் கோப்பைத் தேர்ந்தெடு</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>சுயவிவரம் பெறப்படுகிறது...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>ரத்துசெய்</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>இந்தச் சாதனத்தில் கேமரா இல்லை. காப்புக் கோப்பு இருந்தால் கேமரா தேவையில்லை.</translation>
     </message>
 </context>
 <context>

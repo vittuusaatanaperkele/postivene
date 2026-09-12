@@ -480,6 +480,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Kde je váš profil teraz?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Pridať ako druhé zariadenie</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Zariadenie, ktoré ho má, si ho nechá. Toto sa pridá cez tú istú sieť.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Obnoviť zo zálohy</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Súbor so zálohou, ktorý zapísalo druhé zariadenie, skopírovaný do tohto telefónu.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -933,10 +956,6 @@
         <source>Create a profile</source>
         <translation>Vytvoriť profil</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>Prenos profilu z iného zariadenia ešte nie je hotový. Pracuje sa na ňom.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -964,6 +983,10 @@
     <message>
         <source>No profiles</source>
         <translation>Žiadne profily</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Pridať ako druhé zariadenie</translation>
     </message>
 </context>
 <context>
@@ -1011,6 +1034,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Úprava správy</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Na druhom zariadení beží novší Delta Chat, než z akého vie táto aplikácia prevziať profil.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Prenos sa zastavil pred dokončením. Obe zariadenia musia zostať v tej istej sieti a táto stránka otvorená.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Toto nie je kód, ktorý zariadenie ukazuje, kým ponúka svoj profil.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Pridať ako druhé zariadenie</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Obnoviť zo zálohy</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>Na zariadení s vaším profilom otvorte nastavenia a zvoľte pridanie druhého zariadenia. Namierte tento telefón na zobrazený kód. Obe musia byť v tej istej sieti.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Na zariadení s vaším profilom vytvorte zálohu a skopírujte súbor do tohto telefónu. Potom ho tu vyberte.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Vybrať súbor so zálohou</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Preberám profil...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Zrušiť</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Na tomto zariadení nie je fotoaparát. So súborom zálohy to ide aj bez neho.</translation>
     </message>
 </context>
 <context>

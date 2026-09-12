@@ -7,19 +7,15 @@ import Sailfish.Silica 1.0
  * field of faces stays on the first screen, where it is the welcome; a
  * page asking a question wants nothing behind the question.
  *
- * Two ways from here. Creating a profile is the one that works today and
- * goes straight to the relay dialog. Bringing one over from another
- * device is the one a reader with a phone in each hand wants, and it is
- * not built yet; it says so rather than pretending, because a button
- * that does nothing is worse than a button that explains itself.
+ * Two ways from here, and both are built. Creating a profile goes
+ * straight to the relay dialog. Having one already asks where it is --
+ * on a device still in reach, or in a backup file -- and takes it over
+ * from there (ExistingProfilePage.qml).
  */
 Page {
     id: page
 
     allowedOrientations: Orientation.All
-
-    // Set by the button that has nothing behind it yet.
-    property bool askedForExisting: false
 
     Column {
         id: words
@@ -50,7 +46,7 @@ Page {
             objectName: "existingProfileButton"
             anchors.horizontalCenter: parent.horizontalCenter
             text: qsTr("I already have a profile")
-            onClicked: page.askedForExisting = true
+            onClicked: pageStack.push(Qt.resolvedUrl("ExistingProfilePage.qml"), {})
         }
 
         Button {
@@ -59,19 +55,6 @@ Page {
             text: qsTr("Create a profile")
             enabled: core.status === "ready"
             onClicked: pageStack.push(Qt.resolvedUrl("AddProfileDialog.qml"), {})
-        }
-
-        // What the first of those buttons has to say for itself.
-        Label {
-            objectName: "notYetHint"
-            width: parent.width
-            visible: page.askedForExisting
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: Text.Wrap
-            textFormat: Text.PlainText
-            font.pixelSize: Theme.fontSizeSmall
-            color: Theme.secondaryHighlightColor
-            text: qsTr("Bringing a profile over from another device is not ready yet. It is being worked on.")
         }
     }
 }

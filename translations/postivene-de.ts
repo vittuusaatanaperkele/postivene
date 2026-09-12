@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Wo ist dein Profil jetzt?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Als zweites Gerät hinzufügen</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Das Gerät, auf dem es ist, behält es. Dieses kommt über dasselbe Netzwerk dazu.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Aus einem Backup wiederherstellen</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Eine Backup-Datei, die das andere Gerät geschrieben hat, auf dieses Telefon kopiert.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -928,10 +951,6 @@
         <source>Create a profile</source>
         <translation>Profil erstellen</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>Ein Profil von einem anderen Gerät zu übernehmen, ist noch nicht fertig. Daran wird gearbeitet.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -959,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>Keine Profile</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Als zweites Gerät hinzufügen</translation>
     </message>
 </context>
 <context>
@@ -1006,6 +1029,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Nachricht bearbeiten</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Auf dem anderen Gerät läuft ein neueres Delta Chat, als diese App ein Profil übernehmen kann.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Die Übertragung ist vor dem Ende abgebrochen. Beide Geräte müssen im selben Netzwerk bleiben, mit dieser Seite offen.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Das ist nicht der Code, den ein Gerät zeigt, während es sein Profil anbietet.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Als zweites Gerät hinzufügen</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Aus einem Backup wiederherstellen</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>Öffne auf dem Gerät mit deinem Profil die Einstellungen und wähle, ein zweites Gerät hinzuzufügen. Halte dieses Telefon vor den Code, den es zeigt. Beide Geräte müssen im selben Netzwerk sein.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Erstelle auf dem Gerät mit deinem Profil ein Backup und kopiere die Datei auf dieses Telefon. Wähle sie dann hier aus.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Backup-Datei auswählen</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Profil wird übernommen...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Abbrechen</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Auf diesem Gerät ist keine Kamera verfügbar. Mit einer Backup-Datei geht es auch ohne.</translation>
     </message>
 </context>
 <context>

@@ -348,9 +348,9 @@ fn onboarding_pages_drive_the_core_and_navigate() {
         record(&s, "welcome-click", call!("click", "setupButton"));
     });
 
-    // Where that lands: the two ways into a profile. The one that is not
-    // built says so when it is asked, and the one that is goes on to the
-    // relay dialog.
+    // Where that lands: the two ways into a profile. One asks where the
+    // reader's existing profile is; the other goes on to the relay
+    // dialog.
     let s = steps.clone();
     single_shot(Duration::from_secs(3), move || {
         record(
@@ -358,13 +358,11 @@ fn onboarding_pages_drive_the_core_and_navigate() {
             "start-load",
             call!("load", page_url("ProfileStartPage.qml")),
         );
-        record(&s, "start-quiet", call!("get", "notYetHint", "visible"));
         record(
             &s,
             "start-existing",
             call!("click", "existingProfileButton"),
         );
-        record(&s, "start-said", call!("get", "notYetHint", "visible"));
         record(&s, "start-create", call!("click", "createProfileButton"));
     });
 
@@ -461,8 +459,8 @@ fn assert_pages_loaded(steps: &[(String, String)], context: &str) {
 
 /// With no configured account the welcome page stops probing and shows its
 /// buttons; the setup one starts the profile path, and the page it opens
-/// says so for the half of that path which is not built while going on to
-/// the dialog for the half that is.
+/// leads both ways from there: to where an existing profile is taken over
+/// from, and on to the relay dialog.
 fn assert_welcome_and_navigation(
     steps: &[(String, String)],
     navigation: &str,
@@ -479,15 +477,9 @@ fn assert_welcome_and_navigation(
         navigation.contains("push:ProfileStartPage.qml"),
         "Set up my profile did not start the profile path. {context}"
     );
-    assert_eq!(
-        value_of(steps, "start-quiet"),
-        "false",
-        "the page explained itself before it was asked. {context}"
-    );
-    assert_eq!(
-        value_of(steps, "start-said"),
-        "true",
-        "an existing profile was offered and then said nothing. {context}"
+    assert!(
+        navigation.contains("push:ExistingProfilePage.qml"),
+        "I already have a profile did not ask where it is. {context}"
     );
     assert!(
         navigation.contains("push:AddProfileDialog.qml"),

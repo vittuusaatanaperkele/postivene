@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Missä profiilisi on nyt?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Lisää toisena laitteena</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Laite, jolla se on, pitää sen. Tämä liittyy mukaan samassa verkossa.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Palauta varmuuskopiosta</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Varmuuskopiotiedosto, jonka toinen laite kirjoitti ja joka on kopioitu tähän puhelimeen.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -928,10 +951,6 @@
         <source>Create a profile</source>
         <translation>Luo profiili</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>Profiilin siirtäminen toisesta laitteesta ei ole vielä valmis. Sitä tehdään parhaillaan.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -959,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>Ei profiileja</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Lisää toisena laitteena</translation>
     </message>
 </context>
 <context>
@@ -1006,6 +1029,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Muokataan viestiä</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Toisessa laitteessa on uudempi Delta Chat kuin mistä tämä sovellus osaa ottaa profiilin vastaan.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Siirto keskeytyi ennen kuin se valmistui. Molempien laitteiden on pysyttävä samassa verkossa, tämä sivu auki.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Tämä ei ole se koodi, jonka laite näyttää tarjotessaan profiiliaan.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Lisää toisena laitteena</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Palauta varmuuskopiosta</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>Avaa profiilin sisältävässä laitteessa asetukset ja valitse toisen laitteen lisääminen. Suuntaa tämä puhelin sen näyttämään koodiin. Molempien on oltava samassa verkossa.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Tee profiilin sisältävässä laitteessa varmuuskopio ja kopioi tiedosto tähän puhelimeen. Valitse se sitten täältä.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Valitse varmuuskopiotiedosto</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Otetaan profiilia vastaan...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Peruuta</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Tässä laitteessa ei ole kameraa. Varmuuskopiotiedostolla onnistuu ilmankin.</translation>
     </message>
 </context>
 <context>

@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Kus sinu profiil praegu on?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Lisa teise seadmena</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Seade, kus see on, jätab selle endale. See siin liitub, sama võrgu kaudu.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Taasta varukoopiast</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Varukoopia fail, mille teine seade kirjutas, sellesse telefoni kopeerituna.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -928,10 +951,6 @@
         <source>Create a profile</source>
         <translation>Loo profiil</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>Profiili toomine teisest seadmest pole veel valmis. Sellega tegeletakse.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -959,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>Profiile pole</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Lisa teise seadmena</translation>
     </message>
 </context>
 <context>
@@ -1006,6 +1029,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Sõnumi muutmine</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Teises seadmes on uuem Delta Chat, kui see rakendus profiili üle võtta oskab.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Ülekanne katkes enne lõppu. Mõlemad seadmed peavad jääma samasse võrku ja see leht lahti.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>See ei ole kood, mida seade näitab, kui ta oma profiili pakub.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Lisa teise seadmena</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Taasta varukoopiast</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>Ava profiiliga seadmes seaded ja vali teise seadme lisamine. Suuna see telefon koodile, mida ta näitab. Mõlemad seadmed peavad olema samas võrgus.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Tee profiiliga seadmes varukoopia ja kopeeri fail sellesse telefoni. Vali see siis siit.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Vali varukoopia fail</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Profiili üle võtmas...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Loobu</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Selles seadmes pole kaamerat. Varukoopia failiga saab ka ilma.</translation>
     </message>
 </context>
 <context>

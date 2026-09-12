@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>आपकी प्रोफ़ाइल इस समय कहाँ है?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>दूसरे उपकरण के रूप में जोड़ें</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>जिस उपकरण पर वह है वह उसे रखता है। यह उपकरण उसी नेटवर्क से जुड़ जाता है।</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>बैकअप से पुनर्स्थापित करें</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>दूसरे उपकरण की बनाई बैकअप फ़ाइल, इस फ़ोन पर कॉपी की हुई।</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -928,10 +951,6 @@
         <source>Create a profile</source>
         <translation>प्रोफ़ाइल बनाएँ</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>दूसरे उपकरण से प्रोफ़ाइल लाना अभी तैयार नहीं है। इस पर काम चल रहा है।</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -959,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>कोई प्रोफ़ाइल नहीं</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>दूसरे उपकरण के रूप में जोड़ें</translation>
     </message>
 </context>
 <context>
@@ -1006,6 +1029,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>संदेश संपादित किया जा रहा है</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>दूसरे उपकरण पर इतना नया Delta Chat है कि यह ऐप वहाँ से प्रोफ़ाइल नहीं ले सकता।</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>स्थानांतरण पूरा होने से पहले रुक गया। दोनों उपकरण एक ही नेटवर्क पर रहने चाहिए, यह पृष्ठ खुला रखते हुए।</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>कोई उपकरण अपनी प्रोफ़ाइल देते समय जो कोड दिखाता है, यह वह नहीं है।</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>दूसरे उपकरण के रूप में जोड़ें</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>बैकअप से पुनर्स्थापित करें</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>जिस उपकरण पर आपकी प्रोफ़ाइल है, वहाँ सेटिंग्स खोलिए और दूसरा उपकरण जोड़ना चुनिए। वह जो कोड दिखाए, उसके सामने यह फ़ोन रखिए। दोनों एक ही नेटवर्क पर होने चाहिए।</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>जिस उपकरण पर आपकी प्रोफ़ाइल है, वहाँ बैकअप बनाइए और फ़ाइल इस फ़ोन पर कॉपी कीजिए। फिर उसे यहाँ चुनिए।</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>बैकअप फ़ाइल चुनें</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>प्रोफ़ाइल ली जा रही है...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>रद्द करें</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>इस उपकरण पर कैमरा नहीं है। बैकअप फ़ाइल से बिना कैमरे के भी हो जाता है।</translation>
     </message>
 </context>
 <context>

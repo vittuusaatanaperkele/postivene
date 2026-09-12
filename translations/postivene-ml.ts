@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>നിങ്ങളുടെ പ്രൊഫൈൽ ഇപ്പോൾ എവിടെയാണ്?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>രണ്ടാമത്തെ ഉപകരണമായി ചേർക്കുക</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>അത് ഉള്ള ഉപകരണം അത് സൂക്ഷിക്കും. ഇത് അതേ ശൃംഖലയിലൂടെ ചേരുന്നു.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>ബാക്കപ്പിൽനിന്ന് വീണ്ടെടുക്കുക</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>മറ്റേ ഉപകരണം എഴുതിയ ബാക്കപ്പ് ഫയൽ, ഈ ഫോണിലേക്ക് പകർത്തിയത്.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -928,10 +951,6 @@
         <source>Create a profile</source>
         <translation>പ്രൊഫൈൽ ഉണ്ടാക്കുക</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>മറ്റൊരു ഉപകരണത്തിൽനിന്ന് പ്രൊഫൈൽ കൊണ്ടുവരുന്നത് ഇനിയും തയ്യാറായിട്ടില്ല. അതിന്റെ പണി നടക്കുന്നു.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -959,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>പ്രൊഫൈലുകളില്ല</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>രണ്ടാമത്തെ ഉപകരണമായി ചേർക്കുക</translation>
     </message>
 </context>
 <context>
@@ -1006,6 +1029,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>സന്ദേശം തിരുത്തുന്നു</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>മറ്റേ ഉപകരണത്തിൽ ഈ ആപ്പിന് പ്രൊഫൈൽ ഏറ്റെടുക്കാനാവുന്നതിലും പുതിയ Delta Chat ആണുള്ളത്.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>കൈമാറ്റം തീരുംമുമ്പ് നിന്നു. രണ്ട് ഉപകരണങ്ങളും ഒരേ ശൃംഖലയിൽ തുടരണം, ഈ താൾ തുറന്നുവെച്ച്.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>ഒരു ഉപകരണം തന്റെ പ്രൊഫൈൽ നൽകുമ്പോൾ കാണിക്കുന്ന കോഡ് ഇതല്ല.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>രണ്ടാമത്തെ ഉപകരണമായി ചേർക്കുക</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>ബാക്കപ്പിൽനിന്ന് വീണ്ടെടുക്കുക</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>നിങ്ങളുടെ പ്രൊഫൈൽ ഉള്ള ഉപകരണത്തിൽ ക്രമീകരണങ്ങൾ തുറന്ന് രണ്ടാമത്തെ ഉപകരണം ചേർക്കുക എന്നത് തിരഞ്ഞെടുക്കുക. അത് കാണിക്കുന്ന കോഡിന് നേരെ ഈ ഫോൺ പിടിക്കുക. രണ്ടും ഒരേ ശൃംഖലയിൽ വേണം.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>നിങ്ങളുടെ പ്രൊഫൈൽ ഉള്ള ഉപകരണത്തിൽ ഒരു ബാക്കപ്പ് ഉണ്ടാക്കി ഫയൽ ഈ ഫോണിലേക്ക് പകർത്തുക. പിന്നെ അത് ഇവിടെ തിരഞ്ഞെടുക്കുക.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>ബാക്കപ്പ് ഫയൽ തിരഞ്ഞെടുക്കുക</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>പ്രൊഫൈൽ ഏറ്റെടുക്കുന്നു...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>റദ്ദാക്കുക</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>ഈ ഉപകരണത്തിൽ ക്യാമറയില്ല. ബാക്കപ്പ് ഫയലുണ്ടെങ്കിൽ ക്യാമറ വേണ്ട.</translation>
     </message>
 </context>
 <context>

@@ -479,6 +479,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Къде е профилът ви сега?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Добавяне като второ устройство</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Устройството, на което е, го запазва. Това се присъединява през същата мрежа.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Възстановяване от резервно копие</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Файл с резервно копие, записан от другото устройство и копиран на този телефон.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -928,10 +951,6 @@
         <source>Create a profile</source>
         <translation>Създаване на профил</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>Прехвърлянето на профил от друго устройство още не е готово. Работи се по него.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -959,6 +978,10 @@
     <message>
         <source>No profiles</source>
         <translation>Няма профили</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Добавяне като второ устройство</translation>
     </message>
 </context>
 <context>
@@ -1006,6 +1029,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Редактиране на съобщение</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>На другото устройство работи по-нов Delta Chat, отколкото това приложение може да поеме профил от.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Прехвърлянето спря, преди да завърши. И двете устройства трябва да останат в една и съща мрежа, с отворена тази страница.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Това не е кодът, който устройството показва, докато предлага профила си.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Добавяне като второ устройство</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Възстановяване от резервно копие</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>На устройството с вашия профил отворете настройките и изберете добавяне на второ устройство. Насочете този телефон към кода, който се показва. И двете устройства трябва да са в една и съща мрежа.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>На устройството с вашия профил направете резервно копие и копирайте файла на този телефон. После го изберете тук.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Избор на файл с резервно копие</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Профилът се поема...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отказ</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>На това устройство няма камера. С файл с резервно копие става и без нея.</translation>
     </message>
 </context>
 <context>

@@ -9,7 +9,7 @@ use qmetaobject::*;
 use crate::json;
 use crate::models::{AccountItem, AccountListModel};
 use crate::runtime::CoreRuntime;
-use crate::signup::{self, Attempts, Outcome, Transport};
+use crate::signup::{self, Attempts, Outcome, Source, Taken, Transport};
 
 /// The one live connection to the spawned server, shared with the models
 /// QML instantiates per chat.
@@ -296,6 +296,26 @@ pub struct DeltaChatCore {
     /// Abort the running attempt at a profile. Takes no account id:
     /// onboarding has none to give, and the attempt knows its own.
     pub cancel_ongoing: qt_method!(fn(&mut self)),
+
+    /// Take a profile over from the device showing this code.
+    pub restore_from_device: qt_method!(fn(&mut self, qr_text: QString)),
+
+    /// Take a profile over from a backup file.
+    pub restore_from_file: qt_method!(fn(&mut self, path: QString)),
+
+    /// How far the transfer has got, in permille, as the core reports
+    /// it: 1000 is done, 0 is the core giving up.
+    pub restore_progress: qt_signal!(permille: u32),
+
+    /// The profile is on this device now, with IO started on it.
+    pub profile_restored: qt_signal!(account_id: u32),
+
+    /// Nothing was taken over, for a reason this app words itself:
+    /// `not-a-backup`, `too-new` or `stalled`.
+    pub restore_refused: qt_signal!(reason: QString),
+
+    /// Nothing was taken over, in the core's own words.
+    pub restore_failed: qt_signal!(message: QString),
 
     /// The account's email transports, as a JSON array of upstream
     /// `EnteredLoginParam`.
@@ -689,6 +709,15 @@ impl DeltaChatCore {
         if kind == "ConfigureProgress" {
             if let Some(permille) = json::u32_opt(&event.event, "progress") {
                 self.configure_progress(event.context_id, permille);
+            }
+        }
+        // The same for a profile being taken over: the core reports an
+        // import the way it reports a configure, and one is running at a
+        // time, so the account it is on is the page's own business
+        // rather than something to match up here.
+        if kind == "ImexProgress" {
+            if let Some(permille) = json::u32_opt(&event.event, "progress") {
+                self.restore_progress(permille);
             }
         }
         // The count on the profile's row follows whatever could have
@@ -1157,9 +1186,10 @@ impl DeltaChatCore {
         });
     }
 
-    /// Abort the running attempt: nothing it answers is waited for any
-    /// more, and the core's process is stopped on every account an
-    /// attempt is still holding -- the one being cancelled, and any
+    /// Abort the running attempt, whether it is making a profile or
+    /// taking one over: nothing it answers is waited for any more, and
+    /// the core's process is stopped on every account an attempt is
+    /// still holding -- the one being cancelled, and any
     /// earlier one the core has not let go of yet.
     pub fn cancel_ongoing(&mut self) {
         let held = self.attempts.cancel();
@@ -1174,6 +1204,33 @@ impl DeltaChatCore {
                     .call::<_, ()>("stop_ongoing_process", (account_id,))
                     .await;
             }
+        });
+    }
+
+    /// Take a profile over from the device showing `qr_text`, which is
+    /// what its own "add second device" offers.
+    pub fn restore_from_device(&mut self, qr_text: QString) {
+        self.begin_restore(Source::Device(qr_text.to_string()));
+    }
+
+    /// Take a profile over from the backup file at `path`.
+    pub fn restore_from_file(&mut self, path: QString) {
+        self.begin_restore(Source::File(path.to_string()));
+    }
+
+    /// The shared start of both `restore_from_*` methods. The same
+    /// bookkeeping as a signup, so that one at a time holds across both
+    /// and `cancel_ongoing` stops whichever is running.
+    fn begin_restore(&mut self, source: Source) {
+        let Some((rpc, runtime)) = self.connection() else {
+            self.restore_failed(QString::from("not started"));
+            return;
+        };
+        let attempt = self.attempts.begin(signup::TRANSFER_DEADLINE);
+        let done = self.restore_callback(attempt.id());
+        let task_runtime = runtime.clone();
+        runtime.spawn(async move {
+            done(attempt.restore(&task_runtime, rpc, source).await);
         });
     }
 
@@ -1251,6 +1308,42 @@ impl DeltaChatCore {
                     this.borrow().profile_timed_out(seconds);
                 }
                 Outcome::Failed(_) | Outcome::TimedOut(_) => {}
+            }
+        })
+    }
+
+    /// The completion path of both `restore_from_*` methods, with the
+    /// same rule as a signup's: an answer for an attempt the reader is
+    /// no longer waiting for is not theirs, and the profile it brought
+    /// over is removed rather than announced.
+    ///
+    /// IO is started here rather than left to the page. An imported
+    /// account has none running -- the import writes the database and
+    /// stops -- and a profile that does not fetch is not a profile.
+    fn restore_callback(&self, attempt: u64) -> impl Fn(Taken) {
+        let ptr: QPointer<Self> = QPointer::from(self);
+        queued_callback(move |taken: Taken| {
+            let Some(this) = ptr.as_pinned() else { return };
+            let wanted = this.borrow().attempts.is_current(attempt);
+            match taken {
+                Taken::Done(account_id) if wanted => {
+                    if let Some((rpc, runtime)) = this.borrow().connection() {
+                        runtime.spawn(async move {
+                            let _ = start_io(&rpc, Some(account_id)).await;
+                        });
+                    }
+                    this.borrow().profile_restored(account_id);
+                }
+                Taken::Done(account_id) => {
+                    if let Some((rpc, runtime)) = this.borrow().connection() {
+                        runtime.spawn(async move { signup::discard(&rpc, account_id).await });
+                    }
+                }
+                Taken::Refused(reason) if wanted => {
+                    this.borrow().restore_refused(reason.into());
+                }
+                Taken::Failed(err) if wanted => this.borrow().restore_failed(err.into()),
+                Taken::Refused(_) | Taken::Failed(_) => {}
             }
         })
     }

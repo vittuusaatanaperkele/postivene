@@ -478,6 +478,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>你的個人檔案現在在哪裡？</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>新增為第二台裝置</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>擁有它的那台裝置仍然保留它。這台透過同一個網路加入。</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>從備份還原</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>另一台裝置寫出的備份檔案，複製到這支手機上。</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -923,10 +946,6 @@
         <source>Create a profile</source>
         <translation>建立個人檔案</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>從另一台裝置搬移個人檔案還沒完成，正在開發中。</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -954,6 +973,10 @@
     <message>
         <source>No profiles</source>
         <translation>沒有個人檔案</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>新增為第二台裝置</translation>
     </message>
 </context>
 <context>
@@ -1001,6 +1024,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>正在編輯訊息</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>另一台裝置上的 Delta Chat 比本應用程式能接收個人檔案的版本更新。</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>傳輸在完成前停止了。兩台裝置要留在同一個網路裡，並保持此頁面開啟。</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>這不是裝置在提供個人檔案時顯示的那個碼。</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>新增為第二台裝置</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>從備份還原</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>在有你個人檔案的裝置上開啟設定，選擇新增第二台裝置。把這支手機對準它顯示的碼。兩台裝置要在同一個網路裡。</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>在有你個人檔案的裝置上建立備份，把檔案複製到這支手機，然後在這裡選擇它。</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>選擇備份檔案</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>正在接收個人檔案…</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>這台裝置沒有相機。用備份檔案也可以，不需要相機。</translation>
     </message>
 </context>
 <context>

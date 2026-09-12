@@ -480,6 +480,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Kur dabar yra jūsų profilis?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Pridėti kaip antrą įrenginį</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Įrenginys, kuriame jis yra, jį pasilieka. Šis prisijungia tuo pačiu tinklu.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Atkurti iš atsarginės kopijos</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Atsarginės kopijos failas, kurį įrašė kitas įrenginys, nukopijuotas į šį telefoną.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -933,10 +956,6 @@
         <source>Create a profile</source>
         <translation>Sukurti profilį</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>Profilio perkėlimas iš kito įrenginio dar neparuoštas. Prie jo dirbama.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -964,6 +983,10 @@
     <message>
         <source>No profiles</source>
         <translation>Profilių nėra</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Pridėti kaip antrą įrenginį</translation>
     </message>
 </context>
 <context>
@@ -1011,6 +1034,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Redaguojama žinutė</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Kitame įrenginyje veikia naujesnis Delta Chat, nei iš kurio ši programa gali perimti profilį.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Perkėlimas sustojo nebaigtas. Abu įrenginiai turi likti tame pačiame tinkle, o šis puslapis – atvertas.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Tai ne tas kodas, kurį įrenginys rodo siūlydamas savo profilį.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Pridėti kaip antrą įrenginį</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Atkurti iš atsarginės kopijos</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>Įrenginyje, kuriame yra jūsų profilis, atverkite nustatymus ir pasirinkite pridėti antrą įrenginį. Nukreipkite šį telefoną į rodomą kodą. Abu turi būti tame pačiame tinkle.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Įrenginyje, kuriame yra jūsų profilis, sukurkite atsarginę kopiją ir nukopijuokite failą į šį telefoną. Tada pasirinkite jį čia.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Pasirinkti atsarginės kopijos failą</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Perimamas profilis...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Atšaukti</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Šiame įrenginyje kameros nėra. Su atsarginės kopijos failu jos ir nereikia.</translation>
     </message>
 </context>
 <context>

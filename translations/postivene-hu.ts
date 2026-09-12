@@ -478,6 +478,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Hol van most a profilja?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Hozzáadás második eszközként</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Az az eszköz, amelyiken van, megtartja. Ez csatlakozik hozzá, ugyanazon a hálózaton.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Visszaállítás mentésből</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>A másik eszköz által írt mentésfájl, erre a telefonra másolva.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -923,10 +946,6 @@
         <source>Create a profile</source>
         <translation>Profil létrehozása</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>A profil áthozása másik készülékről még nincs kész. Készül.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -954,6 +973,10 @@
     <message>
         <source>No profiles</source>
         <translation>Nincs profil</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Hozzáadás második eszközként</translation>
     </message>
 </context>
 <context>
@@ -1001,6 +1024,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Üzenet szerkesztése</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>A másik eszközön újabb Delta Chat fut, mint amelyikből ez az alkalmazás profilt tud átvenni.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Az átvitel a vége előtt megállt. Mindkét eszköznek ugyanazon a hálózaton kell maradnia, ezzel az oldallal nyitva.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Ez nem az a kód, amit egy eszköz mutat, amíg a profilját felkínálja.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Hozzáadás második eszközként</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Visszaállítás mentésből</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>A profilt tartalmazó eszközön nyissa meg a beállításokat, és válassza a második eszköz hozzáadását. Tartsa ezt a telefont a megjelenő kód elé. Mindkettőnek ugyanazon a hálózaton kell lennie.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>A profilt tartalmazó eszközön készítsen mentést, és másolja a fájlt erre a telefonra. Utána válassza ki itt.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Mentésfájl kiválasztása</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>A profil átvétele...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Mégse</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Ezen az eszközön nincs kamera. Mentésfájllal kamera nélkül is megy.</translation>
     </message>
 </context>
 <context>

@@ -480,6 +480,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Де зараз ваш профіль?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Додати як другий пристрій</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Пристрій, на якому він є, його й залишає. Цей приєднується тією ж мережею.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Відновити з резервної копії</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Файл резервної копії, записаний іншим пристроєм і скопійований на цей телефон.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -933,10 +956,6 @@
         <source>Create a profile</source>
         <translation>Створити профіль</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>Перенесення профілю з іншого пристрою ще не готове. Над ним працюють.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -964,6 +983,10 @@
     <message>
         <source>No profiles</source>
         <translation>Профілів немає</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Додати як другий пристрій</translation>
     </message>
 </context>
 <context>
@@ -1011,6 +1034,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Зміна повідомлення</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>На іншому пристрої новіший Delta Chat, ніж той, з якого цей застосунок уміє переносити профіль.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Передавання спинилося, не дійшовши до кінця. Обидва пристрої мають залишатися в одній мережі, а ця сторінка — відкритою.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Це не той код, який пристрій показує, поки пропонує свій профіль.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Додати як другий пристрій</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Відновити з резервної копії</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>На пристрої з вашим профілем відкрийте налаштування й виберіть додавання другого пристрою. Наведіть цей телефон на показаний код. Обидва мають бути в одній мережі.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>На пристрої з вашим профілем зробіть резервну копію й скопіюйте файл на цей телефон. Потім виберіть його тут.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Вибрати файл резервної копії</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Профіль переноситься...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Скасувати</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>На цьому пристрої немає камери. З файлом резервної копії вона й не потрібна.</translation>
     </message>
 </context>
 <context>

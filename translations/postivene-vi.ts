@@ -478,6 +478,29 @@
     </message>
 </context>
 <context>
+    <name>ExistingProfilePage</name>
+    <message>
+        <source>Where is your profile now?</source>
+        <translation>Hồ sơ của bạn hiện ở đâu?</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Thêm làm thiết bị thứ hai</translation>
+    </message>
+    <message>
+        <source>The device that has it keeps it. This one joins, over the same network.</source>
+        <translation>Thiết bị đang có hồ sơ vẫn giữ nó. Máy này tham gia cùng, qua cùng một mạng.</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Khôi phục từ bản sao lưu</translation>
+    </message>
+    <message>
+        <source>A backup file the other device wrote, copied onto this phone.</source>
+        <translation>Một tệp sao lưu do thiết bị kia tạo, đã chép sang điện thoại này.</translation>
+    </message>
+</context>
+<context>
     <name>Format</name>
     <message>
         <source>now</source>
@@ -923,10 +946,6 @@
         <source>Create a profile</source>
         <translation>Tạo hồ sơ</translation>
     </message>
-    <message>
-        <source>Bringing a profile over from another device is not ready yet. It is being worked on.</source>
-        <translation>Việc mang hồ sơ từ máy khác sang vẫn chưa sẵn sàng. Đang được làm.</translation>
-    </message>
 </context>
 <context>
     <name>ProfilesPage</name>
@@ -954,6 +973,10 @@
     <message>
         <source>No profiles</source>
         <translation>Không có hồ sơ</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Thêm làm thiết bị thứ hai</translation>
     </message>
 </context>
 <context>
@@ -1001,6 +1024,53 @@
         <source>Editing message</source>
         <extracomment>Above the message field while a sent message&apos;s text is being changed; the message&apos;s text follows.</extracomment>
         <translation>Đang sửa tin nhắn</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreProfilePage</name>
+    <message>
+        <source>The other device runs a newer Delta Chat than this app can take a profile from.</source>
+        <translation>Thiết bị kia chạy Delta Chat mới hơn mức ứng dụng này có thể nhận hồ sơ.</translation>
+    </message>
+    <message>
+        <source>The transfer stopped before it finished. Both devices have to stay on the same network, with this page open.</source>
+        <translation>Việc chuyển đã dừng trước khi xong. Cả hai thiết bị phải ở cùng một mạng, với trang này đang mở.</translation>
+    </message>
+    <message>
+        <source>That is not the code a device shows while it is offering its profile.</source>
+        <translation>Đó không phải mã mà một thiết bị hiện ra khi đang chia sẻ hồ sơ của nó.</translation>
+    </message>
+    <message>
+        <source>Add as second device</source>
+        <translation>Thêm làm thiết bị thứ hai</translation>
+    </message>
+    <message>
+        <source>Restore from a backup</source>
+        <translation>Khôi phục từ bản sao lưu</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, open Settings and choose to add a second device. Hold this phone up to the code it shows. Both devices have to be on the same network.</source>
+        <translation>Trên thiết bị đang có hồ sơ, mở cài đặt và chọn thêm thiết bị thứ hai. Hướng điện thoại này vào mã hiện ra. Cả hai phải ở cùng một mạng.</translation>
+    </message>
+    <message>
+        <source>On the device that has your profile, make a backup and copy the file onto this phone. Then choose it here.</source>
+        <translation>Trên thiết bị đang có hồ sơ, hãy tạo bản sao lưu và chép tệp sang điện thoại này. Rồi chọn tệp đó ở đây.</translation>
+    </message>
+    <message>
+        <source>Choose a backup file</source>
+        <translation>Chọn một tệp sao lưu</translation>
+    </message>
+    <message>
+        <source>Taking the profile over...</source>
+        <translation>Đang nhận hồ sơ...</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Hủy</translation>
+    </message>
+    <message>
+        <source>The camera is not available on this device. A backup file works without one.</source>
+        <translation>Máy này không có camera. Dùng tệp sao lưu thì không cần camera.</translation>
     </message>
 </context>
 <context>

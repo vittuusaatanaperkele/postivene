@@ -356,10 +356,28 @@ deltachat-rpc-server (bundled binary, subprocess) = the entire core
   and nothing else, since turning the phone moves the view too and is
   not a reader asking for anything. "Set up my profile" goes there
   directly: the choice between creating a profile -- the relay dialog,
-  which is where a server is picked -- and bringing one over from
-  another device, which is not built yet and says so. Neither of those
-  two screens draws the field: it is the welcome, and behind a drawing
-  or a question it would be one pattern too many.
+  which is where a server is picked -- and having one already. Neither
+  of those two screens draws the field: it is the welcome, and behind a
+  drawing or a question it would be one pattern too many.
+- **A profile that exists already is taken over, not made again.** Both
+  ways the other Delta Chat apps offer are here, and both are the core's
+  import: from a device that still has the profile, which offers it over
+  the local network behind a code this phone reads (`get_backup`), and
+  from a backup file that device wrote (`import_backup`). The pages are
+  `ExistingProfilePage.qml`, which asks which, and
+  `RestoreProfilePage.qml`, which does either -- one page, because
+  everything after the first step is the same bar and the same answers.
+  A transfer is an attempt in the same sense a signup is (`signup.rs`):
+  one at a time, cancellable, and an answer that arrives after the
+  reader gave up brings a profile nobody asked for, so it is removed
+  rather than kept. Two things are this app's own rather than the core's:
+  the code is classified before the transfer starts, because "not a
+  second device's code" said in protocol terms is no use to somebody
+  holding a camera; and IO is started on what arrives, because an
+  imported account has none running and a profile that does not fetch is
+  not a profile. The same take-over is reachable from the profiles list,
+  under the plus that makes a new one, for the reader whose old phone is
+  in their other hand.
   Adding a profile is the other half of that screen, and the relay is
   the part of it nobody here controls: a public relay is somebody's
   spare-time server, and one that is down holds the core's transport
